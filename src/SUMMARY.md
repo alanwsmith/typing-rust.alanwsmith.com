@@ -1,8 +1,9 @@
 # Summary
 
 - [Introduction](./introduction/index.md)
+  - [Yes, Type](./introduction/yes-type.md)
+  - [A Few Quick Notes](./introduction/page-2.md)
 - [Hello World](./hello-world/index.md)
-  - [Your Turn](./hello-world/your-turn.md)
   - [Piece By Piece](./hello-world/piece-by-piece.md)
   - [Another Line](./hello-world/adding-another-line.md)
 - [Variables](./variables/index.md)
