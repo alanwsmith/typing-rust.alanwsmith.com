@@ -1,0 +1,40 @@
+.hljs {
+  background-color: var(--bg);
+}
+
+.playground .hljs {
+  border: 2px solid #555;
+  border-radius: 10px;
+  background-color: #000;
+  padding: 1rem 2rem;
+  /*
+  margin-left: 5rem;
+  */
+}
+
+.noplayground {
+  background-color: var(--bg);
+  border: 2px solid #555;
+  border-radius: 10px;
+  background-color: #000;
+  padding: 1rem 2rem;
+  /*
+  margin-left: 5rem;
+  */
+}
+
+.playground .editable {
+  border: 2px solid #1010b3;
+  background-color: #000;
+  /*
+  margin-left: 0rem;
+  */
+}
+
+.ace_content {
+  margin: 2rem 1rem;
+}
+
+.ace_gutter-layer {
+  margin-top: 2rem;
+}

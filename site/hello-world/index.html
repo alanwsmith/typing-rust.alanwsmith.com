@@ -1,0 +1,445 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Hello World - Typing Rust</title>
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/overrides.css">
+
+
+<script>
+const init = () => {
+
+  // Add the typo status line
+  const code1Element = document.getElementsByClassName('CODE1')[0];
+  if (code1Element) {
+    const editorWrapper = code1Element.parentNode.parentNode;
+    const typoStatusNode = document.createElement("div");
+    typoStatusNode.id = "typoStatusNode"
+    typoStatusNode.style.fontFamily = "monospace";
+
+    typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #009900">OK</span>`;
+    editorWrapper.insertAdjacentElement('afterend', typoStatusNode);
+
+    // Could probably pull this from the `CODE1`, but this is fine for now. 
+    const codeBlock = document.getElementsByClassName('ace_text-input')[0];
+    codeBlock.addEventListener("keyup", checkForTyposV3);
+  }
+}
+
+/* const getLines = (text) => { */
+/*   const lines = text.split("\n"); */
+/*   for (let indx = 0; indx < lines.length; indx ++) { */
+/*     lines[indx] = lines[indx].trim() */
+/*   } */
+/*   return lines */ 
+/* } */
+
+
+const checkForTyposV3 = () => {
+
+  const codeEditorEl = document.getElementsByClassName('CODE1')[0];
+  const statusNode = document.createElement("div");
+
+  let walkerNode;
+
+  // Get the target source code
+  const exampleEl = document.getElementsByClassName('EXAMPLE1')[0];
+  let baseString = ""
+
+  const targetWalker = document.createTreeWalker(
+    exampleEl, NodeFilter.SHOW_TEXT, null, false
+  )
+
+  while (walkerNode = targetWalker.nextNode()) {
+    baseString += walkerNode.nodeValue
+  }
+
+  const baseLines = []
+  const baseSplit = baseString.split("\n")
+
+  for (let indx = 0; indx < baseSplit.length; indx ++) {
+    if (baseSplit[indx] !== "") {
+      baseLines.push(baseSplit[indx].trim())
+    }
+  }
+
+
+  // The the user entered lines
+  const editorLineEls = document.getElementsByClassName('ace_line'); 
+
+  const editorLines = [];
+
+  for (let editorLine of editorLineEls) {
+    let lineString = "";
+    const walker = document.createTreeWalker(
+      editorLine, NodeFilter.SHOW_TEXT, null, false
+    )
+
+    while (walkerNode = walker.nextNode()) {
+      lineString += walkerNode.nodeValue
+    }
+
+    if (lineString.trim() !== "") {
+      editorLines.push(lineString.trim())
+    }
+  }
+
+  const typoStatusNode = document.getElementById("typoStatusNode");
+
+
+  if (editorLines.length > 0) {
+  }
+
+  /* console.log(baseLines); */
+  /* console.log(editorLines); */
+
+  toploop:
+  for (let baseIndex = 0; baseIndex < baseLines.length; baseIndex ++) {
+
+    let bummerString = ""
+
+    if (editorLines[baseIndex] === undefined) {
+      break toploop
+    }
+
+    if (baseIndex === editorLines.length -1) {
+
+      lowerloop1:
+      for (let letterIndex = 0; letterIndex < editorLines[baseIndex].length; letterIndex ++) {
+        if (editorLines[baseIndex].charAt(letterIndex) !== baseLines[baseIndex].charAt(letterIndex)) {
+
+          /* console.log(`-- ${baseLines[baseIndex].charAt(letterIndex)}`) */
+          /* console.log(`-- ${editorLines[baseIndex].charAt(letterIndex)}`) */
+          /* console.log(`>>> is broken`) */
+
+          bummerString += `<span style="color: red;">${baseLines[baseIndex].charAt(letterIndex)}</span>`
+          typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #880000">TYPO</span> <span style="color: #555555;">|</span> ${bummerString}`;
+          break toploop
+          break lowerloop1
+        }
+        else {
+          bummerString += `<span style="color: #888888">${baseLines[baseIndex].charAt(letterIndex)}</span>`
+          typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #008800">OK</span>&nbsp;&nbsp;&nbsp;<span style="color: #555555;">|</span>`;
+        }
+      }
+    }
+
+    else {
+      lowerloop2:
+      for (let letterIndex = 0; letterIndex < baseLines[baseIndex].length; letterIndex ++) {
+        if (editorLines[baseIndex].charAt(letterIndex) !== baseLines[baseIndex].charAt(letterIndex)) {
+
+          // console.log(`-- ${baseLines[baseIndex].charAt(letterIndex)}`)
+          // console.log(`-- ${editorLines[baseIndex].charAt(letterIndex)}`)
+          // console.log(`-- ${letterIndex}`)
+
+          bummerString += `<span style="color: red;">${baseLines[baseIndex].substring(letterIndex)}</span>`
+          typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #880000">Typo</span> - ${bummerString}`;
+          break toploop
+          break lowerloop2
+        }
+        else {
+          bummerString += baseLines[baseIndex].charAt(letterIndex)
+          typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #008800">OK</span>`;
+        }
+      }
+
+      // typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #008800">OK</span>`;
+
+    }
+
+
+
+    /* console.log(baseLines[baseIndex]) */
+    /* console.log(editorLines[baseIndex]) */
+
+  }
+
+  /* for (let editorIndex = 0; editorIndex < editorLines.length; editorIndex ++) { */
+  /*   console.log(editorLines[editorIndex]) */
+  /* } */
+
+
+
+
+  editorLoop:
+  for (let baseLineIndex = 0; baseLineIndex < baseLines.length; baseLineIndex ++) {
+    let bummerString = "";
+    lineLoop:
+    for (let lineIndex = 0; lineIndex < baseLines[baseLineIndex].length; lineIndex ++) {
+
+      /* console.log(editorLines[baseLineIndex]) */
+      /* // punt if there's no more data */
+      /* if (editorLines[baseLineIndex] === undefined) { */
+      /*   typoStatusNode.innerHTML = `<span style="color: blue;">Status:</span> <span style="color: #880000">Typo</span> - ${bummerString}`; */ 
+      /*   break editorLoop; */
+      /*   break lineLoop; */
+      /* } */
+
+/* console.log(editorLines[baseLineIndex][lineIndex]) */
+
+      /* if (editorLines[baseLineIndex][lineIndex] === undefined) { */ 
+      /*   typoStatusNode.innerHTML = `<span style="color: green;">Status:</span> <span style="color: #880000">Typo</span> - ${bummerString}`; */ 
+      /*   break editorLoop; */
+      /*   break lineLoop; */
+      /* } */
+
+
+      /* if (editorLines[editorLineIndex][lineIndex] !== baseLines[editorLineIndex][lineIndex]) { */
+      /*   bummerString += `<span style="color: #880000">${baseLines[editorLineIndex][lineIndex]}</span>` */
+      /*   typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #880000">Typo</span> - ${bummerString}`; */
+      /*   break editorLoop; */
+      /*   break lineLoop; */
+      /* } */
+      /* else { */
+      /*   bummerString += baseLines[editorLineIndex][lineIndex] */
+      /*   typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #009900">OK</span>`; */
+      /* } */
+
+    }
+  }
+
+  /* editorLoop: */
+  /* for (let editorLineIndex = 0; editorLineIndex < editorLines.length; editorLineIndex ++) { */
+  /*   let bummerString = ""; */
+  /*   lineLoop: */
+  /*   for (let lineIndex = 0; lineIndex < editorLines[editorLineIndex].length; lineIndex ++) { */
+  /*     if (editorLines[editorLineIndex][lineIndex] !== baseLines[editorLineIndex][lineIndex]) { */
+  /*       bummerString += `<span style="color: #880000">${baseLines[editorLineIndex][lineIndex]}</span>` */
+  /*       typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #880000">Typo</span> - ${bummerString}`; */
+  /*       break editorLoop; */
+  /*       break lineLoop; */
+  /*     } */
+  /*     else { */
+  /*       bummerString += baseLines[editorLineIndex][lineIndex] */
+  /*       typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #009900">OK</span>`; */
+  /*     } */
+  /*   } */
+  /* } */
+
+}
+
+document.addEventListener("DOMContentLoaded", init);
+
+</script>
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../hello-world/index.html" class="active"><strong aria-hidden="true">2.</strong> Hello World</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../hello-world/your-turn.html"><strong aria-hidden="true">2.1.</strong> Your Turn</a></li><li class="chapter-item expanded "><a href="../hello-world/piece-by-piece.html"><strong aria-hidden="true">2.2.</strong> Piece By Piece</a></li><li class="chapter-item expanded "><a href="../hello-world/adding-another-line.html"><strong aria-hidden="true">2.3.</strong> Another Line</a></li></ol></li><li class="chapter-item expanded "><a href="../variables/index.html"><strong aria-hidden="true">3.</strong> Variables</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../variables/printing-variables.html"><strong aria-hidden="true">3.1.</strong> Variables In println!</a></li><li class="chapter-item expanded "><a href="../variables/printing-multiple-variables.html"><strong aria-hidden="true">3.2.</strong> Multiple Variables In println!</a></li><li class="chapter-item expanded "><a href="../variables/trying-to-change-an-immutable-variable.html"><strong aria-hidden="true">3.3.</strong> Trying To Change An Immutable Variable</a></li><li class="chapter-item expanded "><a href="../variables/mutable-variables.html"><strong aria-hidden="true">3.4.</strong> Mutalbe Variables</a></li></ol></li><li class="chapter-item expanded "><a href="../constants/index.html"><strong aria-hidden="true">4.</strong> Constants</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shadowing-variables/index.html"><strong aria-hidden="true">4.1.</strong> Shadowing Variables</a></li><li class="chapter-item expanded "><a href="../shadowing-variables/in-scope.html"><strong aria-hidden="true">4.2.</strong> Shadowing Variables In Scope</a></li><li class="chapter-item expanded "><a href="../shadowing-variables/changing-type.html"><strong aria-hidden="true">4.3.</strong> Shadowing Variables To Change Type</a></li></ol></li><li class="chapter-item expanded "><a href="../prerequisites/index.html"><strong aria-hidden="true">5.</strong> Prerequisets</a></li><li class="chapter-item expanded "><a href="../appendix/about.html"><strong aria-hidden="true">6.</strong> About This Site</a></li><li class="chapter-item expanded "><a href="../terminology/index.html"><strong aria-hidden="true">7.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../dev/typo-test.html"><strong aria-hidden="true">8.</strong> Typo Test</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <!--
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        -->
+                    </div>
+
+                    <h1 class="menu-title">Typing Rust</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                            <a rel="prev" href="../introduction/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../hello-world/your-turn.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+
+                    <main>
+                        <div id="rawTextToCompare" style="display: none;">rawTextToCompare</div>
+                        <!-- 
+                        <div id="tmpLine">Templine<div>
+                        <hr />
+                        <div id="debugLine" style="color: red; font-family: monospace;"></div>
+                        -->
+                        <h1 id="hello-world"><a class="header" href="#hello-world">Hello World</a></h1>
+<p>A traditional approach to writing the first program
+in a new language it to make it print &quot;Hello, World&quot;.
+This is how you do it in Rust.</p>
+<pre><pre class="playground"><code class="language-rust">fn main() {
+  println!(&quot;Hello, World&quot;);
+}</code></pre></pre>
+<p>This site includes code samples that can be run live.
+The &quot;Hello, World&quot; sample above is one of them. Click
+the &quot;Run&quot; button in the upper right to run the code.
+It will show &quot;Running&quot; breifly followed by the &quot;Hello, World&quot;
+output from the code itself.</p>
+<p>Most examples have the Run button. There are some that
+include snippets that can run on their own or that
+demonstrate errors that don't have them, though.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                            <a rel="prev" href="../introduction/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../hello-world/your-turn.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../introduction/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../hello-world/your-turn.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+        <script>
+            window.playground_line_numbers = true;
+        </script>
+
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

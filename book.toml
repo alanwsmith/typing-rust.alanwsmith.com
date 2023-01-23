@@ -1,0 +1,26 @@
+[book]
+authors = ["Alan W. Smith"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Typing Rust"
+
+[build]
+build-dir = "site"
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+additional-css = ["theme/overrides.css"]
+
+[output.html.playground]
+editable = true
+copyable = false 
+line-numbers = true
+
+[output.html.search]
+enable = false
+
+[output.html.print]
+enable = false 
+
