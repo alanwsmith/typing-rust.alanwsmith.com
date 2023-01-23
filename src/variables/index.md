@@ -1,12 +1,17 @@
 # Variables
 
-Variables in Rust are created with the `let` keyword.
-By default, they can't be changed once they
-have been defined. (That is, the are "immutable"
-by default.)
+Variables in Rust are created with the `let` keyword followed
+by the name to use for the variable, then an `=` sign followed
+by the value to bind to it. (Rust uses the term `bind` instead
+of assign for varaibles (TODO: Verify this is always the case))
 
-A basic example using a variable named `alfa`
-looks like this:
+Variables are immutable by default (i.e. they can't be changed
+once their set).
+
+Here's a basic example (we'll talk about `{alfa}`
+on the next page):
+
+#### EXAMPLE
 
 ```rust,noplayground,EXAMPLE1
 fn main() {
@@ -15,9 +20,10 @@ fn main() {
 }
 ```
 
-Type that in and run it. The expected output is "The value is 7".
+Give that a shot
+
+#### CODE RUNNER
 
 ```rust,editable,CODE1
 
 ```
-

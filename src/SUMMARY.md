@@ -1,12 +1,16 @@
 # Summary
 
+- [Work In Progress](./introduction/work-in-progress.md)
 - [Introduction](./introduction/index.md)
+  - [The Status Line](./introduction/status-line.md)
   - [Yes, Type](./introduction/yes-type.md)
   - [A Few Quick Notes](./introduction/page-2.md)
 - [Hello World](./hello-world/index.md)
   - [Piece By Piece](./hello-world/piece-by-piece.md)
-  - [Another Line](./hello-world/adding-another-line.md)
 - [Variables](./variables/index.md)
+  - [Immutable By Default](./variables-are-immutable-by-default.md)
+  - [Immutalbe Error Message](./variables-immutable-error-message.md)
+  - [Turning Off Warnings](./turning-off-warnings.md)
   - [Variables In println!](./variables/printing-variables.md)
   - [Multiple Variables In println!](./variables/printing-multiple-variables.md)
   - [Trying To Change An Immutable Variable](./variables/trying-to-change-an-immutable-variable.md)
