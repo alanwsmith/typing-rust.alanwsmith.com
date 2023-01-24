@@ -1,12 +1,7 @@
 # Hello, World (Piece By Piece)
 
-Here's the basics parts of the "Hello, World" example.
-It's a high level overview to introduce
-the concepts. We'll dig into the details more in
-the following sections. It's perfectly fine if
-you don't see how to line things up yet.
 
-Here's the code again:
+#### EXAMPLE
 
 ```rust,noplayground
 fn main() {
@@ -14,36 +9,32 @@ fn main() {
 }
 ```
 
-### The Parts
+### THE PARTS
 
-- The first thing in the code is `fn`. That's
-  short for "function" which is a
-  block of code that makes it easier
-  to issolate different parts of the
-  program to make them easier to write.
+- The first thing in the code is `fn` which
+  is short for function which is what we're defining here.
 
-- `main()` is the name we're assigning to the
-  function we're making. Other parts of the
-  program can "call" the function by
-  it's name to run the code inside it. Details
-  on the empty `()` are coming soon.
+- `main` is the name we're assigning to the
+  function. Every rust program must have a `main()`
+  function. It's the entry point that kicks things off.
 
-- The `{` and `}` curly brackets are the starting
-  and ending point for the code the function will
-  run when it's called.
+- The `()` in `main()` is empty in this example. We'll
+  see examples where it's populated when we cover functions.
 
-- The `println!("Hello, World");` line
-  is a "statement". Statements are one of
-  the main code building blocks that
-  are how the programs do their thing.
-  In this case, the statement prints
-  out "Hello, World". We'll get into
-  more details about statements soon.
+- The `{` curly bracket starts the block of code for the
+  function.
 
+- `println!()` is for printing a line with the content inside
+  the quotes inside the `()` parens. (Watch out for the `!`
+  character. I miss it all the time when typing. We'll get
+  more into what it means later.)
 
-### TODO
+- `"Hello, World"` is the content to be printed. The quotes
+  themselves aren't printed. They're there to identify where
+  the content starts and stops.
 
-- Note the `!` and the `;` explicitly.
+- The `;` at the end of the `println!()` line end the statement.
 
-- Identify and link to chapters for things
-  that are listed as coming up.
+- The `}` identifies the end of the function.
+
+Next up, variables.

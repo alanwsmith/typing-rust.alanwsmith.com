@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Piece By Piece - Typing Rust</title>
+        <title>Variables In println! - Typing Rust</title>
 
         <!-- Custom HTML head -->
         
@@ -297,7 +297,7 @@ document.addEventListener("DOMContentLoaded", init);
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../hello-world/index.html"><strong aria-hidden="true">2.</strong> Hello World</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../hello-world/your-turn.html"><strong aria-hidden="true">2.1.</strong> Your Turn</a></li><li class="chapter-item expanded "><a href="../hello-world/piece-by-piece.html" class="active"><strong aria-hidden="true">2.2.</strong> Piece By Piece</a></li><li class="chapter-item expanded "><a href="../hello-world/adding-another-line.html"><strong aria-hidden="true">2.3.</strong> Another Line</a></li></ol></li><li class="chapter-item expanded "><a href="../variables/index.html"><strong aria-hidden="true">3.</strong> Variables</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../variables/printing-variables.html"><strong aria-hidden="true">3.1.</strong> Variables In println!</a></li><li class="chapter-item expanded "><a href="../variables/printing-multiple-variables.html"><strong aria-hidden="true">3.2.</strong> Multiple Variables In println!</a></li><li class="chapter-item expanded "><a href="../variables/trying-to-change-an-immutable-variable.html"><strong aria-hidden="true">3.3.</strong> Trying To Change An Immutable Variable</a></li><li class="chapter-item expanded "><a href="../variables/mutable-variables.html"><strong aria-hidden="true">3.4.</strong> Mutalbe Variables</a></li></ol></li><li class="chapter-item expanded "><a href="../constants/index.html"><strong aria-hidden="true">4.</strong> Constants</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shadowing-variables/index.html"><strong aria-hidden="true">4.1.</strong> Shadowing Variables</a></li><li class="chapter-item expanded "><a href="../shadowing-variables/in-scope.html"><strong aria-hidden="true">4.2.</strong> Shadowing Variables In Scope</a></li><li class="chapter-item expanded "><a href="../shadowing-variables/changing-type.html"><strong aria-hidden="true">4.3.</strong> Shadowing Variables To Change Type</a></li></ol></li><li class="chapter-item expanded "><a href="../prerequisites/index.html"><strong aria-hidden="true">5.</strong> Prerequisets</a></li><li class="chapter-item expanded "><a href="../appendix/about.html"><strong aria-hidden="true">6.</strong> About This Site</a></li><li class="chapter-item expanded "><a href="../terminology/index.html"><strong aria-hidden="true">7.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../dev/typo-test.html"><strong aria-hidden="true">8.</strong> Typo Test</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../introduction/status-line.html"><strong aria-hidden="true">1.1.</strong> The Status Line</a></li><li class="chapter-item expanded "><a href="../introduction/yes-type.html"><strong aria-hidden="true">1.2.</strong> Yes, Type The Code</a></li><li class="chapter-item expanded "><a href="../introduction/as-short-as-possible.html"><strong aria-hidden="true">1.3.</strong> As Short As Possible</a></li></ol></li><li class="chapter-item expanded "><a href="../hello-world/index.html"><strong aria-hidden="true">2.</strong> Hello World</a></li><li class="chapter-item expanded "><a href="../variables/index.html"><strong aria-hidden="true">3.</strong> Variables</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../variables/variables-in-println.html" class="active"><strong aria-hidden="true">3.1.</strong> Variables In println!</a></li><li class="chapter-item expanded "><a href="../variables/immutable-by-default.html"><strong aria-hidden="true">3.2.</strong> Immutable By Default</a></li><li class="chapter-item expanded "><a href="../variables/immutable-error-message.html"><strong aria-hidden="true">3.3.</strong> Immutalbe Error Message</a></li><li class="chapter-item expanded "><a href="../variables/turning-off-warnings.html"><strong aria-hidden="true">3.4.</strong> Turning Off Warnings</a></li><li class="chapter-item expanded "><a href="../variables/immutable-variable-error.html"><strong aria-hidden="true">3.5.</strong> The Error Message</a></li><li class="chapter-item expanded "><a href="../variables/printing-multiple-variables.html"><strong aria-hidden="true">3.6.</strong> Multiple Variables In println!</a></li><li class="chapter-item expanded "><a href="../variables/trying-to-change-an-immutable-variable.html"><strong aria-hidden="true">3.7.</strong> Trying To Change An Immutable Variable</a></li><li class="chapter-item expanded "><a href="../variables/mutable-variables.html"><strong aria-hidden="true">3.8.</strong> Mutalbe Variables</a></li></ol></li><li class="chapter-item expanded "><a href="../constants/index.html"><strong aria-hidden="true">4.</strong> Constants</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shadowing-variables/index.html"><strong aria-hidden="true">4.1.</strong> Shadowing Variables</a></li><li class="chapter-item expanded "><a href="../shadowing-variables/in-scope.html"><strong aria-hidden="true">4.2.</strong> Shadowing Variables In Scope</a></li><li class="chapter-item expanded "><a href="../shadowing-variables/changing-type.html"><strong aria-hidden="true">4.3.</strong> Shadowing Variables To Change Type</a></li></ol></li><li class="chapter-item expanded "><a href="../prerequisites/index.html"><strong aria-hidden="true">5.</strong> Prerequisets</a></li><li class="chapter-item expanded "><a href="../appendix/about.html"><strong aria-hidden="true">6.</strong> About This Site</a></li><li class="chapter-item expanded "><a href="../terminology/index.html"><strong aria-hidden="true">7.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../dev/typo-test.html"><strong aria-hidden="true">8.</strong> Typo Test</a></li><li class="chapter-item expanded "><a href="../introduction/work-in-progress.html"><strong aria-hidden="true">9.</strong> Work In Progress</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -345,10 +345,10 @@ document.addEventListener("DOMContentLoaded", init);
                 <div id="content" class="content">
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
-                            <a rel="prev" href="../hello-world/your-turn.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../variables/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../hello-world/adding-another-line.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../variables/immutable-by-default.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -361,65 +361,27 @@ document.addEventListener("DOMContentLoaded", init);
                         <hr />
                         <div id="debugLine" style="color: red; font-family: monospace;"></div>
                         -->
-                        <h1 id="hello-world-piece-by-piece"><a class="header" href="#hello-world-piece-by-piece">Hello, World (Piece By Piece)</a></h1>
-<p>Here's the basics parts of the &quot;Hello, World&quot; example.
-It's a high level overview to introduce
-the concepts. We'll dig into the details more in
-the following sections. It's perfectly fine if
-you don't see how to line things up yet.</p>
-<p>Here's the code again:</p>
+                        <h1 id="variables-in-println"><a class="header" href="#variables-in-println">Variables In println!</a></h1>
+<p>This is the same code from the prior page. It
+assigns the value <code>7</code> to the variable <code>alfa</code>
+with the <code>let</code> keyword.</p>
 <pre><code class="language-rust noplayground">fn main() {
-  println!(&quot;Hello, World&quot;);
+  let alfa = 7;
+  println!(&quot;The value is {alfa}&quot;);
 }</code></pre>
-<h3 id="the-parts"><a class="header" href="#the-parts">The Parts</a></h3>
-<ul>
-<li>
-<p>The first thing in the code is <code>fn</code>. That's
-short for &quot;function&quot; which is a
-block of code that makes it easier
-to issolate different parts of the
-program to make them easier to write.</p>
-</li>
-<li>
-<p><code>main()</code> is the name we're assigning to the
-function we're making. Other parts of the
-program can &quot;call&quot; the function by
-it's name to run the code inside it. Details
-on the empty <code>()</code> are coming soon.</p>
-</li>
-<li>
-<p>The <code>{</code> and <code>}</code> curly brackets are the starting
-and ending point for the code the function will
-run when it's called.</p>
-</li>
-<li>
-<p>The <code>println!(&quot;Hello, World&quot;);</code> line
-is a &quot;statement&quot;. Statements are one of
-the main code building blocks that
-are how the programs do their thing.
-In this case, the statement prints
-out &quot;Hello, World&quot;. We'll get into
-more details about statements soon.</p>
-</li>
-</ul>
-<h3 id="todo"><a class="header" href="#todo">TODO</a></h3>
-<ul>
-<li>
-<p>Note the <code>!</code> and the <code>;</code> explicitly.</p>
-</li>
-<li>
-<p>Identify and link to chapters for things
-that are listed as coming up.</p>
-</li>
-</ul>
+<p>The variable is used in <code>println!()</code> by using its
+name inside <code>{</code> and <code>}</code> curly brackets.</p>
+<p>There are other
+ways to use the curly brackets that we'll see later
+but this is the way we'll use it for now.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
-                            <a rel="prev" href="../hello-world/your-turn.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../variables/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../hello-world/adding-another-line.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../variables/immutable-by-default.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -429,11 +391,11 @@ that are listed as coming up.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../hello-world/your-turn.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../variables/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../hello-world/adding-another-line.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../variables/immutable-by-default.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

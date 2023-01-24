@@ -1,13 +1,12 @@
 # Welcome to Typing Rust
 
-The best way I've found to learn a new programming
-language is to copy examples by typing them in myself.
-I built this site to learn rust by doing just that.
+The best way I know to learn something is to do it.
+The best way I know to learn a new programming
+language is to do it by typing in code examples yourself. I'm
+building this site as a tool to learn rust by doing just that. It's made
+of example source code blocks that look like this:
 
-You'll find an example code block like this one
-on each page:
-
-#### EXAMPLE
+#### SOURCE CODE
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
@@ -15,21 +14,16 @@ fn main() {
 }
 ```
 
-"Code Runner" sections provide the place
-to type in the code and run it. Here's the first one. Type in the
-example code then hit "Run"
-to see the results.
+It also has "Code Runner" blocks.
+Typing the source code into them is what the site
+is all about. Give it a shot here with the code
+above then click
+"Run". A new line will appear with a brief
+"Running..." message followed by the code's output
+(which is "Hello, World" in this case).
 
 #### CODE RUNNER
 
 ```rust, editable, CODE1
 
 ```
-
-The "Status" line is there to help catch typos.
-When you make one (which is an everyday occurance
-in programming) it'll show you the problem
-so you can fix it.
-
-After you've run it, use the navigation below to
-move to the next one.
