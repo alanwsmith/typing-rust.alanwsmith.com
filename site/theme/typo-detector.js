@@ -139,49 +139,10 @@ const checkForTyposV3 = () => {
       lineIndex < baseLines[baseLineIndex].length;
       lineIndex++
     ) {
-      /* console.log(editorLines[baseLineIndex]) */
-      /* // punt if there's no more data */
-      /* if (editorLines[baseLineIndex] === undefined) { */
-      /*   typoStatusNode.innerHTML = `<span style="color: blue;">Status:</span> <span style="color: #880000">Typo</span> - ${bummerString}`; */
-      /*   break editorLoop; */
-      /*   break lineLoop; */
-      /* } */
-      /* console.log(editorLines[baseLineIndex][lineIndex]) */
-      /* if (editorLines[baseLineIndex][lineIndex] === undefined) { */
-      /*   typoStatusNode.innerHTML = `<span style="color: green;">Status:</span> <span style="color: #880000">Typo</span> - ${bummerString}`; */
-      /*   break editorLoop; */
-      /*   break lineLoop; */
-      /* } */
-      /* if (editorLines[editorLineIndex][lineIndex] !== baseLines[editorLineIndex][lineIndex]) { */
-      /*   bummerString += `<span style="color: #880000">${baseLines[editorLineIndex][lineIndex]}</span>` */
-      /*   typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #880000">Typo</span> - ${bummerString}`; */
-      /*   break editorLoop; */
-      /*   break lineLoop; */
-      /* } */
-      /* else { */
-      /*   bummerString += baseLines[editorLineIndex][lineIndex] */
-      /*   typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #009900">OK</span>`; */
-      /* } */
+
     }
   }
 
-  /* editorLoop: */
-  /* for (let editorLineIndex = 0; editorLineIndex < editorLines.length; editorLineIndex ++) { */
-  /*   let bummerString = ""; */
-  /*   lineLoop: */
-  /*   for (let lineIndex = 0; lineIndex < editorLines[editorLineIndex].length; lineIndex ++) { */
-  /*     if (editorLines[editorLineIndex][lineIndex] !== baseLines[editorLineIndex][lineIndex]) { */
-  /*       bummerString += `<span style="color: #880000">${baseLines[editorLineIndex][lineIndex]}</span>` */
-  /*       typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #880000">Typo</span> - ${bummerString}`; */
-  /*       break editorLoop; */
-  /*       break lineLoop; */
-  /*     } */
-  /*     else { */
-  /*       bummerString += baseLines[editorLineIndex][lineIndex] */
-  /*       typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #009900">OK</span>`; */
-  /*     } */
-  /*   } */
-  /* } */
 }
 
 document.addEventListener('DOMContentLoaded', init)
