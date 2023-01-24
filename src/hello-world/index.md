@@ -11,8 +11,6 @@ fn main() {
 ```
 
 Here's a high level overview of the parts.
-We'll dig into the details in as we progress
-through the site.
 
 - The first thing in the code is `fn` which
   is short for function which is what we're defining here.
@@ -40,4 +38,5 @@ through the site.
 
 - The `}` identifies the end of the function.
 
-Next up, variables.
+We'll dig into all those parts more as we progress through the site.
+For now, we'll start with variables.

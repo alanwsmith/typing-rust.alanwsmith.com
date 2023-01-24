@@ -2,6 +2,9 @@
 
 This is the code from the prior page.
 
+We're doing to use it to take a first look
+at error messages.
+
 ```rust, noplayground
 fn main() {
   let alfa = 7;
@@ -54,4 +57,7 @@ error: could not compile `playground` due to previous error; 2 warnings emitted
 Let's make the error easier to see by removing
 the warnings.
 
-(NOTE: Probably won't put this here?)
+#### TODO
+
+- Figure out if this is the right place to hit errors
+  to start with.

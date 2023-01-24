@@ -3,7 +3,7 @@
 The best way I know to learn something is to do it.
 The best way I know to learn a new programming
 language is to do it by typing in code examples yourself. I'm
-building this site to teach myself rust by doing just that. It's made
+building this site as a tool to learn rust by doing just that. It's made
 of example source code blocks that look like this:
 
 #### SOURCE CODE
@@ -14,11 +14,11 @@ fn main() {
 }
 ```
 
-There are also "Code Runner" blocks.
-Typing source code into them is what the site
-is all about. Give it a shot here with the Source Code
-from above then click the
-"Run" button. A new line will appear with a brief
+It also has "Code Runner" blocks.
+Typing the source code into them is what the site
+is all about. Give it a shot here with the code
+above then click
+"Run". A new line will appear with a brief
 "Running..." message followed by the code's output
 (which is "Hello, World" in this case).
 
