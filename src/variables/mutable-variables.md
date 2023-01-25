@@ -1,17 +1,22 @@
 # Mutable Variables
 
-A variable must be set as "mutable" in
-order to allow it's value to be changed
-after it's set. This is done by using
-`mut` with the `let` keyword.
+Variables are immutable by default, but it's
+possible to make them mutable (i.e. set
+them up so their values can be changed after
+they are created).
+
+The way to make a mutable variable is to
+use `mut` with the `let` keyword like this
+example where `alfa` is set to an initial
+value of `3` and then changed to `7`.
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
   let mut alfa = 3;
-  println!("The value is now {alfa}");
+  println!("Alfa {alfa}");
 
   alfa = 7;
-  println!("The value is now {alfa}");
+  println!("Alfa {alfa}");
 }
 ```
 

@@ -2,14 +2,14 @@
 
 Variables are immutalbe by default. That is, once
 they are bound to a value, they can't be changed.
-That fact is one of the things that let's the
-rust compiler optimize code to make it fast.
+That's one of the ways the rust compiler uses
+optimize code to make it fast.
 
-This code tries to update a default variable. Because
-it's immutable, the compiler will throw an
-error. Run the code to checkout the message.
-Once you've scanned it, we'll cover it
-in more detail on the next page.
+This example sets the varaible `alfa` to `7`
+then tries to change it. This causes an error
+that will show up when you run the code. Scan
+it here and we'll look at it in more detail
+on the next page.
 
 #### SOURCE CODE
 

@@ -1,24 +1,22 @@
 # The Status Line
 
-The other key feature of the site is the "Status"
-line that you may have noticed below the
-code runner. It's there
-to catch typos as soon as they happen.
-I built it becuase of my frustration
-with tutorials that have long blocks of code
-where I invariably make a typo then
-spend a bunch of time and energy hunting down a goof I made thirty
-lines back before running the code.
+You may have noticed the "Status" line above
+the Code Runner. It's an experiment to see if
+we can improve coding tutorails by eliminating
+typos.
 
-Dealing with typos is a natural part of
-programming. But, when I'm learning, they're nothing
-but huge energy and motivation vampires.
+If you've ever done a tutorail where you entered
+a huge block of code only to get hit
+with an error message you didn't
+understand, you know why I built
+it.
+
+Learning how to read error messages is an
+important skill, but if they're not what you're
+actively working on then fighting them becuase of
+typos is a waste of time, energy, and motivation.
 
 #### NOTES
-
-- The typo catcher is very strict. For example, typing a lowercase
-  "h" instead of an uppercase one in "Hello, World" will cause a warning.
-  It can be a little annoying, but it's way better than not having it.
 
 - Typo warnings won't prevent you from running the code. This means
   you can fiddle with the examples and run them to see what happens even

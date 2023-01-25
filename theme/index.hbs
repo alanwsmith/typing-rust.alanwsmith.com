@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="{{ language }}" class="sidebar-visible no-js {{ default_theme }}">
     <head>
+
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>{{ title }}</title>
@@ -308,9 +309,17 @@
         <script src="{{ path_to_root }}book.js"></script>
 
         <!-- Custom JS scripts -->
+        <!-- REMOVED TO ALLOW FOR MODULES -->
+        <!--
         {{#each additional_js}}
-        <script src="{{ ../path_to_root }}{{this}}"></script>
+        <script src="{{ ../path_to_root }}{{this}}" type="module"></script>
         {{/each}}
+        -->
+
+        <script type="module">
+          import { typoInit } from "./{{ ../path_to_root }}theme/typo-detector.js"
+          typoInit();
+        </script>
 
         {{#if is_print}}
         {{#if mathjax_support}}

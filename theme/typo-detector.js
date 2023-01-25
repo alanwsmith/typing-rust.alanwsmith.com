@@ -1,4 +1,8 @@
-const init = () => {
+export const typoInit = () => {
+  document.addEventListener('DOMContentLoaded', typoReadyUp)
+}
+
+const typoReadyUp = () => {
   // Add the typo status line
   const code1Element = document.getElementsByClassName('CODE1')[0]
   if (code1Element) {
@@ -8,7 +12,7 @@ const init = () => {
     typoStatusNode.style.fontFamily = 'monospace'
 
     typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #009900">OK</span>`
-    editorWrapper.insertAdjacentElement('afterend', typoStatusNode)
+    editorWrapper.insertAdjacentElement('beforebegin', typoStatusNode)
 
     // Could probably pull this from the `CODE1`, but this is fine for now.
     const codeBlock = document.getElementsByClassName('ace_text-input')[0]
@@ -94,14 +98,14 @@ const checkForTyposV3 = () => {
           bummerString += `<span style="color: red;">${baseLines[
             baseIndex
           ].charAt(letterIndex)}</span>`
-          typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #880000">TYPO</span> <span style="color: #555555;">|</span> ${bummerString}`
+          typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #880000">TYPO</span> ${bummerString}`
           break toploop
           break lowerloop1
         } else {
           bummerString += `<span style="color: #888888">${baseLines[
             baseIndex
           ].charAt(letterIndex)}</span>`
-          typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #008800">OK</span>&nbsp;&nbsp;&nbsp;<span style="color: #555555;">|</span>`
+          typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #008800">OK</span>`
         }
       }
     } else {
@@ -138,11 +142,6 @@ const checkForTyposV3 = () => {
       let lineIndex = 0;
       lineIndex < baseLines[baseLineIndex].length;
       lineIndex++
-    ) {
-
-    }
+    ) {}
   }
-
 }
-
-document.addEventListener('DOMContentLoaded', init)
