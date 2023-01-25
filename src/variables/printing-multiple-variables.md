@@ -1,6 +1,6 @@
 # Multiple Variables In println!
 
-Here's an example showing two varaibles. To
+Here's an example with two varaibles. To
 use them both in `println!()` they both
 get their own `{}` wrapper.
 
@@ -8,7 +8,7 @@ get their own `{}` wrapper.
 fn main() {
   let alfa = 3;
   let bravo = 5;
-  println!("Alfa {alfa} Bravo {bravo}")
+  println!("Alfa {alfa} Bravo {bravo}");
 }
 ```
 

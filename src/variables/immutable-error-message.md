@@ -2,9 +2,6 @@
 
 This is the code from the prior page.
 
-We're doing to use it to take a first look
-at error messages.
-
 ```rust, noplayground
 fn main() {
   let alfa = 7;
@@ -12,11 +9,7 @@ fn main() {
 }
 ```
 
-Running it results in an error like the one below.
-There's a lot to get into. For right now, the thing
-to notice is that scanning down the left hand
-column reveals the word "warning" twice and the
-word "error" once.
+Running it results in an error like this:
 
 ```rust, noplayground
    Compiling playground v0.0.1 (/playground)
@@ -54,10 +47,15 @@ warning: `playground` (bin "playground") generated 2 warnings
 error: could not compile `playground` due to previous error; 2 warnings emitted
 ```
 
-Let's make the error easier to see by removing
-the warnings.
+There's a lot going on in there. We'll cover it all
+as we move forward. We'll limit things
+down a bit for the time being.
 
-#### TODO
+The first thing to point out is that there are three
+sections included in the message. Scanning the far left
+column they are identified by the two lines that start with
+"warning:" and one further below that starts
+with "error[E0384]:"
 
-- Figure out if this is the right place to hit errors
-  to start with.
+We're only concerned with the error[E0384] section
+right now.

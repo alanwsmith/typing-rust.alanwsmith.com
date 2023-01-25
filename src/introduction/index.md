@@ -1,10 +1,10 @@
 # Welcome to Typing Rust
 
-The best way I know to learn something is to do it.
-The best way I know to learn a new programming
-language is to do it by typing in code examples yourself. I'm
-building this site as a tool to learn rust by doing just that. It's made
-of example source code blocks that look like this:
+I learn best by doing things. In my case, that means
+typing in source code examples when I'm learning
+new programming langauge. I'm buliding this site
+to do just that with Rust. It's made of example source
+code blocks that look like this:
 
 #### SOURCE CODE
 
@@ -14,13 +14,11 @@ fn main() {
 }
 ```
 
-It also has "Code Runner" blocks.
-Typing the source code into them is what the site
-is all about. Give it a shot here with the code
-above then click
-"Run". A new line will appear with a brief
-"Running..." message followed by the code's output
-(which is "Hello, World" in this case).
+It also has live "Code Runner" blocks. Using them
+is what the site is all about. Type in the above source
+code in and click "Run". It will
+compile and show the output (which is "Hello, World"
+in this case).
 
 #### CODE RUNNER
 

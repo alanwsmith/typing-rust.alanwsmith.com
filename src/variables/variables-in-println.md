@@ -1,19 +1,31 @@
 # Variables In println!
 
-This is the same code from the prior page. It
-assigns the value `7` to the variable `alfa`
-with the `let` keyword.
+In Rust, the name of the string inside
+`println!()` is a format string. In addition
+to outputting basic text (e.g. "Hello, World"),
+it can also output the value of variables. That's
+done by wrapping the name of the variable inside
+`{` and `}` curly brackets.
+
+Here's the code from the prior page.
 
 ```rust,noplayground
 fn main() {
   let alfa = 7;
-  println!("The value is {alfa}");
+  println!("Alfa {alfa}");
 }
 ```
 
-The variable is used in `println!()` by using its
-name inside `{` and `}` curly brackets.
+We use the `{VARAIBLE_NAME}` functionality with
+the `alfa` variable to come up with the format string
 
-There are other
-ways to use the curly brackets that we'll see later
-but this is the way we'll use it for now.
+```txt
+Alfa {alfa}
+```
+
+Since we bould `alfa` to the number `7`, when we
+run our program, we get:
+
+```txt
+Alfa 7
+```

@@ -2,15 +2,13 @@
 
 This is the same code from the home page.
 
-#### SOURCE CODE
-
 ```rust, noplayground, EXAMPLE1
 fn main() {
   println!("Hello, World");
 }
 ```
 
-Here's a high level overview of the parts.
+The high level overview of the parts breaks down like this:
 
 - The first thing in the code is `fn` which
   is short for function which is what we're defining here.

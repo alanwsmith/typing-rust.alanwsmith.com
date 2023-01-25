@@ -1,17 +1,22 @@
 # Variables
 
-Variables in Rust are created with the `let` keyword followed
-by the name to use, a `=` sign, and finally the value to bind to.
+Variables in Rust are created with:
 
-Here's a basic example (we'll talk about `{alfa}`
-on the next page):
+1. The `let` keyword
+2. The name to use (e.g. `alfa` in this case)
+3. The `=` sign
+4. The value to bind to it (e.g. `7` in this case)
 
-#### EXAMPLE
+Here's a basic example. We'll talk about the `{alfa}`
+in `println!()` on the next page. For now, use the
+Code Runner to run the code.
+
+#### SOURCE CODE
 
 ```rust,noplayground,EXAMPLE1
 fn main() {
   let alfa = 7;
-  println!("The value is {alfa}");
+  println!("Alfa {alfa}");
 }
 ```
 
@@ -20,7 +25,3 @@ fn main() {
 ```rust,editable,CODE1
 
 ```
-
-#### TODO
-
-- Verify Rust uses the term bind for assigning variables.

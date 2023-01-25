@@ -12,6 +12,7 @@ build-dir = "site"
 default-theme = "navy"
 preferred-dark-theme = "navy"
 additional-css = ["theme/overrides.css"]
+additional-js = ["theme/typo-detector.js"]
 
 [output.html.playground]
 editable = true
