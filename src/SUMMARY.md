@@ -23,9 +23,17 @@
   - [Tuple Indexes](./compound-data-types/tuple-indexes.md)
   - [Indexes And Offsets](./compound-data-types/indexes-and-offset.md)
 - [Functions](./functions/index.md)
+  - [Parameters](./functions/parameters.md)
+  - [Using Parameters](./functions/using-parameters.md)
+  - [Multiple Parameters](./functions/multiple-parameters.md)
+  - [Using Multiple Parameters](./functions/using-multiple-parameters.md)
+  - [Return Values](./functions/return-values.md)
+  - [Review](./functions/review.md)
 
 # TODOs
 
+- [Work In Progress](./dev/work-in-progress.md)
+- [Statements and Expressions](./statements-and-expressions.md)
 - [Constants](./constants/index.md)
   - [In The Global Scope](./constants/in-the-globa-scope.md)
   - [Types Required](./constants/types-required.md)
@@ -47,3 +55,4 @@
 - [Work In Progress](./introduction/work-in-progress.md)
   - [Turning Off Warnings](./variables/turning-off-warnings.md)
   - [The Error Message](./variables/immutable-variable-error.md)
+- [Error Messages](./error-messages/index.md)
