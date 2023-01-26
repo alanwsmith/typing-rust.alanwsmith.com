@@ -10,8 +10,8 @@ a huge block of code only to get hit with an
 unrelated error message, you know why I built it.
 
 Understanding error messages is a critical part of
-learning a language. But, if you're not actively
-studdying how to read them, error messages from
+learning a language. But, they're best studied
+explicitly. During a tutorial, error messages from
 typos are a waste of time, energy, and motivation.
 
 #### NOTES

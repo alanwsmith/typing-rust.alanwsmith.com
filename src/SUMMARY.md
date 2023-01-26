@@ -12,6 +12,7 @@
   - [Immutable Error Message Full](./variables/immutable-error-message.md)
   - [Immutalbe Error Message Line](./variables/immutable-error-message-line.md)
   - [Mutable Variables](./variables/mutable-variables.md)
+  - [Review](./variables/review.md)
 - [Data Types](./data-types/index.md)
   - [Implicit And Explicit](./data-types/implicit-explicit.md)
   - [The Number Types](./data-types/the-number-types.md)
