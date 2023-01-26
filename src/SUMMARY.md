@@ -15,9 +15,9 @@
   - [Review](./variables/review.md)
 - [Data Types](./data-types/index.md)
   - [Implicit And Explicit](./data-types/implicit-explicit.md)
+  - [Using Explicit Types](./data-types/using-explicit-types.md)
   - [The Number Types](./data-types/the-number-types.md)
   - [Booleans](./data-types/booleans.md)
-  - [Characters](./data-types/characters.md)
 - [Compound Data Types](./compound-data-types/index.md)
   - [Tuples](./compound-data-types/tuples.md)
   - [Tuple Indexes](./compound-data-types/tuple-indexes.md)
@@ -33,6 +33,7 @@
 - [Shadowing Variables](./shadowing-variables/index.md)
   - [Shadowing Variables In Scope](./shadowing-variables/in-scope.md)
   - [Shadowing Variables To Change Type](./shadowing-variables/changing-type.md)
+- [Characters](./data-types/characters.md)
 
 # Work In Progress
 

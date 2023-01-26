@@ -40,7 +40,7 @@ fn main() {
 
   let alfa: f32 = 3.4;
 
-  println!("Value {alfa}");
+  println!("Value {}", alfa);
 
 }
 ```

@@ -1,45 +1,45 @@
 # Implicit And Explicit
 
-We've just said that every value in a Rust
-program must have a type and showed how to
-set them. But, if you remember back to the
-first variable exapmle we didn't set anything.
+In all our previous examples we've set the
+type of our variable explicitly by adding
+a `:` after the name along with the type
+(e.g. `i32`). Rust has the ability to
+guess the type of some varaibles so
+that's not always necessary. When we do
+that it's called an "implicit" type
+assignment and it looks like this:
 
-Here's another look at it:
-
-```rust,noplayground
-fn main() {
-  let alfa = 7;
-  println!("The value is {alfa}");
-}
+```rust, noplayground
+let alfa = 7;
 ```
 
-This works because Rust can infer types in
-many cases. That allows the types to be
-defined impliclty as above instead of
-explicitly like we did with `f32` on the
-prior page.
+That turns our formula for defining
+a variable into this:
 
-If a number without a decimal place is
-used for a variable without an explicit
-type Rust will implicitly assign it
-a type of `i32` which is a number without
-a decimal place that can be either
-negative or positive.
+1. The `let` keyword
+2. The optional `mut` keyword
+3. A name for the variable (e.g. `alfa`)
+4. A `:` separator if we're explicitly setting the data type
+5. An optional data type
+6. The `=` sign
+7. The value to bind to it (e.g. `7`)
+8. A `;` the ends the definition
 
-Here's the same program as above but with
-and explict type set for the `alfa` variable.
+In this example, both `alfa` and `bravo`
+have an `i32` type. Alfa is defined
+explicity. Bravo is defined implicitly.
 
-#### SOURCE CODE
-
-```rust,noplayground, EXAMPLE1
+```rust, noplayground, EXAMPLE1
 fn main() {
+
   let alfa: i32 = 7;
-  println!("The value is {alfa}");
+
+  let bravo = 9;
+
+  println!("Alfa {} - Bravo {}", alfa, bravo)
+
 }
 ```
-
-#### CODE RUNNER
 
 ```rust, editable, CODE1
 
