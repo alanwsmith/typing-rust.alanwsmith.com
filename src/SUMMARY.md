@@ -28,6 +28,7 @@
   - [Multiple Parameters](./functions/multiple-parameters.md)
   - [Using Multiple Parameters](./functions/using-multiple-parameters.md)
   - [Return Values](./functions/return-values.md)
+  - [Binding Return Values](./functions/binding-return-values.md)
   - [Review](./functions/review.md)
 
 # TODOs
