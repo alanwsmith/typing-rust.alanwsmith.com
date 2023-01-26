@@ -15,12 +15,16 @@ we get started for real.
 
 - The approach I'm taking is somewhere between The Rust Book and
   Rust By Example. I'm use concise, issolated examples focused
-  on a happy path to get started. Covering alternatives and historical
-  ways to do things is left for later.
+  on a happy path to get started.
 
-- If you've never learned a programming language by typing it
-  in like this it will probably feel weird and frustrating at first.
-  Give it like 5-10 pages to see if you start to find it useful.
+- I don't try to explain everything all at once. There will be
+  parts in the early sections where I gloss over some things to make
+  it easier to focus on another piece. If it feels like I skipped
+  something that's what's happening and we'll get to further
+  down the road.
 
-- Of course, you can also read the site like a book without typing anything in if
-  you learn better that way.
+- This approach may feel weird and frustrating if you've never done
+  it before. Give it 5-10 pages to see if you start to find it useful.
+
+- Of course, you can also read the site like a book without
+  typing anything in if you learn better that way.
