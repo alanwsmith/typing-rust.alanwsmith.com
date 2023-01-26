@@ -2,8 +2,7 @@
 
 - [Introduction](./introduction/index.md)
   - [The Status Line](./introduction/status-line.md)
-  - [Yes, Type The Code](./introduction/yes-type.md)
-  - [As Short As Possible](./introduction/as-short-as-possible.md)
+  - [Preamble](./introduction/preamble.md)
 - [Hello World](./hello-world/index.md)
 - [Variables](./variables/index.md)
   - [Variables In println!](./variables/variables-in-println.md)
