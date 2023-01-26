@@ -15,6 +15,14 @@
   - [Mutable Variables](./variables/mutable-variables.md)
 - [Data Types](./data-types/index.md)
   - [Implicit And Explicit](./data-types/implicit-explicit.md)
+  - [The Number Types](./data-types/the-number-types.md)
+  - [Booleans](./data-types/booleans.md)
+  - [Characters](./data-types/characters.md)
+- [Compound Data Types](./compound-data-types/index.md)
+  - [Tuples](./compound-data-types/tuples.md)
+  - [Tuple Indexes](./compound-data-types/tuple-indexes.md)
+  - [Accessing Tuple Data](./compound-data-types/accessing-tuple-data.md)
+  - [Arrays](./compound-data-types/arrays.md)
 
 # Work In Progress
 
