@@ -33,3 +33,9 @@ fn widget(alfa: i32) {
   println!("I am alfa");
 }
 ```
+
+---
+
+TODO: Combine this with the next page since it doesn't
+really make sense to show the incoming parameter
+but not use it.

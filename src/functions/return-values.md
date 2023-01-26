@@ -18,13 +18,13 @@ integer looks like this:
 widget() -> i32
 ```
 
-We'll cover a couple of different way
-to send the values back. For now,
-we'll use `return` followed by the
-value to send.
-
 Here's what everything looks like in a
-program. It will output "widget is 5"
+program. It will output:
+
+```txt
+widget is 10
+```
+
 
 #### SOURCE CODE
 
@@ -34,7 +34,7 @@ fn main() {
 }
 
 fn widget() -> i32 {
-  return 5;
+  5 + 5
 }
 ```
 

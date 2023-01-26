@@ -28,6 +28,9 @@
   - [Multiple Parameters](./functions/multiple-parameters.md)
   - [Using Multiple Parameters](./functions/using-multiple-parameters.md)
   - [Return Values](./functions/return-values.md)
+  - [Return Expressions](./functions/return-expressions.md)
+  - [Return Expression Errors](./functions/return-expression-errors.md)
+  - [Statements And Expressions](./functions/statements-and-expressions.md)
   - [Binding Return Values](./functions/binding-return-values.md)
   - [Review](./functions/review.md)
 
