@@ -1,10 +1,12 @@
 # Welcome to Typing Rust
 
-I learn best by doing things. In my case, that means
-typing in source code examples when I'm learning
-new programming langauge. I'm buliding this site
-to do just that with Rust. It's made of example source
-code blocks that look like this:
+I learn best by doing things. That means physicially
+typing code examples when I'm learning a
+new programming language. I'm buliding this site
+to do that with Rust.
+
+The site is made of example source
+code blocks like this:
 
 #### SOURCE CODE
 
@@ -14,9 +16,9 @@ fn main() {
 }
 ```
 
-It also has live "Code Runner" blocks. Using them
-is what the site is all about. Type in the above source
-code in and click "Run". It will
+It also has Code Runners. They're
+what the site is all about. Type in the source
+code from above and click "Run". It will
 compile and show the output (which is "Hello, World"
 in this case).
 

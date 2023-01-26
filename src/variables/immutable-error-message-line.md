@@ -41,5 +41,5 @@ portion that says:
 consider making this binding mutable: `mut alfa`
 ```
 
-That's how we can make a variable who's value
+That's how we can make a variable whose value
 can be changed.
