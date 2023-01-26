@@ -5,12 +5,12 @@ looked like this:
 
 ```rust,noplayground
 fn widget() -> i32 {
-  5 + 5
+  3 + 6
 }
 ```
 
 I bring that up to point out that there isn't
-a `;` after the `5 + 5`. This is different
+a `;` after the `3 + 6`. This is different
 from all the other lines we've seen
 in functions so far.
 
@@ -25,13 +25,13 @@ There are three reasons for this:
 What all that means is if we did this:
 
 ```rust,noplayground
-5 + 5;
+3 + 6;
 ```
 
 instead of:
 
 ```rust,noplayground
-5 + 5
+3 + 6
 ```
 
 we'd be end the expression that did
@@ -49,11 +49,12 @@ talk about it on the next page.
 
 ```rust,noplayground,EXAMPLE1
 fn main() {
-  println!("widget is {}", widget());
+  let alfa = widget();
+  println!("alfa is {}", alfa);
 }
 
 fn widget() -> i32 {
-  5 + 5;
+  3 + 6;
 }
 ```
 

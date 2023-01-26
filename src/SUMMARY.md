@@ -28,15 +28,15 @@
   - [Multiple Parameters](./functions/multiple-parameters.md)
   - [Using Multiple Parameters](./functions/using-multiple-parameters.md)
   - [Return Values](./functions/return-values.md)
+  - [Binding Return Values](./functions/binding-return-values.md)
   - [Return Expressions](./functions/return-expressions.md)
   - [Return Expression Errors](./functions/return-expression-errors.md)
-  - [Statements And Expressions](./functions/statements-and-expressions.md)
-  - [Binding Return Values](./functions/binding-return-values.md)
   - [Review](./functions/review.md)
 
 # TODOs
 
 - [Work In Progress](./dev/work-in-progress.md)
+- [TODO List](./todo/index.md)
 - [Statements and Expressions](./statements-and-expressions.md)
 - [Constants](./constants/index.md)
   - [In The Global Scope](./constants/in-the-globa-scope.md)
@@ -49,6 +49,7 @@
 - [Destructuring Tuples](./todo/destructring-tuples.md)
 - [Adding Values To Tuples](./todo/adding-values-to-tuples.md)
 - [Arrays](./compound-data-types/arrays.md)
+- [Statements And Expressions](./functions/statements-and-expressions.md)
 
 # Work In Progress
 

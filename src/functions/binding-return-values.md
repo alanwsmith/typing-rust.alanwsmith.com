@@ -22,7 +22,7 @@ fn main() {
 }
 
 fn widget() -> i32 {
-  return 9;
+  3 + 6
 }
 ```
 
