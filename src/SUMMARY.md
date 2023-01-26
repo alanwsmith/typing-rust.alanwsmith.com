@@ -14,6 +14,7 @@
   - [Immutalbe Error Message Line](./variables/immutable-error-message-line.md)
   - [Mutable Variables](./variables/mutable-variables.md)
 - [Data Types](./data-types/index.md)
+  - [Implicit And Explicit](./data-types/implicit-explicit.md)
 
 # Work In Progress
 
