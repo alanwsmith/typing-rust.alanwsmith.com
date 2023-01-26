@@ -1,32 +1,42 @@
 # Variables
 
-Variables in Rust are created with:
+Variables in Rust are created using the following
+structure:
 
 1. The `let` keyword
-2. The name to use (e.g. `alfa`)
-3. The `=` sign
-4. The value to bind to it (e.g. `7`)
+2. A name for the variable (e.g. `alfa`)
+3. A `:` that acts as a separator
+4. A data type
+5. The `=` sign
+6. The value to bind to it (e.g. `7`)
+7. A `;` the ends the definition
 
-(We'll expand on this moving foward, but it
-covers us for now)
+The data type from item 4 tells rust what
+kind of content the variable can hold. For example,
+it might be a number, or a letter, or full
+sentence. We'll dig into data types in the
+next chapter. We'll use `i32` (which
+stands for a number) until we get there.
 
-Put that formula togehter looks like this:
+Putting it all together we get this:
 
 ```rust, noplayground
-let alfa = 7;
+let alfa: i32 = 7;
 ```
 
-Here's an example that sets a variable
-and then prints it out. (`{alfa}` is
-what prints out the variable. We'll
-talk about it on the next page)
+Using that line in we can create
+a full program that defines the `alfa`
+varaible then prints it out.
 
 #### SOURCE CODE
 
 ```rust,noplayground,EXAMPLE1
 fn main() {
-  let alfa = 7;
-  println!("The value is {alfa}");
+
+  let alfa: i32 = 7;
+
+  println!("The value is {}", alfa);
+
 }
 ```
 

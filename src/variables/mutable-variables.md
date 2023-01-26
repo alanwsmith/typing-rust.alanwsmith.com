@@ -10,10 +10,13 @@ use the `mut` keyword with `let`. This expands
 our formula for creating variables to looks like this:
 
 1. The `let` keyword
-2. An optional `mut` keyword
-3. The name to use (e.g. `alfa`)
-4. The `=` sign
-5. The value to bind to it (e.g. `7`)
+2. The optional `mut` keyword
+3. A name for the variable (e.g. `alfa`)
+4. A `:` that acts as a separator
+5. A data type
+6. The `=` sign
+7. The value to bind to it (e.g. `7`)
+8. A `;` the ends the definition
 
 Here's what that looks like in practice.
 We create a variable named `alfa` with
@@ -26,11 +29,15 @@ change.
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
-  let mut alfa = 3;
+
+  let mut alfa: i32 = 3;
+
   println!("Value {alfa}");
 
   alfa = 7;
+
   println!("Value {alfa}");
+
 }
 ```
 

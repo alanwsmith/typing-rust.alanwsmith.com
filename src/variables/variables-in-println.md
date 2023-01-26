@@ -3,7 +3,7 @@
 The code from the prior page includes this line:
 
 ```rust, noplayground
-println!("The value is {alfa}");
+println!("The value is {}", alfa);
 ```
 
 which produced this output:
@@ -19,21 +19,22 @@ original `println!("Hello, World")` example. They can
 also output the current value of a variables
 like we're doing here.
 
-The process works by putting the name of the
-variable inside `{` and `}` curly brackets. In
-this case, that looks like this:
+The process works by putting the a `{}`
+placeholder in the first quoted text inside the
+`println!()` parenthesis. The name of the value
+that we want to use to replace the placeholder
+comes next.
 
-```rust, noplayground
-{alfa}
-```
-
-Here's another example where we set a varaible
-named `bravo` to 12 then print it out.
+Here's another example where we set the varaible
+`bravo` to 12 then print it out.
 
 ```rust,noplayground,EXAMPLE1
 fn main() {
-  let bravo = 12;
-  println!("Bravo is {bravo}");
+
+  let bravo: i32 = 12;
+
+  println!("The value is {}", bravo);
+
 }
 ```
 

@@ -1,16 +1,20 @@
 # Multiple Variable Usage in println!
 
-The same technique can be used to
-print the variable multiple times
-by inserting it into the format
-string repeatedly.
+Adding multiple placeholders and passing
+the vairalbe multiple times allows us
+to use it more than once in the output.
+
+For example:
 
 #### SOURCE CODE
 
 ```rust,noplayground,EXAMPLE1
 fn main() {
-  let echo = 27;
-  println!("{echo} - {echo} - {echo}");
+
+  let alfa: i32 = 27;
+
+  println!("{} - {} - {}", alfa, alfa, alfa);
+
 }
 ```
 
