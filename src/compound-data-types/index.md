@@ -1,10 +1,12 @@
 # Compound Data Types
 
-The floating-point, integer, boolean, and character
-types we've covered so far each hold a single value.
-The name for that group of types is "scalar" types.
-Rust has another category of types called "compound"
-types. Instead of being limited to a single values,
-compound types can handle multiple values.
+The floating-point, integer, and boolean data
+types we've covered each hold a single value.
+Collectively, they're called "scalar" types (TODO:
+find where the term scalar comes from)
 
-Compound types come in two flavors: Tuples and Arrays.
+Rust has another category of types called "compound"
+types. They hold multiple values instead of being
+constrained to a single one.
+
+Compound data types come in two flavors: Tuples and Arrays.

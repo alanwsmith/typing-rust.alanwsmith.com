@@ -1,28 +1,29 @@
 # Tuples
 
-The Tuple type is a container that holds
-other values. Those values can be any of
-the other types we've covered so far (e.g. `i32`,
-`char`, etc...). Tuples can also contain other
-types we'll learn about.
+Tuples are containers that hold other values
+of different types.
 
-Creating a tuple looks a little different than
-creating a variable for one of the scalar data types.
+Creating a tuple variable looks different than
+making one for a scalar data type.
 Instead of using a specific keyword after the varaible's
 name (like `i32` in `let alfa: i32 = 58`), tuple definitions
 use a pair of parenthesis with the types it's
 going to contain between them.
 
+To the right side of the equal sign the values
+to assign are placed in a corresponding set of
+parenthesis.
+
 For example, defining a tuple with three
 integers looks like this:
 
 ```rust, noplayground
-let bravo: (i32, i32, i32) = (5, 7, 9);
+let alfa: (i32, i32, i32) = (5, 7, 9);
 ```
 
-Creating one with a float and a boolean looks
+Making one with a float and a boolean looks
 like this:
 
 ```rust, noplayground
-let charlie: (f32, bool) = (37.9, false);
+let bravo: (f32, bool) = (37.9, false);
 ```

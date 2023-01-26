@@ -21,10 +21,10 @@
 - [Compound Data Types](./compound-data-types/index.md)
   - [Tuples](./compound-data-types/tuples.md)
   - [Tuple Indexes](./compound-data-types/tuple-indexes.md)
-  - [Accessing Tuple Data](./compound-data-types/accessing-tuple-data.md)
-  - [Arrays](./compound-data-types/arrays.md)
+  - [Indexes And Offsets](./compound-data-types/indexes-and-offset.md)
+- [Functions](./functions/index.md)
 
-# Work In Progress
+# TODOs
 
 - [Constants](./constants/index.md)
   - [In The Global Scope](./constants/in-the-globa-scope.md)
@@ -34,6 +34,9 @@
   - [Shadowing Variables In Scope](./shadowing-variables/in-scope.md)
   - [Shadowing Variables To Change Type](./shadowing-variables/changing-type.md)
 - [Characters](./data-types/characters.md)
+- [Destructuring Tuples](./todo/destructring-tuples.md)
+- [Adding Values To Tuples](./todo/adding-values-to-tuples.md)
+- [Arrays](./compound-data-types/arrays.md)
 
 # Work In Progress
 

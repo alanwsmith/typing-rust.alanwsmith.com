@@ -1,33 +1,43 @@
 # Tuple Indexes
 
-Getting values out of a tuple is done
-by using the varaible's name followed
-by a dot and the "index" number for
-the position of the value we're after.
+Getting values out of a tuple is done using
+the varaible's name followed by a dot and
+the "index" number for the position we're
+after.
 
 For example:
 
 ```rust, noplayground
-alfa.3
+alfa.2
 ```
 
 The index position represents a counter
 that starts at the beginning of the tuple
-and goes up one for each position. The
-way Rust works, that first number starts
-with zero instead of one. So, the
-first position is `0`, the second position
+and goes up one for each position. But, the
+first number is zero instead of one. So,
+the first position is `0`, the second position
 is `1`, etc...
 
-The way I've learned to think about this is
-as an offset. We always start at the first
-position. If the value we want is in the
-first position no offset is required. That
-means the index is `0`. The second number is
-one away from the start. So, we access it
-with an index of `2`.
+Here's an example creating a tuple that holds an
+`i32`, a `f32`, and a `bool` and then prints
+them out.
 
-If you haven't worked with this type of index
-before it can take some time to get used to.
-Even folks who've been programming for
-years still screw it up sometimes.
+#### SOURCE CODE
+
+```rust,noplayground,EXAMPLE1
+fn main() {
+
+  let alfa: (i32, f32, bool) = (99, 234.5, false);
+
+  println!("1st {}", alfa.0);
+  println!("2nd {}", alfa.1);
+  println!("3rd {}", alfa.2);
+
+}
+```
+
+#### CODE RUNNER
+
+```rust,editable,CODE1
+
+```
