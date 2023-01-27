@@ -46,6 +46,14 @@
 - [For Loops](./for-loops/index.md)
   - [Using Ranges](./for-loops/using-ranges.md)
 
+# Stuff To Sort
+
+- [The String Type](./the-string-type/index.md)
+  - [Moving String](./the-string-type/moving-strings.md)
+- [Scope](./scope/index.md)
+  - [Scope Error](./scope/error.md)
+  - [Scope Error Message](./scope/error-message.md)
+
 # -- Work In Progress --
 
 - [Work In Progress](./dev/work-in-progress.md)
