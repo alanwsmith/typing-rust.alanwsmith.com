@@ -32,8 +32,29 @@
   - [Return Expressions](./functions/return-expressions.md)
   - [Return Expression Errors](./functions/return-expression-errors.md)
   - [Review](./functions/review.md)
+- [if Expressions](./if-expressions/index.md)
+  - [false Conditions](./if-expressions/false-conditions.md)
+  - [else Expressions](./if-expressions/else-expressions.md)
+  - [else if Expressions](./if-expressions/else-if-expressions.md)
+  - [Multiple if else Expressions](./if-expressions/multiple-if-else-expressions.md)
+  - [Function Example](./if-expressions/function-example.md)
+  - [Binding Variables](./if-expressions/binding-variables.md)
+  - [Binding Values Must Be The Same](./if-expressions/binding-values-must-be-the-same.md)
+  - [Incompatible Types](./if-expressions/incompatible-types.md)
+- [While Loops](./while-loops/index.md)
+  - [Assignments](./while-loops/assignments.md)
+- [For Loops](./for-loops/index.md)
+  - [Using Ranges](./for-loops/using-ranges.md)
 
-# TODOs
+# Stuff To Sort
+
+- [The String Type](./the-string-type/index.md)
+  - [Moving String](./the-string-type/moving-strings.md)
+- [Scope](./scope/index.md)
+  - [Scope Error](./scope/error.md)
+  - [Scope Error Message](./scope/error-message.md)
+
+# -- Work In Progress --
 
 - [Work In Progress](./dev/work-in-progress.md)
 - [TODO List](./todo/index.md)
@@ -61,3 +82,10 @@
   - [Turning Off Warnings](./variables/turning-off-warnings.md)
   - [The Error Message](./variables/immutable-variable-error.md)
 - [Error Messages](./error-messages/index.md)
+
+# To Sort
+
+- [Loops](./loops/index.md)
+  - [Binding Values](./loops/binding-variables.md)
+  - [Labels](./loops/labels.md)
+  - [Nested Loops](./loops/nested-loops.md)
