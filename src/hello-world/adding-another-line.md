@@ -1,6 +1,6 @@
 # Hello, World (Another Line)
 
-Let's add another `prlintln!()`. Nothing
+Let's add another `println!()`. Nothing
 fancy. It just sets us up for the next
 example.
 

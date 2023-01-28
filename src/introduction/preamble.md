@@ -11,7 +11,7 @@ started with the code.
 
 - The content is designed for folks who have at least some
   programming experience. If you know what variables,
-  funcitons, loops, and conditionals are, you'll be fine.
+  functions, loops, and conditionals are, you'll be fine.
 
 ### The Examples
 

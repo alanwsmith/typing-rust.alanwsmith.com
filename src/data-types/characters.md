@@ -7,15 +7,15 @@ independently. We'll address in a later section.
 
 ---
 
-The `char` type in Rust holds a single character. Varaibles
+The `char` type in Rust holds a single character. Variables
 of the `char` type are defined with single quotes. They can
-be set implictly like this:
+be set implicitly like this:
 
 ```rust, noplayground
 let alfa = 'a';
 ```
 
-Or explictly like this:
+Or explicitly like this:
 
 ```rust, noplayground
 let bravo: char = 'b';

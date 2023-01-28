@@ -1,6 +1,5 @@
 # Hello, World (Piece By Piece)
 
-
 #### EXAMPLE
 
 ```rust,noplayground
@@ -25,7 +24,7 @@ fn main() {
   function.
 
 - `println!()` is for printing a line with the content inside
-  the quotes inside the `()` parens. (Watch out for the `!`
+  the quotes inside the `()` parentheses. (Watch out for the `!`
   character. I miss it all the time when typing. We'll get
   more into what it means later.)
 

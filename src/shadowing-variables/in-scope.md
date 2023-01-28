@@ -2,7 +2,7 @@
 
 Shadowing a variable only applies to the scope
 that the shadowing happens in. If you bind
-a varible in one scope, then shadow it in a child
+a variable in one scope, then shadow it in a child
 scope the new version of the variable
 will be used in that scope. For example:
 

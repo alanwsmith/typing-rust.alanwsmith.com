@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Function References - Typing Rust</title>
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/overrides.css">
+
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../introduction/status-line.html"><strong aria-hidden="true">1.1.</strong> The Status Line</a></li><li class="chapter-item expanded "><a href="../introduction/preamble.html"><strong aria-hidden="true">1.2.</strong> Preamble</a></li></ol></li><li class="chapter-item expanded "><a href="../hello-world/index.html"><strong aria-hidden="true">2.</strong> Hello World</a></li><li class="chapter-item expanded "><a href="../variables/index.html"><strong aria-hidden="true">3.</strong> Variables</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../variables/variables-in-println.html"><strong aria-hidden="true">3.1.</strong> Variables In println!</a></li><li class="chapter-item expanded "><a href="../variables/multiple-variable-usage-in-println.html"><strong aria-hidden="true">3.2.</strong> Multiple Variable Usage in println!</a></li><li class="chapter-item expanded "><a href="../variables/multiple-variables-in-println.html"><strong aria-hidden="true">3.3.</strong> Multiple Variables In println!</a></li><li class="chapter-item expanded "><a href="../variables/immutable-by-default.html"><strong aria-hidden="true">3.4.</strong> Immutable By Default</a></li><li class="chapter-item expanded "><a href="../variables/immutable-error-message.html"><strong aria-hidden="true">3.5.</strong> Immutable Error Message Full</a></li><li class="chapter-item expanded "><a href="../variables/immutable-error-message-line.html"><strong aria-hidden="true">3.6.</strong> Immutable Error Message Line</a></li><li class="chapter-item expanded "><a href="../variables/mutable-variables.html"><strong aria-hidden="true">3.7.</strong> Mutable Variables</a></li><li class="chapter-item expanded "><a href="../variables/review.html"><strong aria-hidden="true">3.8.</strong> Review</a></li></ol></li><li class="chapter-item expanded "><a href="../data-types/index.html"><strong aria-hidden="true">4.</strong> Data Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data-types/implicit-explicit.html"><strong aria-hidden="true">4.1.</strong> Implicit And Explicit</a></li><li class="chapter-item expanded "><a href="../data-types/using-explicit-types.html"><strong aria-hidden="true">4.2.</strong> Using Explicit Types</a></li><li class="chapter-item expanded "><a href="../data-types/the-number-types.html"><strong aria-hidden="true">4.3.</strong> The Number Types</a></li><li class="chapter-item expanded "><a href="../data-types/booleans.html"><strong aria-hidden="true">4.4.</strong> Booleans</a></li></ol></li><li class="chapter-item expanded "><a href="../compound-data-types/index.html"><strong aria-hidden="true">5.</strong> Compound Data Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../compound-data-types/tuples.html"><strong aria-hidden="true">5.1.</strong> Tuples</a></li><li class="chapter-item expanded "><a href="../compound-data-types/tuple-indexes.html"><strong aria-hidden="true">5.2.</strong> Tuple Indexes</a></li><li class="chapter-item expanded "><a href="../compound-data-types/indexes-and-offset.html"><strong aria-hidden="true">5.3.</strong> Indexes And Offsets</a></li></ol></li><li class="chapter-item expanded "><a href="../functions/index.html"><strong aria-hidden="true">6.</strong> Functions</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../functions/parameters.html"><strong aria-hidden="true">6.1.</strong> Parameters</a></li><li class="chapter-item expanded "><a href="../functions/using-parameters.html"><strong aria-hidden="true">6.2.</strong> Using Parameters</a></li><li class="chapter-item expanded "><a href="../functions/multiple-parameters.html"><strong aria-hidden="true">6.3.</strong> Multiple Parameters</a></li><li class="chapter-item expanded "><a href="../functions/using-multiple-parameters.html"><strong aria-hidden="true">6.4.</strong> Using Multiple Parameters</a></li><li class="chapter-item expanded "><a href="../functions/return-values.html"><strong aria-hidden="true">6.5.</strong> Return Values</a></li><li class="chapter-item expanded "><a href="../functions/binding-return-values.html"><strong aria-hidden="true">6.6.</strong> Binding Return Values</a></li><li class="chapter-item expanded "><a href="../functions/return-expressions.html"><strong aria-hidden="true">6.7.</strong> Return Expressions</a></li><li class="chapter-item expanded "><a href="../functions/return-expression-errors.html"><strong aria-hidden="true">6.8.</strong> Return Expression Errors</a></li><li class="chapter-item expanded "><a href="../functions/review.html"><strong aria-hidden="true">6.9.</strong> Review</a></li></ol></li><li class="chapter-item expanded "><a href="../if-expressions/index.html"><strong aria-hidden="true">7.</strong> if Expressions</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../if-expressions/false-conditions.html"><strong aria-hidden="true">7.1.</strong> false Conditions</a></li><li class="chapter-item expanded "><a href="../if-expressions/else-expressions.html"><strong aria-hidden="true">7.2.</strong> else Expressions</a></li><li class="chapter-item expanded "><a href="../if-expressions/else-if-expressions.html"><strong aria-hidden="true">7.3.</strong> else if Expressions</a></li><li class="chapter-item expanded "><a href="../if-expressions/multiple-if-else-expressions.html"><strong aria-hidden="true">7.4.</strong> Multiple if else Expressions</a></li><li class="chapter-item expanded "><a href="../if-expressions/function-example.html"><strong aria-hidden="true">7.5.</strong> Function Example</a></li><li class="chapter-item expanded "><a href="../if-expressions/binding-variables.html"><strong aria-hidden="true">7.6.</strong> Binding Variables</a></li><li class="chapter-item expanded "><a href="../if-expressions/binding-values-must-be-the-same.html"><strong aria-hidden="true">7.7.</strong> Binding Values Must Be The Same</a></li><li class="chapter-item expanded "><a href="../if-expressions/incompatible-types.html"><strong aria-hidden="true">7.8.</strong> Incompatible Types</a></li></ol></li><li class="chapter-item expanded "><a href="../while-loops/index.html"><strong aria-hidden="true">8.</strong> While Loops</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../while-loops/assignments.html"><strong aria-hidden="true">8.1.</strong> Assignments</a></li></ol></li><li class="chapter-item expanded "><a href="../for-loops/index.html"><strong aria-hidden="true">9.</strong> For Loops</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../for-loops/using-ranges.html"><strong aria-hidden="true">9.1.</strong> Using Ranges</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Stuff To Sort</li><li class="chapter-item expanded "><a href="../the-string-type/index.html"><strong aria-hidden="true">10.</strong> The String Type</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../the-string-type/moving-strings.html"><strong aria-hidden="true">10.1.</strong> Moving String</a></li></ol></li><li class="chapter-item expanded "><a href="../functions/_placeholder.html"><strong aria-hidden="true">11.</strong> Functions Placeholder</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../passing-values-in-funcitons/index.html"><strong aria-hidden="true">11.1.</strong> Passing Values In Functions</a></li><li class="chapter-item expanded "><a href="../functions/references.html" class="active"><strong aria-hidden="true">11.2.</strong> Function References</a></li><li class="chapter-item expanded "><a href="../functions/references-can-not-be-modified.html"><strong aria-hidden="true">11.3.</strong> Function References Can't Be Modified</a></li><li class="chapter-item expanded "><a href="../functions/mutable-references.html"><strong aria-hidden="true">11.4.</strong> Function Mutable References</a></li><li class="chapter-item expanded "><a href="../functions/only-one-mutable-reference.html"><strong aria-hidden="true">11.5.</strong> Only One Mutable Reference</a></li><li class="chapter-item expanded "><a href="../functions/scope-for-mutable-refereces.html"><strong aria-hidden="true">11.6.</strong> Scope For Mutable References</a></li><li class="chapter-item expanded "><a href="../functions/mutable-and-immutable-references-can-not-be-combined.html"><strong aria-hidden="true">11.7.</strong> Mutable And Immutable References Can't Be Combined</a></li><li class="chapter-item expanded "><a href="../functions/_todo.html"><strong aria-hidden="true">11.8.</strong> TODO</a></li></ol></li><li class="chapter-item expanded "><a href="../slices/_todo.html"><strong aria-hidden="true">12.</strong> Slices TODO</a></li><li class="chapter-item expanded "><a href="../string-literals/_todo.html"><strong aria-hidden="true">13.</strong> String literals</a></li><li class="chapter-item expanded affix "><li class="part-title">To Sort</li><li class="chapter-item expanded "><a href="../scope/index.html"><strong aria-hidden="true">14.</strong> Scope</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../scope/error.html"><strong aria-hidden="true">14.1.</strong> Scope Error</a></li><li class="chapter-item expanded "><a href="../scope/error-message.html"><strong aria-hidden="true">14.2.</strong> Scope Error Message</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">-- Work In Progress --</li><li class="chapter-item expanded "><a href="../dev/work-in-progress.html"><strong aria-hidden="true">15.</strong> Work In Progress</a></li><li class="chapter-item expanded "><a href="../todo/index.html"><strong aria-hidden="true">16.</strong> TODO List</a></li><li class="chapter-item expanded "><a href="../statements-and-expressions.html"><strong aria-hidden="true">17.</strong> Statements and Expressions</a></li><li class="chapter-item expanded "><a href="../constants/index.html"><strong aria-hidden="true">18.</strong> Constants</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../constants/in-the-globa-scope.html"><strong aria-hidden="true">18.1.</strong> In The Global Scope</a></li><li class="chapter-item expanded "><a href="../constants/types-required.html"><strong aria-hidden="true">18.2.</strong> Types Required</a></li><li class="chapter-item expanded "><a href="../constants/compile-time.html"><strong aria-hidden="true">18.3.</strong> Compile Time</a></li></ol></li><li class="chapter-item expanded "><a href="../shadowing-variables/index.html"><strong aria-hidden="true">19.</strong> Shadowing Variables</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shadowing-variables/in-scope.html"><strong aria-hidden="true">19.1.</strong> Shadowing Variables In Scope</a></li><li class="chapter-item expanded "><a href="../shadowing-variables/changing-type.html"><strong aria-hidden="true">19.2.</strong> Shadowing Variables To Change Type</a></li></ol></li><li class="chapter-item expanded "><a href="../data-types/characters.html"><strong aria-hidden="true">20.</strong> Characters</a></li><li class="chapter-item expanded "><a href="../todo/destructring-tuples.html"><strong aria-hidden="true">21.</strong> Destructuring Tuples</a></li><li class="chapter-item expanded "><a href="../todo/adding-values-to-tuples.html"><strong aria-hidden="true">22.</strong> Adding Values To Tuples</a></li><li class="chapter-item expanded "><a href="../compound-data-types/arrays.html"><strong aria-hidden="true">23.</strong> Arrays</a></li><li class="chapter-item expanded "><a href="../functions/statements-and-expressions.html"><strong aria-hidden="true">24.</strong> Statements And Expressions</a></li><li class="chapter-item expanded affix "><li class="part-title">Work In Progress</li><li class="chapter-item expanded "><a href="../prerequisites/index.html"><strong aria-hidden="true">25.</strong> Prerequisites</a></li><li class="chapter-item expanded "><a href="../appendix/about.html"><strong aria-hidden="true">26.</strong> About This Site</a></li><li class="chapter-item expanded "><a href="../terminology/index.html"><strong aria-hidden="true">27.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../dev/typo-test.html"><strong aria-hidden="true">28.</strong> Typo Test</a></li><li class="chapter-item expanded "><a href="../introduction/work-in-progress.html"><strong aria-hidden="true">29.</strong> Work In Progress</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../variables/turning-off-warnings.html"><strong aria-hidden="true">29.1.</strong> Turning Off Warnings</a></li><li class="chapter-item expanded "><a href="../variables/immutable-variable-error.html"><strong aria-hidden="true">29.2.</strong> The Error Message</a></li></ol></li><li class="chapter-item expanded "><a href="../error-messages/index.html"><strong aria-hidden="true">30.</strong> Error Messages</a></li><li class="chapter-item expanded affix "><li class="part-title">To Sort</li><li class="chapter-item expanded "><a href="../loops/index.html"><strong aria-hidden="true">31.</strong> Loops</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../loops/binding-variables.html"><strong aria-hidden="true">31.1.</strong> Binding Values</a></li><li class="chapter-item expanded "><a href="../loops/labels.html"><strong aria-hidden="true">31.2.</strong> Labels</a></li><li class="chapter-item expanded "><a href="../loops/nested-loops.html"><strong aria-hidden="true">31.3.</strong> Nested Loops</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <!--
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        -->
+                    </div>
+
+                    <h1 class="menu-title">Typing Rust</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                            <a rel="prev" href="../passing-values-in-funcitons/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../functions/references-can-not-be-modified.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+
+                    <main>
+                        <div id="rawTextToCompare" style="display: none;">rawTextToCompare</div>
+                        <!-- 
+                        <div id="tmpLine">Templine<div>
+                        <hr />
+                        <div id="debugLine" style="color: red; font-family: monospace;"></div>
+                        -->
+                        <h1 id="function-references"><a class="header" href="#function-references">Function References</a></h1>
+<p>You can pass values by reference so the
+functions don't take ownership.</p>
+<p>TKTKTK The act of using a reference is
+called borrowing.</p>
+<h4 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h4>
+<pre><pre class="playground"><code class="language-rust  editable  EXAMPLE1">fn main() {
+
+  let alfa = String::from(&quot;apple&quot;);
+
+  widget(&amp;alfa);
+
+  println!(&quot;alfa {}&quot;, alfa)
+
+}
+
+fn widget(incoming: &amp;String) {
+  println!(&quot;incoming: {}&quot;, incoming)
+}
+
+</code></pre></pre>
+<h3 id="code-runner"><a class="header" href="#code-runner">CODE RUNNER</a></h3>
+<pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                            <a rel="prev" href="../passing-values-in-funcitons/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../functions/references-can-not-be-modified.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../passing-values-in-funcitons/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../functions/references-can-not-be-modified.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+        <script>
+            window.playground_line_numbers = true;
+        </script>
+
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <!-- REMOVED TO ALLOW FOR MODULES -->
+        <!--
+        <script src="../theme/typo-detector.js" type="module"></script>
+        -->
+
+        <script type="module">
+          import { typoInit } from "./../theme/typo-detector.js"
+          typoInit();
+        </script>
+
+
+    </body>
+</html>

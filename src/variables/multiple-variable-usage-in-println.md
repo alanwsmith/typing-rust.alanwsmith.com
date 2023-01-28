@@ -1,7 +1,7 @@
 # Multiple Variable Usage in println!
 
 Adding multiple placeholders and passing
-the vairalbe multiple times allows us
+the variable multiple times allows us
 to use it more than once in the output.
 
 For example:

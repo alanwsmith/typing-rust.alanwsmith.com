@@ -1,11 +1,11 @@
 # Variables Are Immutable By Default
 
-Variables are immutalbe by default. That is, once
+Variables are immutable by default. That is, once
 they are bound to a value, they can't be changed.
 That's one of the ways the rust compiler uses
 optimize code to make it fast.
 
-This example sets the varaible `alfa` to `7`
+This example sets the variable `alfa` to `7`
 then tries to change it to `9`. (Since the variable
 has already been created we don't use `let` or
 the `i32` data type the second time.) This causes an

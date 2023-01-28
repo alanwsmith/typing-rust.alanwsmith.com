@@ -2,7 +2,7 @@
 
 This site assumes you know the following:
 
-- What immutalbe means.
+- What immutable means.
 - What it means to assign a variable.
 - What keywords in a language are
 

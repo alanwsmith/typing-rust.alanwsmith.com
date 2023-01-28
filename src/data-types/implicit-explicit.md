@@ -4,7 +4,7 @@ In all our previous examples we've set the
 type of our variable explicitly by adding
 a `:` after the name along with the type
 (e.g. `i32`). Rust has the ability to
-guess the type of some varaibles so
+guess the type of some variables so
 that's not always necessary. When we do
 that it's called an "implicit" type
 assignment and it looks like this:
@@ -27,7 +27,7 @@ a variable into this:
 
 In this example, both `alfa` and `bravo`
 have an `i32` type. Alfa is defined
-explicity. Bravo is defined implicitly.
+explicitly. Bravo is defined implicitly.
 
 ```rust, noplayground, EXAMPLE1
 fn main() {

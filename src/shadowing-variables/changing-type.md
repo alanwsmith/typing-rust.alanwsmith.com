@@ -1,9 +1,9 @@
 # Shadowing Variables To Change Type
 
-Shadowning variables allows you to
+Shadowing variables allows you to
 change their type. That's something you can't
 do with a regular mutable variable (i.e. one
-defined with `let mut`). For exaple, this code
+defined with `let mut`). For example, this code
 tries to change from a string to a number.
 Run it and you'll see the error message.
 

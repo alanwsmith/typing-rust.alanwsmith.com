@@ -1,4 +1,4 @@
-# Immutalbe Error Message
+# Immutable Error Message
 
 This is the code from the prior page.
 

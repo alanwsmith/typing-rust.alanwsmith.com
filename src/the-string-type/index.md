@@ -7,7 +7,7 @@ think about a single string type for
 the early part of the book. Push
 the literals to later.
 
-Example showin how to add more text
+Example showing how to add more text
 to a mutable String
 
 #### SOURCE CODE

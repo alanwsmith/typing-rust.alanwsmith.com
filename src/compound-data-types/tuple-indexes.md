@@ -1,7 +1,7 @@
 # Tuple Indexes
 
 Getting values out of a tuple is done using
-the varaible's name followed by a dot and
+the variable's name followed by a dot and
 the "index" number for the position we're
 after.
 

@@ -2,7 +2,7 @@
 
 Defining functions that take more than
 one parameter is done by adding more
-in the paranthesis that are separated
+in the parentheses that are separated
 by commas like this:
 
 ```rust,noplayground

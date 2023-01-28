@@ -28,7 +28,7 @@ widget is 10
 
 #### SOURCE CODE
 
-```rust,noplayground,EXAPMLE1
+```rust,noplayground,EXAMPLE1
 fn main() {
   println!("widget is {}", widget());
 }

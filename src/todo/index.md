@@ -7,3 +7,4 @@
 - Scope
 - Comments
 - Rust does not try to convert non-boolean types to booleans
+- String literals

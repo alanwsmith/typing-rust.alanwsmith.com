@@ -4,7 +4,7 @@
 
 Trying to update the value of an immutable
 variable results in an error. This code sets
-an initial immutalbe value with `let alfa = 3`
+an initial immutable value with `let alfa = 3`
 and then tries to update it with `alfa = 5` which
 causes an error.
 
