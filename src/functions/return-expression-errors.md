@@ -6,7 +6,7 @@ Here's the error message from the prior page
 where we intentionally put a semi-colon at
 the end of an expression that caused an error.
 
-```rust,noplaygound
+```rust,noplayground
    Compiling playground v0.0.1 (/playground)
 error[E0308]: mismatched types
  --> src/main.rs:6:16

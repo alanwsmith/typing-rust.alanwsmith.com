@@ -15,7 +15,7 @@ A golden retriever
 And, in a similar manner when discussing a Rust program:
 
 ```txt
-What type of varaible is alfa?
+What type of variable is alfa?
 
 A number with a decimal point
 ```

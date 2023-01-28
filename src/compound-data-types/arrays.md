@@ -61,7 +61,3 @@ fn main() {
 ```rust, editable, CODE1
 
 ```
-
-```
-
-```

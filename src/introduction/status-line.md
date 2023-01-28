@@ -2,10 +2,10 @@
 
 You may have noticed the "Status" line above
 the Code Runner. It's an experiment to see if
-we can improve coding tutorails by eliminating
+we can improve coding tutorials by eliminating
 typos.
 
-If you've ever done a tutorail where you entered
+If you've ever done a tutorial where you entered
 a huge block of code only to get hit with an
 unrelated error message, you know why I built it.
 
@@ -22,7 +22,7 @@ typos are a waste of time, energy, and motivation.
   warning will let you know you've drifted away
   from the example source code
 
-- I've got a feature on the roadmap to disable the
+- I've got a feature on the road map to disable the
   typo catcher. That'll make playing with the examples
   more friendly since it won't be throwing the warning
   at you when you change things

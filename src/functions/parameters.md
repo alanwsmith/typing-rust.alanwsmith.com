@@ -11,10 +11,10 @@ To start with, those are:
 
 The way we do that is to assign a variable inside
 the parenthesis after the function name. The format
-is similar to what we've used to assing variable
+is similar to what we've used to assigning variable
 so far but we remove the `let`, `=`, and the value.
 
-So instad of this:
+So instead of this:
 
 ```rust, noplayground
 let alfa: i32 = 3

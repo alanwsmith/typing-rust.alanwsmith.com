@@ -11,7 +11,7 @@ fn main() {
 ```
 
 The `const` and `println!()` statements are
-inbetween the `{` and `}` of the `main()` function.
+between the `{` and `}` of the `main()` function.
 The terminology used for this is to say
 those statements are in the main()
 function's "scope".

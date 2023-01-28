@@ -4,8 +4,8 @@ We covered a lot in this chapter:
 
 - How to define variables
 - How to print one or more of them
-- Immutalbe variables
-- Mutalbe variables
+- Immutable variables
+- Mutable variables
 - What an error message looks like
 
 This program reviews all those things

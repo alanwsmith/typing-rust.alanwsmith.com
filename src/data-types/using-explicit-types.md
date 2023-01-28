@@ -12,8 +12,8 @@ or explicitly like this:
 let alfa: i32 = 7;
 ```
 
-are both frequency occurrances in Rust
-programs. While the implict version is
+are both frequency occurrences in Rust
+programs. While the implicit version is
 shorter to type and easier to read we'll
 be using the explicit approach for a
 few reasons:

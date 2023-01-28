@@ -5,7 +5,7 @@ of different types.
 
 Creating a tuple variable looks different than
 making one for a scalar data type.
-Instead of using a specific keyword after the varaible's
+Instead of using a specific keyword after the variable's
 name (like `i32` in `let alfa: i32 = 58`), tuple definitions
 use a pair of parenthesis with the types it's
 going to contain between them.

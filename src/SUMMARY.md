@@ -10,7 +10,7 @@
   - [Multiple Variables In println!](./variables/multiple-variables-in-println.md)
   - [Immutable By Default](./variables/immutable-by-default.md)
   - [Immutable Error Message Full](./variables/immutable-error-message.md)
-  - [Immutalbe Error Message Line](./variables/immutable-error-message-line.md)
+  - [Immutable Error Message Line](./variables/immutable-error-message-line.md)
   - [Mutable Variables](./variables/mutable-variables.md)
   - [Review](./variables/review.md)
 - [Data Types](./data-types/index.md)
@@ -50,6 +50,20 @@
 
 - [The String Type](./the-string-type/index.md)
   - [Moving String](./the-string-type/moving-strings.md)
+- [Functions Placeholder](./functions/_placeholder.md)
+  - [Passing Values In Functions](./passing-values-in-funcitons/index.md)
+  - [Function References](./functions/references.md)
+  - [Function References Can't Be Modified](./functions/references-can-not-be-modified.md)
+  - [Function Mutable References](./functions/mutable-references.md)
+  - [Only One Mutable Reference](./functions/only-one-mutable-reference.md)
+  - [Scope For Mutable References](./functions/scope-for-mutable-refereces.md)
+  - [Mutable And Immutable References Can't Be Combined](./functions/mutable-and-immutable-references-can-not-be-combined.md)
+  - [TODO](./functions/_todo.md)
+- [Slices TODO](./slices/_todo.md)
+- [String literals](./string-literals/_todo.md)
+
+# To Sort
+
 - [Scope](./scope/index.md)
   - [Scope Error](./scope/error.md)
   - [Scope Error Message](./scope/error-message.md)
@@ -62,7 +76,7 @@
 - [Constants](./constants/index.md)
   - [In The Global Scope](./constants/in-the-globa-scope.md)
   - [Types Required](./constants/types-required.md)
-  - [Compilie Time](./constants/compile-time.md)
+  - [Compile Time](./constants/compile-time.md)
 - [Shadowing Variables](./shadowing-variables/index.md)
   - [Shadowing Variables In Scope](./shadowing-variables/in-scope.md)
   - [Shadowing Variables To Change Type](./shadowing-variables/changing-type.md)

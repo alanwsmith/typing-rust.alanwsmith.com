@@ -21,7 +21,7 @@ few pages.
    see on the next page)
 2. They must have a type annotation (e.g. the `i32`
    in the example below which is coming up).
-3. They must be set to something determined at complile
+3. They must be set to something determined at compile
    time (which we'll also get to shortly)
 
 ```rust, noplayground, EXAMPLE1
@@ -41,6 +41,6 @@ fn main() {
 
 ### TODO
 
-- Examine moving constants to a poinst
+- Examine moving constants to a points
   after you've talked about scope and types.
   Probably that makes the most sense.

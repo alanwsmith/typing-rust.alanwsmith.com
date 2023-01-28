@@ -15,7 +15,7 @@ be negative.
 This brings us to the `32` that follows the
 `f`, `i`, and `u` in the types. It
 determines how big a number can be used for
-the varaible.
+the variable.
 
 Here's the values for floating point numbers
 

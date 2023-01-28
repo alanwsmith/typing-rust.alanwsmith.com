@@ -25,7 +25,7 @@ placeholder in the first quoted text inside the
 that we want to use to replace the placeholder
 comes next.
 
-Here's another example where we set the varaible
+Here's another example where we set the variable
 `bravo` to 12 then print it out.
 
 ```rust,noplayground,EXAMPLE1

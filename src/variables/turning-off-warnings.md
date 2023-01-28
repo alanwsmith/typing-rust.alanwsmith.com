@@ -11,12 +11,12 @@ fn main() {
 ```
 
 All we care about right now is the error message.
-Rust provides as way to suppross warinigs (TODO:
+Rust provides as way to suppress warnings (TODO:
 find the name of these things, "directives", maybe?)
 
-There are several directives avaialbe. (TODO:
+There are several directives available. (TODO:
 link to the other directives). The one we're  
-intersted in right now is `#[allow(unused)]`
+interested in right now is `#[allow(unused)]`
 
 (TODO: Update based on the one with the `!`
 as well and talk about the difference i.e.

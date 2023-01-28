@@ -12,7 +12,7 @@ fn main() {
 }
 ```
 
-Issolating the error section from the rest of messages
+Isolating the error section from the rest of messages
 we get this:
 
 ```rust, noplayground

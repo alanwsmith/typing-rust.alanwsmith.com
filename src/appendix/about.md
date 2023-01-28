@@ -11,7 +11,7 @@ code with no comments intertwined.
 
 Documenting what I'm learning is another big part of
 how I figure things out. This site combines both things.
-It's a collection of refined exmaples
+It's a collection of refined examples
 based off The Rust Book and Rust By Example with my
 write ups.
 
@@ -29,5 +29,5 @@ way I do.
   been very helpful for me.
 - I've suppressed some warnings that would
   require making examples more complicated. None
-  of them effect functonality and we'll cover
+  of them effect functionality and we'll cover
   them specifically in their own chapter.

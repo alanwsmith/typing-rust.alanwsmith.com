@@ -26,7 +26,7 @@ let alfa: i32 = 7;
 
 Using that line in we can create
 a full program that defines the `alfa`
-varaible then prints it out.
+variable then prints it out.
 
 #### SOURCE CODE
 
