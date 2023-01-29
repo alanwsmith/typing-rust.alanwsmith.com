@@ -3,6 +3,9 @@
 - [Introduction](./introduction/index.md)
   - [The Status Line](./introduction/status-line.md)
   - [Preamble](./introduction/preamble.md)
+
+# Part 1
+
 - [Hello World](./hello-world/index.md)
 - [Variables](./variables/index.md)
   - [Variables In println!](./variables/variables-in-println.md)
@@ -46,6 +49,8 @@
 - [For Loops](./for-loops/index.md)
   - [Using Ranges](./for-loops/using-ranges.md)
 
+---
+
 # Stuff To Sort
 
 - [The String Type](./the-string-type/index.md)
@@ -59,8 +64,20 @@
   - [Scope For Mutable References](./functions/scope-for-mutable-refereces.md)
   - [Mutable And Immutable References Can't Be Combined](./functions/mutable-and-immutable-references-can-not-be-combined.md)
   - [TODO](./functions/_todo.md)
+
+# Needs Spell Check
+
 - [Slices TODO](./slices/_todo.md)
 - [String literals](./string-literals/_todo.md)
+- [Structs](./structs/_todo.md)
+- [Tuple Structs](./tuple-structs/_todo.md)
+- [Debug Derived Trait](./debug-derived-trait/_todo.md)
+- [Struct Methods](./struct-methods/_todo.md)
+- [Enums](./enums/_todo.md)
+  - [Enum Type Aliases](./enum-type-aliases/index.md)
+- [match](./match/_todo.md)
+
+---
 
 # To Sort
 
@@ -68,11 +85,13 @@
   - [Scope Error](./scope/error.md)
   - [Scope Error Message](./scope/error-message.md)
 
+---
+
 # -- Work In Progress --
 
 - [Work In Progress](./dev/work-in-progress.md)
 - [TODO List](./todo/index.md)
-- [Statements and Expressions](./statements-and-expressions.md)
+- [Statements and Expressions](./statements-and-expressions/index.md)
 - [Constants](./constants/index.md)
   - [In The Global Scope](./constants/in-the-globa-scope.md)
   - [Types Required](./constants/types-required.md)
@@ -85,17 +104,22 @@
 - [Adding Values To Tuples](./todo/adding-values-to-tuples.md)
 - [Arrays](./compound-data-types/arrays.md)
 - [Statements And Expressions](./functions/statements-and-expressions.md)
+- [Option Type](./option-type/_todo.md)
+
+---
 
 # Work In Progress
 
 - [Prerequisites](./prerequisites/index.md)
 - [About This Site](./appendix/about.md)
-- [Terminology](./terminology/index.md)
+- [Glossary](./glossary/index.md)
 - [Typo Test](./dev/typo-test.md)
 - [Work In Progress](./introduction/work-in-progress.md)
   - [Turning Off Warnings](./variables/turning-off-warnings.md)
   - [The Error Message](./variables/immutable-variable-error.md)
 - [Error Messages](./error-messages/index.md)
+
+---
 
 # To Sort
 
