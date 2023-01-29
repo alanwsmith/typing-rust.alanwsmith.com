@@ -1,5 +1,10 @@
 # TODO List
 
+- Put in fun things to do and see for the different
+  parts that you go through as options?
+- What if there were different versions of the book
+  with different exmample variable names (e.g. if you
+  want to have animals, or colors, or nato alphabet)
 - Maybe don't use anything that's stored on the
   stack for the first part of the book? Introduce
   String and Vec instead of string literals and arrays.

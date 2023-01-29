@@ -3,9 +3,6 @@
 - [Introduction](./introduction/index.md)
   - [The Status Line](./introduction/status-line.md)
   - [Preamble](./introduction/preamble.md)
-
-# Part 1
-
 - [Hello World](./hello-world/index.md)
 - [Variables](./variables/index.md)
   - [Variables In println!](./variables/variables-in-println.md)
