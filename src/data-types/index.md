@@ -1,7 +1,28 @@
 # Data Types
 
-Rust's design requires every value have a
-"type" assigned to. The "type" of a value is what
+Rust has "types". Each one defines a different
+kind of data. Every value in Rust has to be
+one of those types. For example,
+numbers without decimal points are `i32` types.
+
+One way to think about it is like asking someone
+what kind of dog they have.
+
+```txt
+What kind of dog is Charlie?
+
+A golden retriever
+```
+
+We can ask similar questions about data:
+
+```txt
+What type of variable is alfa?
+
+An i32
+```
+
+The "type" of a value is what
 you'd used to answer a question about what kind of
 thing it is. For example, if you were asking someone
 about their dog:

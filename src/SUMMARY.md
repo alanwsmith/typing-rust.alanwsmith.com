@@ -1,19 +1,35 @@
 # Summary
 
-- [Introduction](./introduction/index.md)
+- [Introduction: Hello World](./introduction/index.md)
   - [The Status Line](./introduction/status-line.md)
-  - [Preamble](./introduction/preamble.md)
-- [Hello World](./hello-world/index.md)
+- [Hello World Explained](./hello-world/index.md)
+  - [The Parts](./hello-world/the-parts.md)
+  - [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
   - [Variables In println!](./variables/variables-in-println.md)
-  - [Multiple Variable Usage in println!](./variables/multiple-variable-usage-in-println.md)
-  - [Multiple Variables In println!](./variables/multiple-variables-in-println.md)
-  - [Immutable By Default](./variables/immutable-by-default.md)
-  - [Immutable Error Message Full](./variables/immutable-error-message.md)
-  - [Immutable Error Message Line](./variables/immutable-error-message-line.md)
-  - [Mutable Variables](./variables/mutable-variables.md)
-  - [Review](./variables/review.md)
+- [If Expressions](./if-expressions/index.md)
+  - [If/Else](./if-expressions/if-else.md)
+- [Variables With If Expressions](./variables-with-if-expressions/index.md)
+  - [println! Variables](./variables-with-if-expressions/println-variables.md)
+- [Functions](./functions/index.md)
+  - [Passing Values](./functions/passing-values.md)
 - [Data Types](./data-types/index.md)
+
+# Holding
+
+- [Else If Expressions](./else-if-expressions/index.md)
+
+# Original Versions
+
+- [Just The Variable In println!](./variables/just-the-variable.md)
+- [Multiple Variable Usage in println!](./variables/multiple-variable-usage-in-println.md)
+- [Multiple Variables In println!](./variables/multiple-variables-in-println.md)
+- [Immutable By Default](./variables/immutable-by-default.md)
+- [Immutable Error Message Full](./variables/immutable-error-message.md)
+- [Immutable Error Message Line](./variables/immutable-error-message-line.md)
+- [Mutable Variables](./variables/mutable-variables.md)
+- [Review](./variables/review.md)
+- [Data Types](./data-types/index-old.md)
   - [Implicit And Explicit](./data-types/implicit-explicit.md)
   - [Using Explicit Types](./data-types/using-explicit-types.md)
   - [The Number Types](./data-types/the-number-types.md)
@@ -22,7 +38,7 @@
   - [Tuples](./compound-data-types/tuples.md)
   - [Tuple Indexes](./compound-data-types/tuple-indexes.md)
   - [Indexes And Offsets](./compound-data-types/indexes-and-offset.md)
-- [Functions](./functions/index.md)
+- [Functions](./functions/index-old.md)
   - [Parameters](./functions/parameters.md)
   - [Using Parameters](./functions/using-parameters.md)
   - [Multiple Parameters](./functions/multiple-parameters.md)
@@ -45,6 +61,12 @@
   - [Assignments](./while-loops/assignments.md)
 - [For Loops](./for-loops/index.md)
   - [Using Ranges](./for-loops/using-ranges.md)
+
+# Cards
+
+- [Error Messages In Tutorials](./cards/error-messages-in-tutorials.md)
+- [Messing With The Code](./introduction/messing-with-the-code.md)
+- [Preamble](./introduction/preamble.md)
 
 ---
 
@@ -82,6 +104,10 @@
   - [Scope Error](./scope/error.md)
   - [Scope Error Message](./scope/error-message.md)
 
+# Misc
+
+- [Guildlines](./guidelines/index.md)
+
 ---
 
 # -- Work In Progress --
@@ -115,6 +141,7 @@
   - [Turning Off Warnings](./variables/turning-off-warnings.md)
   - [The Error Message](./variables/immutable-variable-error.md)
 - [Error Messages](./error-messages/index.md)
+- [Variables - Origian with types](./variables/original-with-types.md)
 
 ---
 

@@ -1,28 +1,30 @@
 # The Status Line
 
 You may have noticed the "Status" line above
-the Code Runner. It's an experiment to see if
-we can improve coding tutorials by eliminating
-typos.
+the Code Runner. It's designed eliminate typos. If
+you've ever done a tutorial where you entered a huge
+block of code only to get hit with a seemingly random
+error message from a typo then you know why I built it.
 
-If you've ever done a tutorial where you entered
-a huge block of code only to get hit with an
-unrelated error message, you know why I built it.
+If you made it through the previous "Hello World"
+example without making a typo, try it here again but
+make some intentional typos. The Status line will
+show you the text from the current line that's
+correct in gray. It then highlights the typo in red
+showing you what character it should be.
 
-Understanding error messages is a critical part of
-learning a language. But, they're best studied
-explicitly. During a tutorial, error messages from
-typos are a waste of time, energy, and motivation.
+#### SOURCE CODE
 
-#### NOTES
+```rust, noplayground, EXAMPLE1
+fn main() {
 
-- The Status line typo warnings won't prevent you from
-  running code. You can fiddle with the examples
-  and run them to see what happens even though the
-  warning will let you know you've drifted away
-  from the example source code
+  println!("Hello, World");
 
-- I've got a feature on the road map to disable the
-  typo catcher. That'll make playing with the examples
-  more friendly since it won't be throwing the warning
-  at you when you change things
+}
+```
+
+#### CODE RUNNER
+
+```rust, editable, CODE1
+
+```

@@ -1,5 +1,7 @@
 # TODO List
 
+- Add spacing to the code lines so you don't have to
+  put spacer lines between all of them.
 - Put in fun things to do and see for the different
   parts that you go through as options?
 - What if there were different versions of the book

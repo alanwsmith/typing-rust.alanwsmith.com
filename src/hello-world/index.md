@@ -1,7 +1,8 @@
 # Hello World
 
-Here's our "Hello, World" code again. It's a
-complete Rust program.
+Okay, time to to start for real. Let's take
+a look at the "Hello, World" code. Here
+it is one more time.
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
@@ -11,32 +12,9 @@ fn main() {
 }
 ```
 
-The parts of the code break down like this:
+The first thing to point out is that it's a complete
+Rust program. When you type it into the
+Code Runner and hit Run the code is compiled and
+executed directly.
 
-- `fn` is short for function which is what's being
-  defined.
-
-- `main` is the name we're assigning to the
-  function. Every rust program must have a `main`
-  function. It's the entry point that kicks things off.
-
-- The `()` in `main()` holds arguments that can be passed
-  to the function. It's empty here which means no
-  arguments can be passed to `main()`.
-
-- The opening `{` curly bracket starts the block of code
-  that will make up the function.
-
-- `println!()` prints a line out to the terminal. (Watch
-  out for the `!` character. I miss it all the time.)
-
-- `"Hello, World"` is the content to be printed. The quotes
-  themselves aren't printed. They're there to identify where
-  the content starts and stops.
-
-- The `;` at the end of the `println!()` line ends the statement.
-
-- The closing `}` identifies the end of the function.
-
-We'll dig into all those parts more throughout the site.
-For now, let's add a variable.
+It may be simple, but you've officially written Rust.
