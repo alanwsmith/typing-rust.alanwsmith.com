@@ -139,8 +139,8 @@
                         <h1 id="data-types"><a class="header" href="#data-types">Data Types</a></h1>
 <p>Rust has &quot;types&quot;. Each one defines a different
 kind of data. Every value in Rust has to be
-one of those types. For example,
-numbers without decimal points are <code>i32</code> types.</p>
+one of those types. For example, numbers
+without decimal points have the type <code>i32</code>.</p>
 <p>One way to think about it is like asking someone
 what kind of dog they have.</p>
 <pre><code class="language-txt">What kind of dog is Charlie?
@@ -152,39 +152,14 @@ A golden retriever
 
 An i32
 </code></pre>
-<p>The &quot;type&quot; of a value is what
-you'd used to answer a question about what kind of
-thing it is. For example, if you were asking someone
-about their dog:</p>
-<pre><code class="language-txt">What kind of dog is Charlie?
-
-A golden retriever
-</code></pre>
-<p>And, in a similar manner when discussing a Rust program:</p>
-<pre><code class="language-txt">What type of variable is alfa?
-
-A number with a decimal point
-</code></pre>
-<p>Except we wouldn't use the term &quot;a number with a
-decimal point&quot;. We'd use <code>f32</code>. That's what Rust
-uses to set the type of a value to a &quot;floating-point
-number&quot; (which is a number that has a decimal point
-compared to an &quot;integer&quot; which doesn't).</p>
-<p>As we saw in the previous chapter, types are assigned
-to variables when they are created. We used <code>i32</code>
-in the prior examples for integers. We could have used
-<code>f32</code> for floating-point numbers just as easily:</p>
-<p>For example:</p>
-<h4 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h4>
-<pre><code class="language-rust  noplayground  EXAMPLE1">fn main() {
-
-  let alfa: f32 = 3.4;
-
-  println!(&quot;Value {}&quot;, alfa);
-
-}</code></pre>
-<h4 id="code-runner"><a class="header" href="#code-runner">CODE RUNNER</a></h4>
-<pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
+<p>There are a bunch of built-in types in Rust.
+We'll start with these:</p>
+<ul>
+<li><code>i32</code> - A number that can be positive
+or negative</li>
+<li><code>String</code> - Letter, words, sentences, etc...</li>
+<li><code>Vec</code> - TODO - Cover Vecs</li>
+</ul>
 
                     </main>
 

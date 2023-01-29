@@ -1,7 +1,7 @@
 # Passing Values
 
-Functions can recrive values from other
-parts of the program when they are called.
+Functions can receive values from other
+parts of the program.
 (TODO: Define arguments, parameters)
 
 Here we'll send a number from `main`
