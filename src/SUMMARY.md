@@ -14,9 +14,14 @@
 - [Functions](./functions/index.md)
   - [Passing Values](./functions/passing-values.md)
 - [Data Types](./data-types/index.md)
+  - [i32](./data-types/i32.md)
+- [Function Arguments](./functions/function-arguments.md)
 
 # Holding
 
+- [While Loops](./while-loops/index.md)
+- [String](./data-types/string.md)
+- [Vec](./data-types/vec.md)
 - [Else If Expressions](./else-if-expressions/index.md)
 
 # Original Versions
@@ -57,10 +62,12 @@
   - [Binding Variables](./if-expressions/binding-variables.md)
   - [Binding Values Must Be The Same](./if-expressions/binding-values-must-be-the-same.md)
   - [Incompatible Types](./if-expressions/incompatible-types.md)
-- [While Loops](./while-loops/index.md)
+- [While Loops](./while-loops/index-old.md)
   - [Assignments](./while-loops/assignments.md)
 - [For Loops](./for-loops/index.md)
   - [Using Ranges](./for-loops/using-ranges.md)
+
+# Holding
 
 # Cards
 

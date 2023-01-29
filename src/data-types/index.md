@@ -21,11 +21,3 @@ What type of variable is alfa?
 
 An i32
 ```
-
-There are a bunch of built-in types in Rust.
-We'll start with these:
-
-- `i32` - A number that can be positive
-  or negative
-- `String` - Letter, words, sentences, etc...
-- `Vec` - TODO - Cover Vecs
