@@ -18,7 +18,7 @@ less than `<` the number `4`. Since it is, we'll get the output
 fn main() {
 
   if 3 < 4 {
-    println!("alfa");
+    println!("3 is less than 4");
   }
 
 }

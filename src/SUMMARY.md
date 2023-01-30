@@ -9,6 +9,7 @@
   - [Variables In println!](./variables/variables-in-println.md)
 - [If Expressions](./if-expressions/index.md)
   - [If/Else](./if-expressions/if-else.md)
+- [Comparison Operators](./operators/index.md)
 - [Variables With If Expressions](./variables-with-if-expressions/index.md)
   - [println! Variables](./variables-with-if-expressions/println-variables.md)
 - [Functions](./functions/index.md)
@@ -16,13 +17,28 @@
 - [Data Types](./data-types/index.md)
   - [i32](./data-types/i32.md)
 - [Function Arguments](./functions/function-arguments.md)
+  - [Conditional Functions](./functions/conditional-functions.md)
+- [for Loops](./for-loops/index.md)
+  - [With Variables](./for-loops/with-variables.md)
+- [Program 1](./programs/1.md)
+- [Immutable Variables](./immutable-variables/index.md)
+  - [Assigning Twice Error](./mutable-variables/assigning-twice-error.md)
+- [Mutable Variables](./mutable-variables/index.md)
+- [While Loops](./while-loops/index.md)
+- [Booleans](./booleans/index.md)
+- [Function Return Values](./function-return-values/index.md)
+  - [Different Types](./function-return-values/different-types.md)
+  - [Returning From if](./function-return-values/returning-from-if.md)
 
 # Holding
 
-- [While Loops](./while-loops/index.md)
 - [String](./data-types/string.md)
 - [Vec](./data-types/vec.md)
 - [Else If Expressions](./else-if-expressions/index.md)
+- [Assignment Operators](./assignment-operators/index.md)
+  - [Examples](./assignment-operators/examples.md)
+  - [Division](./assignment-operators/division.md)
+  - [Remainder](./assignment-operators/remainder.md)
 
 # Original Versions
 
@@ -34,7 +50,7 @@
 - [Immutable Error Message Line](./variables/immutable-error-message-line.md)
 - [Mutable Variables](./variables/mutable-variables.md)
 - [Review](./variables/review.md)
-- [Data Types](./data-types/index-old.md)
+- [Data Types](./data-types/_index-old.md)
   - [Implicit And Explicit](./data-types/implicit-explicit.md)
   - [Using Explicit Types](./data-types/using-explicit-types.md)
   - [The Number Types](./data-types/the-number-types.md)
@@ -43,7 +59,7 @@
   - [Tuples](./compound-data-types/tuples.md)
   - [Tuple Indexes](./compound-data-types/tuple-indexes.md)
   - [Indexes And Offsets](./compound-data-types/indexes-and-offset.md)
-- [Functions](./functions/index-old.md)
+- [Functions](./functions/_index-old.md)
   - [Parameters](./functions/parameters.md)
   - [Using Parameters](./functions/using-parameters.md)
   - [Multiple Parameters](./functions/multiple-parameters.md)
@@ -62,12 +78,11 @@
   - [Binding Variables](./if-expressions/binding-variables.md)
   - [Binding Values Must Be The Same](./if-expressions/binding-values-must-be-the-same.md)
   - [Incompatible Types](./if-expressions/incompatible-types.md)
-- [While Loops](./while-loops/index-old.md)
+- [While Loops](./while-loops/_index-old.md)
   - [Assignments](./while-loops/assignments.md)
 - [For Loops](./for-loops/index.md)
   - [Using Ranges](./for-loops/using-ranges.md)
-
-# Holding
+- [if let placeholder]()
 
 # Cards
 

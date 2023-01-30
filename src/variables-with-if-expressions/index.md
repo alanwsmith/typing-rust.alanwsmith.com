@@ -7,27 +7,31 @@ condition check like we did on the prior page.
 Here's the if condition from the prior example:
 
 ```rust, noplayground
-if 5 < 4 {
-  println!("alfa");
+if 7 == 8 {
+  println!("They match");
 } else {
-  println!("bravo");
+  println!("They don't match");
 }
 ```
 
-And here's our version with variables.
+We'll bind the value `7` to `alfa` and
+`8` to `bravo`. We'll get the
+`They don't match` output from the
+`else` section because the values aren't
+the same.
 
 #### SOURCE CODE
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
 
-  let alfa = 5;
-  let bravo = 4;
+  let alfa = 7;
+  let bravo = 8;
 
-  if alfa < bravo {
-    println!("alfa is less than bravo");
+  if alfa == bravo {
+    println!("They match");
   } else {
-    println!("alfa is not less than bravo");
+    println!("They don't match");
   }
 
 }

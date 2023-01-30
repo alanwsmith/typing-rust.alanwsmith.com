@@ -24,7 +24,7 @@ fn alfa(incoming_data: i32){
 ```
 
 The name that we put in the parenthesis defines
-a variable that we can use in the bode of the
+a variable that we can use in the body of the
 function. So, we can do this:
 
 ```rust,noplayground

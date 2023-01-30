@@ -14,7 +14,7 @@ What kind of dog is Charlie?
 A golden retriever
 ```
 
-We can ask similar questions about data:
+We can ask similar questions about Rust values:
 
 ```txt
 What type of variable is alfa?

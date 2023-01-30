@@ -3,16 +3,17 @@
 A few quick notes before we continue:
 
 - These are my actual, in-progress notes on learning
-  Rust. As such, the site is very much a work in progress.
-  It only goes far as I've made it in my studies.
+  Rust. So, the site is a work in progress. It only goes
+  as far as I've made it in my studies.
 
-- The content is designed for folks who have at least some
-  programming experience. If you know what variables,
-  functions, loops, and conditionals are, you'll be fine.
+- The content is designed for folks who have a little
+  programming experience. If you know
+  what variables, loops, conditionals, and functions
+  are you'll be fine.
 
-- Examples are kept intentionally sort. That often
-  means doing things that would be silly in a useful
-  program. For example, defining a variable that's
+- Examples are intentionally sort. That often
+  means doing things that would be silly in useful
+  programs. For example, defining a variable that's
   used only once on the following line. The goal is to
   show _how_ to use something not _when_ to use it.
 

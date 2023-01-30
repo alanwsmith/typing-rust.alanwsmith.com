@@ -1,19 +1,19 @@
 # For Loops
 
-TODO: Switch to using a Vec instead of
-and array probably since Vecs are
-what will have been used elsewhere.
+For loops allow us to run the same block of
+code multiple times.
+
+Here a counter that goes up from `1` to `5`.
 
 #### SOURCE CODE
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
 
-  let alfa = [5, 10, 15, 20];
-
-  for item in alfa {
-    println!("item is {}", item)
+  for alfa in (1..=5) {
+    println!("alfa is {}", alfa);
   }
+
 }
 ```
 

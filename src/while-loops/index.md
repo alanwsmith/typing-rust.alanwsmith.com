@@ -1,39 +1,30 @@
 # While Loops
 
-The `i32` type can be used for counting too.
-Here's an exmaple using one in a `while`
-loop.
+Rust provides `while` loops in addition
+to `for` loops. Mutable variables work
+well with them by acting as counters.
 
-A `while` loop works off the following formula:
+In this case we'll set a mutable
+variable named `counter` for a while
+loop that checks to see if it's less
+than or equal to `5`.
 
-1. The `while` keyword
-2. A condition to check
-3. Code to run if the condition is `true`
-
-Here's an example where we set `alfa` to `1`
-and the run a `while` loop where we print
-out the value and add one each time. The
-condition we're using is `alfa < 5` to check
-if the value is less than five or not. If it
-is, the block of code runs.
-
-(We'll talk about the `mut` keyword on the
-next page)
+Everytime through `1`
+add `1` to the counter with `+= 1`
+which takes the current value and
+adds one to it.
 
 #### SOURCE CODE
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
-  let mut alfa = 1;
 
-  println!("Starting loop");
+  let mut counter = 1;
 
-  while alfa < 5 {
-    println!("alfa is {}", alfa);
-    alfa += 1;
+  while counter <= 5 {
+    println!("counter is {}", counter);
+    counter = counter + 1;
   }
-
-  println!("Finished loop");
 
 }
 ```

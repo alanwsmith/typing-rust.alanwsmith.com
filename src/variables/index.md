@@ -1,7 +1,7 @@
 # Variables
 
-Now, let's take a look at variables. Basic variables
-in Rust are created using the following structure:
+Now, let's take a look at variables. Basic Rust variables
+are created using the following structure:
 
 1. The `let` keyword
 2. A name

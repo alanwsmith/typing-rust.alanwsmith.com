@@ -1,12 +1,43 @@
 # TODO List
 
+## Stream
+
+- Add a `Type the Source Code here` placeholder to
+  the Code Runners that disppars when they take focus
+
+- Move the run button below the Code Runners
+
 - Add spacing to the code lines so you don't have to
   put spacer lines between all of them.
+
+- Add a button to copy the text automatically, maybe
+  you could make that the thing where when you click in
+  you click inside for copy the text or type the text.
+  (because you have to click in anyway unless you tab
+  in so you should handle tabbing in too)
+
+- Add styles to `txt` code fences.
+
+- Turn off whatever is overriding the default scroll bars.
+
+## Other
+
+- Is it possible to make the book dynamic in some
+  way, even if it's just manually. Like a setting where
+  you can select if you've got any programming experience
+  or not and if not you get extra text and maybe some
+  variations in the main text.
+
+- What if there was a spaced repetition thing
+  built into the site with programs to run that helped
+  work on the parts you weren't as sure about.
 - Put in fun things to do and see for the different
   parts that you go through as options?
 - What if there were different versions of the book
   with different exmample variable names (e.g. if you
   want to have animals, or colors, or nato alphabet)
+  Or, maybe not different versions, but like settings
+  so you could control things.
 - Maybe don't use anything that's stored on the
   stack for the first part of the book? Introduce
   String and Vec instead of string literals and arrays.

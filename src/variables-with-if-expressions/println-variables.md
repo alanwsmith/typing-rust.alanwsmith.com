@@ -1,24 +1,27 @@
 # println! Variables
 
-The varialbes are also avavilable in the
-`println!()` expressions inside the `if`
-and `else` blocks of code. We'll use them
-here and this time we'll add two `{}`
-placeholders and add both variables after
-the format string.
+Having our values in variables allows us
+to use them multiple times easily. For example,
+instead of just saying "They don't match", we can
+use the variables again to print out the
+actual numbers.
+
+Because we need to print two numbers we'll
+be using two sets of the `{}` curly bracket
+placeholders in the format string.
 
 #### SOURCE CODE
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
 
-  let alfa = 5;
-  let bravo = 4;
+  let alfa = 7;
+  let bravo = 8;
 
-  if alfa < bravo {
-    println!("{} is less than {}", alfa, bravo);
+  if alfa == bravo {
+    println!("{} matches {}", alfa, bravo);
   } else {
-    println!("{} is not less than {}", alfa, bravo);
+    println!("{} does not match {}", alfa, bravo);
   }
 
 }

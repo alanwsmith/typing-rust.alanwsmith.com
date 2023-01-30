@@ -13,10 +13,10 @@ the `else` statement is run and we get the output
 ```rust, noplayground, EXAMPLE1
 fn main() {
 
-  if 5 < 4 {
-    println!("alfa");
+  if 8 < 7 {
+    println!("8 is less than 7");
   } else {
-    println!("bravo");
+    println!("8 is greater than 7");
   }
 
 }
