@@ -6,12 +6,20 @@ number into another as many times as
 possible. (TODO: Look up the math
 term for this)
 
-#### SOURCE CODE
+For example, `2` goes into `9` four times
+with a remainder of `1`. So, this code
+outputs:
+
+```txt
+alfa is 1
+```
+
+### SOURCE CODE
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
   let alfa = 9 % 2;
-  println!("alfa is {}", alfa);
+  println!("alfa is {alfa}");
 }
 ```
 
