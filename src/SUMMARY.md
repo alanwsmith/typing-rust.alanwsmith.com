@@ -18,6 +18,9 @@
   - [i32](./data-types/i32.md)
 - [Function Arguments](./functions/function-arguments.md)
   - [Conditional Functions](./functions/conditional-functions.md)
+- [Arithmetic Operators](./arithmetic-operators/index.md)
+  - [Division Operator](./arighmetic-operators/division.md)
+  - [Remainder Operator](./arithmetic-operators/remainder.md)
 - [for Loops](./for-loops/index.md)
   - [With Variables](./for-loops/with-variables.md)
 - [Program 1](./programs/1.md)
@@ -173,3 +176,7 @@
   - [Binding Values](./loops/binding-variables.md)
   - [Labels](./loops/labels.md)
   - [Nested Loops](./loops/nested-loops.md)
+
+# Fizz Buzz
+
+- [Fizz Buzz](./fizz-buzz/index.md)

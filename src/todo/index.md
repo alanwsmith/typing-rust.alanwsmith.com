@@ -20,6 +20,11 @@
 
 - Turn off whatever is overriding the default scroll bars.
 
+- See if you can turn off whatever is making the TOC
+  sidebar nav jump to center the items so that it stays
+  with where you had it. (Probably requrie setting a cookie
+  and reading it?)
+
 ## Other
 
 - Is it possible to make the book dynamic in some

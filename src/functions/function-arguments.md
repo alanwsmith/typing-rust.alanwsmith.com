@@ -40,6 +40,7 @@ in that type of data.
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
+  println!("Call alfa next");
   alfa(9);
 }
 
