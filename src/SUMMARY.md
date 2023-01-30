@@ -28,13 +28,15 @@
   - [Remainder Operator](./arithmetic-operators/remainder.md)
   - [With Comparison Operators](./arithmetic-operators/with-comparison-operators.md)
   - [Comparison Operators With Variables](./arithmetic-operators/comparison-operators-with-variables.md)
-- [Program: for Mod Example](./programs/for-mod-example.md)
+  - [Using The Remainder](./programs/for-mod-example.md)
+  - [Using The Remainder V2](./arithmetic-operators/using-the-remainder-v2.md)
+- [Booleans](./booleans/index.md)
+  - [In Conditionals](./booleans/in-conditionals.md)
 
 # Holding
 
 - [Program 1](./programs/1.md)
 - [While Loops](./while-loops/index.md)
-- [Booleans](./booleans/index.md)
 - [Function Return Values](./function-return-values/index.md)
   - [Different Types](./function-return-values/different-types.md)
   - [Returning From if](./function-return-values/returning-from-if.md)
@@ -48,6 +50,7 @@
   - [Examples](./assignment-operators/examples.md)
   - [Division](./assignment-operators/division.md)
   - [Remainder](./assignment-operators/remainder.md)
+- [Arithmetic Stuff]()
 
 # Original Versions
 
