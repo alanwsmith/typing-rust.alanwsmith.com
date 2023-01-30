@@ -40,7 +40,6 @@
 
 # Holding
 
-- [Program 1](./programs/1.md)
 - [While Loops](./while-loops/index.md)
 
 # Holding
@@ -56,14 +55,6 @@
 
 # Original Versions
 
-- [Just The Variable In println!](./variables/just-the-variable.md)
-- [Multiple Variable Usage in println!](./variables/multiple-variable-usage-in-println.md)
-- [Multiple Variables In println!](./variables/multiple-variables-in-println.md)
-- [Immutable By Default](./variables/immutable-by-default.md)
-- [Immutable Error Message Full](./variables/immutable-error-message.md)
-- [Immutable Error Message Line](./variables/immutable-error-message-line.md)
-- [Mutable Variables](./variables/mutable-variables.md)
-- [Review](./variables/review.md)
 - [Data Types](./data-types/_index-old.md)
   - [Implicit And Explicit](./data-types/implicit-explicit.md)
   - [Using Explicit Types](./data-types/using-explicit-types.md)
