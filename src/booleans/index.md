@@ -23,20 +23,16 @@ or not. We can use `bool` values
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
-
   let mut alfa = true;
   let mut counter = 1;
 
   while alfa == true {
-
     println!("counter is {}", counter);
     if counter == 5 {
       alfa = false;
     }
     counter = counter + 1;
-
   }
-
 }
 ```
 

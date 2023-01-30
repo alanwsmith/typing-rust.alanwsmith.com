@@ -32,14 +32,16 @@
   - [Using The Remainder V2](./arithmetic-operators/using-the-remainder-v2.md)
 - [Booleans](./booleans/index.md)
   - [In Conditionals](./booleans/in-conditionals.md)
+- [Function Return Values](./function-return-values/index.md)
+  - [Different Types](./function-return-values/different-types.md)
+  - [Returning From if](./function-return-values/returning-from-if.md)
+  - [Functions As Conditions](./functions/as-conditions.md)
+- [Program 3 NAME TKTKTKT](./programs/3.md)
 
 # Holding
 
 - [Program 1](./programs/1.md)
 - [While Loops](./while-loops/index.md)
-- [Function Return Values](./function-return-values/index.md)
-  - [Different Types](./function-return-values/different-types.md)
-  - [Returning From if](./function-return-values/returning-from-if.md)
 
 # Holding
 
@@ -176,6 +178,7 @@
   - [The Error Message](./variables/immutable-variable-error.md)
 - [Error Messages](./error-messages/index.md)
 - [Variables - Origian with types](./variables/original-with-types.md)
+- [if let](./if-let/index.md)
 
 ---
 
