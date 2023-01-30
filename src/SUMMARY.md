@@ -16,19 +16,19 @@
 - [Data Types](./data-types/index.md)
   - [i32](./data-types/i32.md)
 - [Function Arguments](./functions/arguments.md)
-- [Program: Conditional Functions](./functions/conditional-functions.md)
+- [Program: TKTKTKT](./functions/conditional-functions.md)
 - [Immutable Variables](./immutable-variables/index.md)
   - [Assigning Twice Error](./mutable-variables/assigning-twice-error.md)
 - [Mutable Variables](./mutable-variables/index.md)
-- [Program: Conditional Functions V2](./programs/conditional-functions-v2.md)
+- [Program: TKTKTKT V2](./programs/conditional-functions-v2.md)
+- [for Loops](./for-loops/index.md)
+  - [With Variables](./for-loops/with-variables.md)
 
 # Holding
 
 - [Arithmetic Operators](./arithmetic-operators/index.md)
   - [Division Operator](./arighmetic-operators/division.md)
   - [Remainder Operator](./arithmetic-operators/remainder.md)
-- [for Loops](./for-loops/index.md)
-  - [With Variables](./for-loops/with-variables.md)
 - [Program 1](./programs/1.md)
 - [While Loops](./while-loops/index.md)
 - [Booleans](./booleans/index.md)
