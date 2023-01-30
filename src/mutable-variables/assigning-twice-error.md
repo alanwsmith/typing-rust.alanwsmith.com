@@ -34,17 +34,36 @@ error: could not compile `playground` due to previous error
 
 Rust's error messages are verbose, but great. They give us
 nice, direct statements about what's wrong. Take this line from
-above which tells us what's wrong.
+our error.
 
 ```rust, noplayground
 error[E0384]: cannot assign twice to immutable variable `alfa`
 ```
 
-They often include ways to fix the whatever caused the error.
-For example, we see this line as well:
+We made a first assignment to `alfa` in this default way
+which make it immutable:
+
+```rust, noplayground
+let alfa = 7;
+```
+
+Later, we tried to update the value in the variable by
+assining `9` to it like this.
+
+```rust, noplayground
+alfa = 9;
+```
+
+Rust won't let us do that since `alfa` is immutalbe so we get
+that error message which tells us what's happening.
+
+Something that's great about Rust is that error messages often
+contian recommendations on how to fix what went wrong. Take
+this line for example:
 
 ```rust, noplayground
 help: consider making this binding mutable: `mut alfa`
 ```
 
-And that's exactly what we need to do.
+It suggestions not only that we make `alfa` mutable, but it
+also shows up how.
