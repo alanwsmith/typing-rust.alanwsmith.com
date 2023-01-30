@@ -9,7 +9,7 @@ run or not. They are created with:
 3. A block of code to run if the condition is true.
 
 For example, this will check if the number `3` is
-less than or equal to `4`. Since it is, we'll get the output
+less than `<` the number `4`. Since it is, we'll get the output
 `alfa`.
 
 #### SOURCE CODE
@@ -17,8 +17,8 @@ less than or equal to `4`. Since it is, we'll get the output
 ```rust, noplayground, EXAMPLE1
 fn main() {
 
-  if 3 <= 4 {
-    println!("alfa");
+  if 3 < 4 {
+    println!("3 is less than 4");
   }
 
 }

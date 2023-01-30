@@ -1,51 +1,46 @@
 # Functions
 
 Every program we've run so far has consisted of
-the single `main` function. It's definition
-starts with `fn` followed by the name of the
-function with some parenthesis (i.e. `main()`),
-then the opening and closing `{}` curly braces
-that wrap the code that gets executed when
-the function is called.
+a single function called `main`.
 
-We can add more functions to our programs as
-well using the same approach. For example,
-here's the definition of a function named
-"alfa" that prints out "I am alfa":
+We can add other functions as well. Here's
+an example of a function named `alfa` that
+prints out `This is alfa` when we use it.
 
 ```rust,noplayground
 fn alfa() {
-  println!("I am alfa");
+  println!("This is alfa");
 }
 ```
 
-The function is used by "calling it". The
-syntax for that is the name of the function
-followed by parenthesis:
+The way we use a function is to "call" it.
+That's done using the function's name along
+with any data we need to send inside of
+parenthesis. We don't need to send anything
+to our new function so the call looks like
+this:
 
 ```rust,noplayground
 alfa();
 ```
 
-Here's a full program where we
-print `I am main` inside the main function
-then call the `alfa` function which
-then prints `I am alfa`
+When we put that in our `main()` function, we
+get this:
 
 #### SOURCE CODE
 
-```rust,noplayground,EXAMPLE1
+```rust, noplayground, EXAMPLE1
 fn main() {
-  println!("I am main");
-  alfa()
+  println!("Call alfa next");
+  alfa();
 }
 
 fn alfa() {
-  println!("I am alfa");
+  println!("This is alfa");
 }
 ```
 
-#### CODE RUNNER
+### CODE RUNNER
 
 ```rust, editable, CODE1
 

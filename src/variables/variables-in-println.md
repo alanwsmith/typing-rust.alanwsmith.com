@@ -12,18 +12,17 @@ which produced this output:
 The value is 7
 ```
 
-The characters quoted inside `println!()` are
-called a "format string". Format strings can
-output basic text like we saw with the
+The characters first piece of text quoted inside
+`println!()` is called a "format string". Format
+strings can output basic text like we saw with the
 original `println!("Hello, World")` example. They can
-also output the current value of a variables
-like we're doing here.
+also output the value of variables like we're
+doing with `alfa` above.
 
-The process works by putting the a `{}`
-placeholder in the first quoted text inside the
-`println!()` parenthesis. The name of the value
-that we want to use to replace the placeholder
-comes next.
+The process works by adding `{}` curly brackets
+as a placeholder in the format string then
+adding the variable name after it (separated by
+a comma)
 
 Here's another example where we set the variable
 `bravo` to 12 then print it out.
@@ -31,9 +30,9 @@ Here's another example where we set the variable
 ```rust,noplayground,EXAMPLE1
 fn main() {
 
-  let bravo: i32 = 12;
+  let bravo = 12;
 
-  println!("The value is {}", bravo);
+  println!("bravo is {}", bravo);
 
 }
 ```
