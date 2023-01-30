@@ -1,33 +1,38 @@
 # Booleans
 
-Now that we've seen some uses of `i32`
-we'll add another data type: `bool`
+We've used a bunch of `i32` type values. It's
+time to introduce our next data type: `bool`
 
 The `bool` data type stands for boolean.
-A boolean value can be either `true` or
-`false`. It can't be anything else.
+A value that can be either `true` or
+`false` and nothing else.
 
-We can use booleans in a while loop.
-For example:
+Boolean values are bound to variables like
+this:
+
+```rust,noplayground
+let alfa = true;
+let bravo = false;
+```
+
+The `if` statements we've been using
+check to see if the condition is `true`
+or not. We can use `bool` values
 
 #### SOURCE CODE
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
-
   let mut alfa = true;
   let mut counter = 1;
 
   while alfa == true {
-
     println!("counter is {}", counter);
     if counter == 5 {
       alfa = false;
     }
     counter = counter + 1;
-
   }
-
 }
 ```
 

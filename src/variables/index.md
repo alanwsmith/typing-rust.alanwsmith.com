@@ -17,17 +17,14 @@ let alfa = 7;
 ```
 
 Using that line in we can create another full program
-that defines the `alfa` variable then prints it out.
+that defines the `alfa` variable then prints it.
 
 #### SOURCE CODE
 
 ```rust,noplayground,EXAMPLE1
 fn main() {
-
   let alfa = 7;
-
-  println!("alfa is {}", alfa);
-
+  println!("alfa is {alfa}");
 }
 ```
 

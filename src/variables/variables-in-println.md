@@ -3,13 +3,13 @@
 The code from the prior page includes this line:
 
 ```rust, noplayground
-println!("The value is {}", alfa);
+println!("alfa is {alfa}");
 ```
 
 which produced this output:
 
 ```rust, noplayground
-The value is 7
+alfa is 7
 ```
 
 The characters first piece of text quoted inside
@@ -20,20 +20,20 @@ also output the value of variables like we're
 doing with `alfa` above.
 
 The process works by adding `{}` curly brackets
-as a placeholder in the format string then
-adding the variable name after it (separated by
-a comma)
+with the name of the variable inside it. In our
+case this is:
+
+```rust, noplayground
+{alfa}
+```
 
 Here's another example where we set the variable
 `bravo` to 12 then print it out.
 
 ```rust,noplayground,EXAMPLE1
 fn main() {
-
   let bravo = 12;
-
-  println!("bravo is {}", bravo);
-
+  println!("bravo is {bravo}");
 }
 ```
 

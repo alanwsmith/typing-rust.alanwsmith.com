@@ -1,5 +1,9 @@
 # Guildlines
 
+These are not hard rules. They are guidelines.
+Staying from them when it makes sense makes
+total sense.
+
 - Get to code that actually does
   something as fast as possible
 
@@ -31,3 +35,6 @@
 
 - Don't worry too much about explaing the syntax. That is:
   Show. Don't Tell.
+
+- Avoid talking about what you'll show later. Wait until
+  you get there. (This is a continuation of show don't tell)

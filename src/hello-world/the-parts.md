@@ -1,13 +1,11 @@
 # Hello, World - The Parts
 
-Here's a look at the parts of our "Hello, World"
-program:
+Let's take a look at the individual parts that make up our
+"Hello, World" program.
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
-
   println!("Hello, World");
-
 }
 ```
 

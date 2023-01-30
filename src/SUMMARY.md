@@ -1,8 +1,8 @@
 # Summary
 
-- [Introduction: Hello World](./introduction/index.md)
+- [Introduction: Hello, World](./introduction/index.md)
   - [The Status Line](./introduction/status-line.md)
-- [Hello World Explained](./hello-world/index.md)
+- [Hello, World Explained](./hello-world/index.md)
   - [The Parts](./hello-world/the-parts.md)
   - [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
@@ -13,25 +13,34 @@
 - [Variables With If Expressions](./variables-with-if-expressions/index.md)
   - [println! Variables](./variables-with-if-expressions/println-variables.md)
 - [Functions](./functions/index.md)
-  - [Passing Values](./functions/passing-values.md)
 - [Data Types](./data-types/index.md)
   - [i32](./data-types/i32.md)
-- [Function Arguments](./functions/function-arguments.md)
-  - [Conditional Functions](./functions/conditional-functions.md)
-- [Arithmetic Operators](./arithmetic-operators/index.md)
-  - [Division Operator](./arighmetic-operators/division.md)
-  - [Remainder Operator](./arithmetic-operators/remainder.md)
-- [for Loops](./for-loops/index.md)
-  - [With Variables](./for-loops/with-variables.md)
-- [Program 1](./programs/1.md)
+- [Function Arguments](./functions/arguments.md)
+- [Program: NAME TKTKTKT](./functions/conditional-functions.md)
 - [Immutable Variables](./immutable-variables/index.md)
   - [Assigning Twice Error](./mutable-variables/assigning-twice-error.md)
 - [Mutable Variables](./mutable-variables/index.md)
-- [While Loops](./while-loops/index.md)
+- [Program: NAME TKTKTKT V2](./programs/conditional-functions-v2.md)
+- [for Loops With Ranges](./for-loops/index.md)
+  - [With Variables](./for-loops/with-variables.md)
+- [Arithmetic Operators](./arithmetic-operators/index.md)
+  - [Division Operator](./arithmetic-operators/division.md)
+  - [Remainder Operator](./arithmetic-operators/remainder.md)
+  - [With Comparison Operators](./arithmetic-operators/with-comparison-operators.md)
+  - [Comparison Operators With Variables](./arithmetic-operators/comparison-operators-with-variables.md)
+  - [Using The Remainder](./programs/for-mod-example.md)
+  - [Using The Remainder V2](./arithmetic-operators/using-the-remainder-v2.md)
 - [Booleans](./booleans/index.md)
+  - [In Conditionals](./booleans/in-conditionals.md)
 - [Function Return Values](./function-return-values/index.md)
   - [Different Types](./function-return-values/different-types.md)
   - [Returning From if](./function-return-values/returning-from-if.md)
+  - [Functions As Conditions](./functions/as-conditions.md)
+- [Program 3 NAME TKTKTKT](./programs/3.md)
+
+# Holding
+
+- [While Loops](./while-loops/index.md)
 
 # Holding
 
@@ -42,17 +51,10 @@
   - [Examples](./assignment-operators/examples.md)
   - [Division](./assignment-operators/division.md)
   - [Remainder](./assignment-operators/remainder.md)
+- [Arithmetic Stuff]()
 
 # Original Versions
 
-- [Just The Variable In println!](./variables/just-the-variable.md)
-- [Multiple Variable Usage in println!](./variables/multiple-variable-usage-in-println.md)
-- [Multiple Variables In println!](./variables/multiple-variables-in-println.md)
-- [Immutable By Default](./variables/immutable-by-default.md)
-- [Immutable Error Message Full](./variables/immutable-error-message.md)
-- [Immutable Error Message Line](./variables/immutable-error-message-line.md)
-- [Mutable Variables](./variables/mutable-variables.md)
-- [Review](./variables/review.md)
 - [Data Types](./data-types/_index-old.md)
   - [Implicit And Explicit](./data-types/implicit-explicit.md)
   - [Using Explicit Types](./data-types/using-explicit-types.md)
@@ -83,7 +85,7 @@
   - [Incompatible Types](./if-expressions/incompatible-types.md)
 - [While Loops](./while-loops/_index-old.md)
   - [Assignments](./while-loops/assignments.md)
-- [For Loops](./for-loops/index.md)
+- [For Loops](./for-loops/_index_old.md)
   - [Using Ranges](./for-loops/using-ranges.md)
 - [if let placeholder]()
 
@@ -167,6 +169,7 @@
   - [The Error Message](./variables/immutable-variable-error.md)
 - [Error Messages](./error-messages/index.md)
 - [Variables - Origian with types](./variables/original-with-types.md)
+- [if let](./if-let/index.md)
 
 ---
 

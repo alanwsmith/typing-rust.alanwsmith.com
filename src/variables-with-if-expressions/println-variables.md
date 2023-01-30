@@ -1,14 +1,15 @@
 # println! Variables
 
-Having our values in variables allows us
-to use them multiple times easily. For example,
-instead of just saying "They don't match", we can
-use the variables again to print out the
-actual numbers.
+Binding values to variables let us use them
+repeatedly. For example, we can improve the
+output of our program by including the
+numbers that match or don't match.
 
-Because we need to print two numbers we'll
-be using two sets of the `{}` curly bracket
-placeholders in the format string.
+We'll do this by using the variables in
+`println!()` the same way we have before.
+The only difference this time is that
+we're putting two variables in the format
+string instead of one.
 
 #### SOURCE CODE
 
@@ -19,9 +20,9 @@ fn main() {
   let bravo = 8;
 
   if alfa == bravo {
-    println!("{} matches {}", alfa, bravo);
+    println!("{alfa} matches {bravo}");
   } else {
-    println!("{} does not match {}", alfa, bravo);
+    println!("{alfa} does not match {bravo}");
   }
 
 }

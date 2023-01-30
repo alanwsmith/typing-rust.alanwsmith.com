@@ -23,5 +23,5 @@ line-numbers = true
 enable = false
 
 [output.html.print]
-enable = false 
+enable = true 
 

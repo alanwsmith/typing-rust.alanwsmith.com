@@ -1,26 +1,40 @@
 # Variables With If Expressions
 
-Let's combine some variables with an if/else
-expression. We can do this by using the varaibles
-in place of the numbers for the `if` expression's
-condition check like we did on the prior page.
-Here's the if condition from the prior example:
+Let's use variables in the condition section
+of our if/else expression. The first step is to
+bind the values to our variables.
 
-```rust, noplayground
+```rust,noplayground
+let alfa = 7;
+let bravo = 8;
+```
+
+Then, we'll replace the numbers in the `condition`
+section of the `if` statement with the variable
+names. So, this:
+
+```rust,noplayground
 if 7 == 8 {
-  println!("They match");
-} else {
-  println!("They don't match");
+  ...
 }
 ```
 
-We'll bind the value `7` to `alfa` and
-`8` to `bravo`. We'll get the
-`They don't match` output from the
-`else` section because the values aren't
-the same.
+Becomes this:
 
-#### SOURCE CODE
+```rust,noplayground
+if alfa == bravo {
+  ...
+}
+```
+
+Here's the code for the full example which
+outputs:
+
+```txt
+They don't match
+```
+
+### SOURCE CODE
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
