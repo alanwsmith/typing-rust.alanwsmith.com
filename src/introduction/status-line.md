@@ -1,32 +1,17 @@
 # The Status Line
 
-You may have noticed the Code Runner's "Status" line.
-It's designed to eliminate typos. If you've entered
-a huge block of code for a tutorail and got hit
-with an indecipherable error message becuase
-you made a typo you know why I built it.
+Learning to read error message is a crital part of
+programming. We'll cover them. But, hitting one
+because you made a typo in a tutorail is a waste
+of time, energy, and motivation.
 
-If you made it through "Hello World" on the previos
-page without making a typo, try it again but
-make some intentional mistakes. The Status line will
-highlight the character you need to fix.
+You may have noticed the "Status" line in the previous
+Code Runner. It's designed to eliminate typos by
+highlighting them as soon as they occur and
+showing you what character to use.
 
-(You can click "Run" when the typo warning is showing.
-You'll probably get a sizable error message, but that's
-fine. It won't hurt anything.)
+---
 
-#### SOURCE CODE
-
-```rust, noplayground, EXAMPLE1
-fn main() {
-
-  println!("Hello, World");
-
-}
-```
-
-#### CODE RUNNER
-
-```rust, editable, CODE1
-
-```
+TODO: Make a way to turn off the alert so folks
+can change the source code to experiment without
+having the warning flash.

@@ -1,20 +1,20 @@
 # Hello World
 
-Okay, time to to start for real. Let's take
-a look at the "Hello, World" code.
+Time to to start for real. Let's
+look at the "Hello, World" code again:
 
 ```rust, noplayground
 fn main() {
-
   println!("Hello, World");
-
 }
 ```
 
 Those three lines of code are a complete
-program. It maybe simple, but you've officially
-written Rust.
+program. It maybe simple, but when you type
+them in you've officially written Rust.
 
-Every "Source Code" block is a full program too.
-They would run the same on your computer if you
-installed Rust and ran them from local files.
+There are snippets of code on the site designed
+to show speicif aspect of the language that aren't
+full programs, but every Source Code block is.
+They would run the same if you installed Rust and
+ran them from local files.

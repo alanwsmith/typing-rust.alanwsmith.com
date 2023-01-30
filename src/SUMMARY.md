@@ -1,8 +1,8 @@
 # Summary
 
-- [Introduction: Hello World](./introduction/index.md)
+- [Introduction: Hello, World](./introduction/index.md)
   - [The Status Line](./introduction/status-line.md)
-- [Hello World Explained](./hello-world/index.md)
+- [Hello, World Explained](./hello-world/index.md)
   - [The Parts](./hello-world/the-parts.md)
   - [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
