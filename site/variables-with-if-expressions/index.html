@@ -137,22 +137,26 @@
                         <div id="debugLine" style="color: red; font-family: monospace;"></div>
                         -->
                         <h1 id="variables-with-if-expressions"><a class="header" href="#variables-with-if-expressions">Variables With If Expressions</a></h1>
-<p>Let's combine some variables with an if/else
-expression. We can do this by using the varaibles
-in place of the numbers for the <code>if</code> expression's
-condition check like we did on the prior page.
-Here's the if condition from the prior example:</p>
-<pre><code class="language-rust  noplayground">if 7 == 8 {
-  println!(&quot;They match&quot;);
-} else {
-  println!(&quot;They don't match&quot;);
+<p>Let's use variables in the condition section
+of our if/else expression. The first step is to
+bind the values to our variables.</p>
+<pre><code class="language-rust noplayground">let alfa = 7;
+let bravo = 8;</code></pre>
+<p>Then, we'll replace the numbers in the <code>condition</code>
+section of the <code>if</code> statement with the variable
+names. So, this:</p>
+<pre><code class="language-rust noplayground">if 7 == 8 {
+  ...
 }</code></pre>
-<p>We'll bind the value <code>7</code> to <code>alfa</code> and
-<code>8</code> to <code>bravo</code>. We'll get the
-<code>They don't match</code> output from the
-<code>else</code> section because the values aren't
-the same.</p>
-<h4 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h4>
+<p>Becomes this:</p>
+<pre><code class="language-rust noplayground">if alfa == bravo {
+  ...
+}</code></pre>
+<p>Here's the code for the full example which
+outputs:</p>
+<pre><code class="language-txt">They don't match
+</code></pre>
+<h3 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h3>
 <pre><code class="language-rust  noplayground  EXAMPLE1">fn main() {
 
   let alfa = 7;

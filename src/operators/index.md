@@ -1,19 +1,19 @@
-# Operators
+# Comparison Operators
 
 We used `<` to check if one number was
 less than another like this:
 
 ```rust,noplayground
 if 1 < 2 {
-  println!("1 is less than 2");
+  println!("The comparison is true");
 }
 ```
 
-The `<` is called an "operator". It
+The `<` symbol is called an "operator". It
 performs a comparison operation and give
 us a result.
 
-The `<` looks the same way you see it
+The `<` looks the same as you see it
 in everyday math. Some of the other
 comparison operators look a little different:
 

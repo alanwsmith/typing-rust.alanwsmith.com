@@ -1,10 +1,16 @@
 # println! Variables
 
-Having our values in variables allows us
-to use them multiple times easily. For example,
-instead of just saying "They don't match", we can
-use the variables again to print out the
-actual numbers.
+Putting values in variables allows us
+to use them repeatedly. For example, we
+can improve the output of our program by
+including the numbers that match or don't
+match.
+
+We'll do this by using the variables in
+`println!()` like we have before. Since we
+want two varaibles this time we'll add
+another `{}` placeholder in the format
+string and
 
 Because we need to print two numbers we'll
 be using two sets of the `{}` curly bracket

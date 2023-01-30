@@ -137,26 +137,27 @@
                         <div id="debugLine" style="color: red; font-family: monospace;"></div>
                         -->
                         <h1 id="if-expressions"><a class="header" href="#if-expressions">if Expressions</a></h1>
-<p><code>if</code> expressions provide a way for programs to make
-decisions about if a section of code should be
-run or not. They are created with:</p>
+<p><code>if</code> expressions are used to determine
+if a section of code should be run or not.
+They are created with:</p>
 <ol>
 <li>The <code>if</code> keyword</li>
 <li>A condition to check</li>
 <li>A block of code to run if the condition is true.</li>
 </ol>
-<p>For example, this will check if the number <code>3</code> is
-less than <code>&lt;</code> the number <code>4</code>. Since it is, we'll get the output
-<code>alfa</code>.</p>
-<h4 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h4>
+<p>The condition in the example below checks to see if the
+number <code>3</code> is less than the number <code>4</code> using the <code>&lt;</code> math
+symbol like this:</p>
+<pre><code class="language-rust noplayground">3 &lt; 4</code></pre>
+<p>Since the <code>3</code> <strong>is</strong> less than <code>4</code> the condition is
+true so we'll see the output <code>the condition is true</code>.</p>
+<h3 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h3>
 <pre><code class="language-rust  noplayground  EXAMPLE1">fn main() {
-
   if 3 &lt; 4 {
-    println!(&quot;3 is less than 4&quot;);
+    println!(&quot;the condition is true&quot;);
   }
-
 }</code></pre>
-<h4 id="code-runner"><a class="header" href="#code-runner">CODE RUNNER</a></h4>
+<h3 id="code-runner"><a class="header" href="#code-runner">CODE RUNNER</a></h3>
 <pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
 
                     </main>

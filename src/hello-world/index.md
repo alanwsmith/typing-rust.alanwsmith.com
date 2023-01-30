@@ -1,7 +1,6 @@
-# Hello World
+# Hello, World - Explained
 
-Time to to start for real. Let's
-look at the "Hello, World" code again:
+Let's look at the "Hello, World" code again:
 
 ```rust, noplayground
 fn main() {
@@ -9,12 +8,22 @@ fn main() {
 }
 ```
 
-Those three lines of code are a complete
-program. It maybe simple, but when you type
-them in you've officially written Rust.
+Those three lines of code are a complete program.
+It may be simple, but when you've typed them in
+you've officially written Rust.
 
-There are snippets of code on the site designed
-to show speicif aspect of the language that aren't
-full programs, but every Source Code block is.
-They would run the same if you installed Rust and
-ran them from local files.
+There are snippets of code on the site that aren't
+full programs. For example, this single line that's
+been pulled out of of our program. We'll use those
+to discuss specific aspects of the language.
+
+```rust, noplayground
+fn main() {
+```
+
+Those snippets don't need to be typed in.
+
+The contents of every Source Code block _are_ complete
+programs. Every Source Code block is paired directly
+above a Code Runner editor to help make it clear what
+to type.

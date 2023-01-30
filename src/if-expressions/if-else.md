@@ -1,22 +1,34 @@
 # If/Else
 
-We can provide an alternate block of code
-to run for situations where the condition in the
-`if` expression is not `true`. This is done
-with an `else` like below where we check to see
-if `5` is less than `<` the number `4`. Since it's not
-the `else` statement is run and we get the output
-`bravo`.
+We can provide an alternate block of code to run for
+situations where the condition in the `if` expression
+is not `true`. This is done with an `else` expression.
 
-#### SOURCE CODE
+The below example checks to see if `8` is less than `7` with:
+
+```rust,noplayground
+8 < 7
+```
+
+That's not a true statement so `if` sees the condition
+as `false`. Since `if` only runs its code block if
+the condition is `true` it gets passed over. The
+code in the `else` block is run instead and we see
+the output:
+
+```txt
+the condition is false
+```
+
+### SOURCE CODE
 
 ```rust, noplayground, EXAMPLE1
 fn main() {
 
   if 8 < 7 {
-    println!("8 is less than 7");
+    println!("the condition is true");
   } else {
-    println!("8 is greater than 7");
+    println!("the condition is false");
   }
 
 }

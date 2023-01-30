@@ -137,20 +137,25 @@
                         <div id="debugLine" style="color: red; font-family: monospace;"></div>
                         -->
                         <h1 id="ifelse"><a class="header" href="#ifelse">If/Else</a></h1>
-<p>We can provide an alternate block of code
-to run for situations where the condition in the
-<code>if</code> expression is not <code>true</code>. This is done
-with an <code>else</code> like below where we check to see
-if <code>5</code> is less than <code>&lt;</code> the number <code>4</code>. Since it's not
-the <code>else</code> statement is run and we get the output
-<code>bravo</code>.</p>
-<h4 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h4>
+<p>We can provide an alternate block of code to run for
+situations where the condition in the <code>if</code> expression
+is not <code>true</code>. This is done with an <code>else</code> expression.</p>
+<p>The below example checks to see if <code>8</code> is less than <code>7</code> with:</p>
+<pre><code class="language-rust noplayground">8 &lt; 7</code></pre>
+<p>That's not a true statement so <code>if</code> sees the condition
+as <code>false</code>. Since <code>if</code> only runs its code block if
+the condition is <code>true</code> it gets passed over. The
+code in the <code>else</code> block is run instead and we see
+the output:</p>
+<pre><code class="language-txt">the condition is false
+</code></pre>
+<h3 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h3>
 <pre><code class="language-rust  noplayground  EXAMPLE1">fn main() {
 
   if 8 &lt; 7 {
-    println!(&quot;8 is less than 7&quot;);
+    println!(&quot;the condition is true&quot;);
   } else {
-    println!(&quot;8 is greater than 7&quot;);
+    println!(&quot;the condition is false&quot;);
   }
 
 }</code></pre>
