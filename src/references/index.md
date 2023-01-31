@@ -1,9 +1,16 @@
 # References
 
-References offer another way to avoid moving
-ownership of a value. Referenes are made by
-putting the `&` symbol in from of the variable
-that needs to be referenced.
+References offer a way to access a value
+from multiple variables without changing
+ownership.
+
+Referenes are made by
+putting the `&` symbol in front of the
+original variable that holds the value.
+
+---
+
+OLD NOTES:
 
 In our earlier example we could no longer
 access the value in `alfa` once we moved it

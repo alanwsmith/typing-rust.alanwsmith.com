@@ -1,8 +1,8 @@
 # Step 5
 
-With the move completed via the assignment,
-`bravo` now gives us the `String` value in
-the same way `alfa` did before.
+Using `bravo` gives us the `String` value
+output of "apple" the same way `alfa` did
+before the move.
 
 ![Ownership 7](/images/ownership-7.png)
 

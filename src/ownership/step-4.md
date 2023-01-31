@@ -6,7 +6,7 @@ this page use the right language?
 ---
 
 Let's look at what _does_ happen starting with
-a review of Step 3 where we had:
+a review of Step 3 where:
 
 1. The `alfa` variable has been created
 2. The `String::from("apple")` value has
@@ -15,11 +15,11 @@ a review of Step 3 where we had:
 3. We've made the first half of the expression
    to bind `alfa` to `bravo`
 
-Our illustration looks like this:
+Our illustration looked like this:
 
 ![Ownership 4](/images/ownership-4.png)
 
-And here's how we complete the expression:
+Now we can complete the expression with:
 
 ```rust,noplayground
 let bravo = alfa;

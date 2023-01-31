@@ -10,7 +10,7 @@ For exaple, if we do:
 println!("alfa has {alfa}");
 ```
 
-Rust sees the request for `alfa` and access
+Rust sees the request for `alfa` and accesses
 the variable to get the value it's bound to
 and returns it for the output:
 
@@ -21,4 +21,3 @@ alfa is apple
 Here's what that looks like:
 
 ![Ownership 3](/images/ownership-3.png)
-

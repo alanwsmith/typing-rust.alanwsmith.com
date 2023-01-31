@@ -1,13 +1,15 @@
 # Hitting A Moved Error
 
 Where things go wrong is if we try to
-access `alfa` again. Values can only
-have one owner. When we moved our `String`
-to `bravo` it removed ownership from
-`alfa`. That means `alfa` can't work with it
-anymore.
+use `alfa` again. Values can only
+have one owner. When we did `let bravo = alfa;`
+it transferred ownership of the `String` from
+`alfa` to `bravo`.
 
-Updating our illustration looks like this:
+Without ownership, `alfa` can't work with the
+`String` any more`
+
+Trying to use it looks like this:
 
 ![Ownership 8](/images/ownership-8.png)
 

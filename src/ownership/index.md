@@ -1,19 +1,8 @@
 # Ownership
 
-TODO: Verify the langues used here.
-
-(A quick heads: we're getting into sections
-of the book that deal with the more conceptually
-complicated parts of Rust. Going through them
-multiple times before things click happenes
-more often than not.)
-
-NOTE: My handwriting is chicken scratch.
-These drawings are drafts. I'll replace
-them with more legible versions once I get
-things finalized.
-
----
+NOTE: This is my understanding of how things work
+but I need to have it vetted by someon who knows
+more about Rust for accuracy.
 
 We've talked a lot about binding values to
 variables. Let's take a deeper look at what
@@ -27,7 +16,10 @@ every value has an "owner". When we bind
 let alfa = String::from("apple");
 ```
 
-`alfa` becomes the owner of that particual
-`String` instance that contains the word "apple".
+that variable becomes the owner of the value.
+
+In the case that means `alfa` now owns the
+`String` of "apple"
+
 You can think of an "owner" like a wrapper around
 the value.
