@@ -27,10 +27,8 @@ it by `2` as it's sending it back.
 
 ```rust, noplayground, EXAMPLE1
 fn main(){
-
   let alfa = double_number(5);
   println!("alfa is {}", alfa);
-
 }
 
 fn double_number(value: i32) -> i32 {

@@ -2,8 +2,11 @@
 
 ## Stream
 
-- Add a `Type the Source Code here` placeholder to
-  the Code Runners that disppars when they take focus
+- [] Add button to disable live typo detection.
+
+- Add two buttons into the Code Runner that let you
+  click them to decide to Type or to decide to
+  Copy and Run the code directly.
 
 - Move the run button below the Code Runners
 
