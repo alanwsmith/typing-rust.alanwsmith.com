@@ -37,6 +37,19 @@
   - [Returning From if](./function-return-values/returning-from-if.md)
   - [Functions As Conditions](./functions/as-conditions.md)
 - [Program 3 NAME TKTKTKT](./programs/3.md)
+- [Strings](./strings/index.md)
+  - [Mutable Strings](./strings/mutable-strings.md)
+- [Ownership And Moving](./strings/moving-strings.md)
+  - [Moving Error](./strings/moving-strings-error.md)
+  - [Moving Error Details](./strings/moving-string-error-details.md)
+- [Cloning](./cloning-and-references/index.md)
+  - [Separate Values](./cloning-and-references/separate-values.md)
+- [References](./cloning-and-references/references.md)
+  - [A Single Value](./cloning-and-references/a-single-value.md)
+- [Binding Values From if](./if/binding-values.md)
+  - [Must Be The Same Type](./if/binding-values-must-be-the-same-type.md)
+  - [Mismatched Type Error](./if/mismatched-type-error.md)
+- [Sandbox](./sandbox/index.md)
 
 # Holding
 
@@ -183,3 +196,5 @@
 # Fizz Buzz
 
 - [Fizz Buzz](./fizz-buzz/index.md)
+
+# Sandbox

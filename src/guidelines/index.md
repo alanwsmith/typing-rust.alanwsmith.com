@@ -38,3 +38,7 @@ total sense.
 
 - Avoid talking about what you'll show later. Wait until
   you get there. (This is a continuation of show don't tell)
+
+- Avoid statements like "which we haven't talked about yet".
+  If the person thinks about it at all, they'll know that's the
+  case so there's littl point in mentioning it.

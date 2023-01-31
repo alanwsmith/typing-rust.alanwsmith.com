@@ -27,6 +27,10 @@
 
 ## Other
 
+- Verify that the generic term statement can be used
+  to describe expressions (e.g. "an `if` statement is
+  an expression")
+
 - Is it possible to make the book dynamic in some
   way, even if it's just manually. Like a setting where
   you can select if you've got any programming experience
