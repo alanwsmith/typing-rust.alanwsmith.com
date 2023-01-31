@@ -41,8 +41,15 @@
 - [Strings](./strings/index.md)
   - [Mutable Strings](./strings/mutable-strings.md)
 - [Ownership](./ownership/index.md)
+  - [Step 1](./ownership/step-1.md)
+  - [Step 2](./ownership/step-2.md)
+  - [Step 3](./ownership/step-3.md)
+  - [What Doesn't Happen](./ownership/what-does-not-happen.md)
+  - [Step 4](./ownership/step-4.md)
+  - [Step 5](./ownership/step-5.md)
+  - [Hitting A Moved Error](./ownership/hitting-a-moved-error.md)
 
-# Tmp
+# Holding Drafts
 
 - [Ownership And Moving](./strings/moving-strings.md)
   - [Moving Error](./strings/moving-strings-error.md)
