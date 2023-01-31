@@ -1,7 +1,7 @@
 # Ownership And Moving
 
 Every value in Rust has an "owner". For example, this
-statement assigns a `String` with the value of `widget`
+statement assigns a `String` with the value of `apple`
 to the variable `alfa`. That makes `alfa` the owner
 of the `String`.
 

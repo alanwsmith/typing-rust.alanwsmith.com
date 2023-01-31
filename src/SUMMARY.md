@@ -37,8 +37,13 @@
   - [Returning From if](./function-return-values/returning-from-if.md)
   - [Functions As Conditions](./functions/as-conditions.md)
 - [Program 3 NAME TKTKTKT](./programs/3.md)
+- [Scopes](./scopes/index.md)
 - [Strings](./strings/index.md)
   - [Mutable Strings](./strings/mutable-strings.md)
+- [Ownership](./ownership/index.md)
+
+# Tmp
+
 - [Ownership And Moving](./strings/moving-strings.md)
   - [Moving Error](./strings/moving-strings-error.md)
   - [Moving Error Details](./strings/moving-string-error-details.md)
@@ -46,6 +51,9 @@
   - [Separate Values](./cloning-and-references/separate-values.md)
 - [References](./cloning-and-references/references.md)
   - [A Single Value](./cloning-and-references/a-single-value.md)
+  - [Using In A Function](./cloning-and-references/using-in-a-function.md)
+  - [Changing In A Function](./cloning-and-references/changing-in-a-function.md)
+  - [A Function Error](./cloning-and-references/a-function-error.md)
 - [Binding Values From if](./if/binding-values.md)
   - [Must Be The Same Type](./if/binding-values-must-be-the-same-type.md)
   - [Mismatched Type Error](./if/mismatched-type-error.md)

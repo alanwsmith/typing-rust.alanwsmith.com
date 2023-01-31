@@ -1,23 +1,23 @@
 # A Single Value
 
-TODO: Show a single value being updated.
+TKTKTKT
 
 ### SOURCE CODE
 
 ```rust, EXAMPLE1
 fn main() {
   let mut alfa = String::from("widget");
-  let bravo = &mut alfa;
+  println!("alfa is {alfa}");
 
-  bravo.push_str("-thing");
-
-  // println!("alfa is {alfa}");
-  // println!("bravo is {bravo}");
-
-  // alfa.push_str("-thing");
+  {
+    let bravo = &mut alfa;
+    println!("bravo is {bravo}");
+    bravo.push_str("-thing");
+    println!("bravo is {bravo}");
+  }
 
   println!("alfa is {alfa}");
-  println!("bravo is {bravo}");
+
 }
 ```
 
