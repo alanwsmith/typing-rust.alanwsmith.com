@@ -3,6 +3,7 @@
 ## Step By Step Test
 
 This is the first prototype of the viewer.
+Next step is to highlight lines that changed.
 
 <script>
 let alfa_step = 0;
