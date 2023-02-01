@@ -51,38 +51,45 @@ const updateStepByStep = (lines_index) => {
     outputLines.push(alfa_code[alfa_lines[lines_index][line_id]])
   }
   window.stepByStepCode.value = outputLines.join("\n")
+
+  window.stepByStepText.innerHTML = alfa_text[lines_index]
+
   if (alfa_step > 0) {
     window.previousButton.innerHTML = "Previous"
   } else {
-    window.previousButton.innerHTML = "--------"
+    window.previousButton.innerHTML = "&nbsp;&nbsp;----&nbsp;&nbsp;"
   }
   if (alfa_step < alfa_lines.length - 1) {
     window.nextButton.innerHTML = "Next"
   } else {
-    window.nextButton.innerHTML = "----"
+    window.nextButton.innerHTML = "&nbsp;--&nbsp;"
   }
 }
 
 
 const setupStepByStep = () => {
-  const d = document.createElement("textarea")
-  d.id = `stepByStepCode`
-  const stepByStepTextEl = document.createElement("div")
 
-  const stepByStepButtonEls = document.createElement("div")
-  stepByStepButtonEls.innerHTML = `<button id="previousButton">--------</button>
-  <button id="nextButton">Next</button>`
-
-  stepByStepTextEl.innerHTML = alfa_text[0]
-  d.cols = 70
   const outputLines = [];
   for (let indx in alfa_lines[0]) {
     outputLines.push(alfa_code[alfa_lines[0][indx]])
   }
-  d.value = outputLines.join("\n");
-  window["stepByStepDiv"].append(d);
-  window["stepByStepDiv"].append(stepByStepButtonEls);
+
+  const stepByStepCodeEl = document.createElement("textarea")
+  stepByStepCodeEl.id = `stepByStepCode`
+  stepByStepCodeEl.cols = 70
+  stepByStepCodeEl.value = outputLines.join("\n");
+
+  const stepByStepButtonEl = document.createElement("div")
+  stepByStepButtonEl.innerHTML = `<button id="previousButton">&nbsp;&nbsp;----&nbsp;&nbsp;</button>
+  <button id="nextButton">Next</button>`
+
+  const stepByStepTextEl = document.createElement("div")
+  stepByStepTextEl.id = "stepByStepText"
+  stepByStepTextEl.innerHTML = alfa_text[0]
+
+  window["stepByStepDiv"].append(stepByStepCodeEl);
   window["stepByStepDiv"].append(stepByStepTextEl);
+  window["stepByStepDiv"].append(stepByStepButtonEl);
   window["previousButton"].addEventListener("click", goToPrevious)
   window["nextButton"].addEventListener("click", goToNext)
   setStepByStepCodeRowCount()
