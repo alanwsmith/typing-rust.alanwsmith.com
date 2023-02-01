@@ -2,10 +2,11 @@
 
 - [Introduction: Hello, World](./introduction/index.md)
   - [The Status Line](./introduction/status-line.md)
-- [Hello, World Explained](./hello-world/index.md)
+- [A Complete Program](./hello-world/index.md)
   - [The Parts](./hello-world/the-parts.md)
-  - [Quick Notes](./cards/index.md)
+- [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
+- [Printing](./printing/index.md)
   - [Variables In println!](./variables/variables-in-println.md)
 - [If Expressions](./if-expressions/index.md)
   - [If/Else](./if-expressions/if-else.md)
@@ -37,6 +38,46 @@
   - [Returning From if](./function-return-values/returning-from-if.md)
   - [Functions As Conditions](./functions/as-conditions.md)
 - [Program 3 NAME TKTKTKT](./programs/3.md)
+- [Scopes](./scopes/index.md)
+- [Strings](./strings/index.md)
+  - [Mutable Strings](./strings/mutable-strings.md)
+- [Difficulty Increasing](./concepts-ahead/index.md)
+- [Illustrations Incoming](./illustrations-incoming/index.md)
+- [Ownership](./ownership/index.md)
+  - [Step 1](./ownership/step-1.md)
+  - [Step 2](./ownership/step-2.md)
+  - [Step 3](./ownership/step-3.md)
+  - [What Doesn't Happen](./ownership/what-does-not-happen.md)
+  - [Step 4](./ownership/step-4.md)
+  - [Step 5](./ownership/step-5.md)
+  - [Hitting A Moved Error](./ownership/hitting-a-moved-error.md)
+  - [Moving Error Details](./ownership/moving-string-error-details.md)
+  - [Function Moves](./ownership/function-moves.md)
+  - [Function Move Errors](./ownership/function-move-errors.md)
+- [References](./references/index.md)
+  - [Step 1](./references/step-1.md)
+  - [Step 2](./references/step-2.md)
+  - [Working Example](./references/working-example.md)
+  - [Multiple References](./references/multiple-references.md)
+- [Mutable References](./mutable-references/index.md)
+
+# Holding Drafts
+
+- [References Holding]()
+
+  - [A Single Value](./references/a-single-value.md)
+  - [Using In A Function](./references/using-in-a-function.md)
+  - [Changing In A Function](./references/changing-in-a-function.md)
+  - [A Function Error](./references/a-function-error.md)
+
+- [Ownership And Moving](./strings/moving-strings.md)
+  - [Moving Error](./strings/moving-strings-error.md)
+- [Cloning](./cloning/index.md)
+  - [Separate Values](./cloning/separate-values.md)
+- [Binding Values From if](./if/binding-values.md)
+  - [Must Be The Same Type](./if/binding-values-must-be-the-same-type.md)
+  - [Mismatched Type Error](./if/mismatched-type-error.md)
+- [Sandbox](./sandbox/index.md)
 
 # Holding
 
@@ -183,3 +224,5 @@
 # Fizz Buzz
 
 - [Fizz Buzz](./fizz-buzz/index.md)
+
+# Sandbox

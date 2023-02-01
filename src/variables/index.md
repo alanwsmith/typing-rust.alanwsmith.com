@@ -1,7 +1,7 @@
 # Variables
 
-Now, let's take a look at variables. Basic Rust variables
-are created using the following structure:
+Basic Rust variables are created using this
+formula:
 
 1. The `let` keyword
 2. A name
@@ -9,27 +9,19 @@ are created using the following structure:
 4. The value
 5. A `;`
 
-Using `alfa` for the name and `7` for the value we
-get this:
+Text values can be created in Rust like this:
 
-```rust, noplayground
-let alfa = 7;
+```rust,noplayground
+String::from("apple")
 ```
 
-Using that line in we can create another full program
-that defines the `alfa` variable then prints it.
+Using that as a value and `alfa` for a name we
+come to this line based on our formula above:
 
-#### SOURCE CODE
-
-```rust,noplayground,EXAMPLE1
-fn main() {
-  let alfa = 7;
-  println!("alfa is {alfa}");
-}
+```rust,noplayground
+let alfa = String::from("apple");
 ```
 
-#### CODE RUNNER
-
-```rust,editable,CODE1
-
-```
+In Rust, setting variables is called "binding".
+So, the above line binds the text "apple"
+to the variable `alfa.
