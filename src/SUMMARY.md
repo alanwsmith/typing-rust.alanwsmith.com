@@ -2,10 +2,11 @@
 
 - [Introduction: Hello, World](./introduction/index.md)
   - [The Status Line](./introduction/status-line.md)
-- [Hello, World Explained](./hello-world/index.md)
+- [A Complete Program](./hello-world/index.md)
   - [The Parts](./hello-world/the-parts.md)
-  - [Quick Notes](./cards/index.md)
+- [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
+- [Printing](./printing/index.md)
   - [Variables In println!](./variables/variables-in-println.md)
 - [If Expressions](./if-expressions/index.md)
   - [If/Else](./if-expressions/if-else.md)
