@@ -32,18 +32,18 @@ const alfa_lines = [
 ]
 
 const goToPrevious = () => {
-  console.log("go to previous")
-}
-
-const goToNext = () => {
-  console.log("go to next")
-  if (alfa_step < alfa_lines.length) {
-    alfa_step += 1
-    window.previousButton.innerHTML = "Previous"
+  if (alfa_step > 0) {
+    alfa_step -= 1
     updateStepByStep(alfa_step)
   }
 }
 
+const goToNext = () => {
+  if (alfa_step < alfa_lines.length - 1) {
+    alfa_step += 1
+    updateStepByStep(alfa_step)
+  }
+}
 
 const updateStepByStep = (lines_index) => {
   const outputLines = [];
@@ -51,33 +51,41 @@ const updateStepByStep = (lines_index) => {
     outputLines.push(alfa_code[alfa_lines[lines_index][line_id]])
   }
   window.stepByStepCode.value = outputLines.join("\n")
+  if (alfa_step > 0) {
+    window.previousButton.innerHTML = "Previous"
+  } else {
+    window.previousButton.innerHTML = "--------"
+  }
+  if (alfa_step < alfa_lines.length - 1) {
+    window.nextButton.innerHTML = "Next"
+  } else {
+    window.nextButton.innerHTML = "----"
+  }
 }
 
 
 const setupStepByStep = () => {
   const d = document.createElement("textarea")
   d.id = `stepByStepCode`
-  const stepByStepText = document.createElement("div")
+  const stepByStepTextEl = document.createElement("div")
 
-  const stepByStepButtons = document.createElement("div")
-  stepByStepButtons.innerHTML = `<button id="previousButton">-------</button>
+  const stepByStepButtonEls = document.createElement("div")
+  stepByStepButtonEls.innerHTML = `<button id="previousButton">--------</button>
   <button id="nextButton">Next</button>`
 
-  stepByStepText.innerHTML = alfa_text[0]
+  stepByStepTextEl.innerHTML = alfa_text[0]
   d.cols = 70
   const outputLines = [];
   for (let indx in alfa_lines[0]) {
     outputLines.push(alfa_code[alfa_lines[0][indx]])
   }
   d.value = outputLines.join("\n");
-  // d.rows = outputLines.length;
   window["stepByStepDiv"].append(d);
-  window["stepByStepDiv"].append(stepByStepButtons);
-  window["stepByStepDiv"].append(stepByStepText);
+  window["stepByStepDiv"].append(stepByStepButtonEls);
+  window["stepByStepDiv"].append(stepByStepTextEl);
   window["previousButton"].addEventListener("click", goToPrevious)
   window["nextButton"].addEventListener("click", goToNext)
   setStepByStepCodeRowCount()
-
 }
 
 const setStepByStepCodeRowCount = () => {
@@ -88,8 +96,6 @@ const setStepByStepCodeRowCount = () => {
     }
   }
 }
-
-
 
 document.addEventListener("DOMContentLoaded", setupStepByStep);
 
