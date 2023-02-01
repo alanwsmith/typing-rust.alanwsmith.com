@@ -792,8 +792,24 @@ const updateStepByStep = (lines_index) => {
   }
 }
 
+const updateFromIndividualButton = (event) => {
+  const indexToSwitchTo = event.target.id.split("--")[1]
+  alfa_step = indexToSwitchTo
+  updateStepByStep(indexToSwitchTo)
+}
+
 
 const setupStepByStep = () => {
+
+  const individualButtonRowEl = document.createElement("div")
+
+  for (let i=0; i<alfa_lines.length; i ++) {
+    const individualButtonEl = document.createElement("button")
+    individualButtonEl.innerHTML = i + 1
+    individualButtonEl.id = `individualStep--${i}`
+    individualButtonRowEl.append(individualButtonEl)
+    individualButtonEl.addEventListener("click", updateFromIndividualButton)
+  }
 
   const outputLines = [];
   for (let indx in alfa_lines[0]) {
@@ -816,6 +832,7 @@ const setupStepByStep = () => {
   window["stepByStepDiv"].append(stepByStepCodeEl);
   window["stepByStepDiv"].append(stepByStepTextEl);
   window["stepByStepDiv"].append(stepByStepButtonEl);
+  window["stepByStepDiv"].append(individualButtonRowEl);
   window["previousButton"].addEventListener("click", goToPrevious)
   window["nextButton"].addEventListener("click", goToNext)
   setStepByStepCodeRowCount()
