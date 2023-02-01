@@ -1,10 +1,8 @@
 # Summary
 
 - [Hello, World](./introduction/index.md)
-- [The Status Line](./introduction/status-line.md)
-- [A Complete Program](./hello-world/index.md)
-- [Hello, World - The Parts](./hello-world/the-parts.md)
-- [Quick Notes](./cards/index.md)
+  - [The Status Line](./introduction/status-line.md)
+  - [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
 - [Printing Variables](./printing/index.md)
 - [Mutable Variables](./mutable-variables/index.md)
@@ -244,5 +242,10 @@
 # Fizz Buzz
 
 - [Fizz Buzz](./fizz-buzz/index.md)
+
+# For Review
+
+- [Hello, World - The Parts](./hello-world/the-parts.md)
+- [A Complete Program](./hello-world/index.md)
 
 # Sandbox

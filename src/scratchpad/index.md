@@ -1,5 +1,104 @@
 # Scratchpad
 
+## Step By Step Test
+
+<script>
+let alfa_step = 0;
+
+const renderCode = (code, lines) => {
+  document.createElement("div");
+  console.log('here');
+  // const loc = document.getElementById('source-code');
+  const loc = window['source-code'];
+  console.log(loc);
+}
+
+const alfa_text = [
+  `<p>The first thing to put in palce is our <code>main()</code>
+  function wrapper</p>`,
+  `<p>Next we create our <code>alfa</code> varaible and bind
+  the <code>String</code> value of &quot;apple&quot;</p>`,
+  `<p>Finally, we print out the value of the variable with 
+  <code>println!()</code>`
+]
+
+const alfa_code = `fn main() {
+  let alfa = String::from("apple");
+  println!("alfa is {alfa}");
+}`.split("\n");
+
+const alfa_lines = [
+  [0, 3], [0, 1, 3], [0, 1, 2, 3]
+]
+
+const goToPrevious = () => {
+  console.log("go to previous")
+}
+
+const goToNext = () => {
+  console.log("go to next")
+  if (alfa_step < alfa_lines.length) {
+    alfa_step += 1
+    window.previousButton.innerHTML = "Previous"
+    updateStepByStep(alfa_step)
+  }
+}
+
+
+const updateStepByStep = (lines_index) => {
+  const outputLines = [];
+  for (let line_id in alfa_lines[lines_index]) {
+    outputLines.push(alfa_code[alfa_lines[lines_index][line_id]])
+  }
+  window.stepByStepCode.value = outputLines.join("\n")
+}
+
+
+const setupStepByStep = () => {
+  const d = document.createElement("textarea")
+  d.id = `stepByStepCode`
+  const stepByStepText = document.createElement("div")
+
+  const stepByStepButtons = document.createElement("div")
+  stepByStepButtons.innerHTML = `<button id="previousButton">-------</button>
+  <button id="nextButton">Next</button>`
+
+  stepByStepText.innerHTML = alfa_text[0]
+  d.cols = 70
+  const outputLines = [];
+  for (let indx in alfa_lines[0]) {
+    outputLines.push(alfa_code[alfa_lines[0][indx]])
+  }
+  d.value = outputLines.join("\n");
+  // d.rows = outputLines.length;
+  window["stepByStepDiv"].append(d);
+  window["stepByStepDiv"].append(stepByStepButtons);
+  window["stepByStepDiv"].append(stepByStepText);
+  window["previousButton"].addEventListener("click", goToPrevious)
+  window["nextButton"].addEventListener("click", goToNext)
+  setStepByStepCodeRowCount()
+
+}
+
+const setStepByStepCodeRowCount = () => {
+  window.stepByStepCode.rows = 1
+  for (let lineIndex in alfa_lines) {
+    if (window.stepByStepCode.rows < alfa_lines[lineIndex].length) {
+      window.stepByStepCode.rows = alfa_lines[lineIndex].length
+    }
+  }
+}
+
+
+
+document.addEventListener("DOMContentLoaded", setupStepByStep);
+
+</script>
+
+<div id="stepByStepDiv"></div>
+
+---
+
 NOTE: These are in reverse order of how they were
 created so I don't have to keep scrolling down
 
@@ -85,15 +184,9 @@ fn widget(value: String) {
 }
 ```
 
-
 ---
 
 Other situaltions:
 
-combinging mutalbe and immutable 
-references. 
-
-
-
-
-
+combinging mutalbe and immutable
+references.
