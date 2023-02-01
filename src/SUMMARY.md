@@ -32,6 +32,10 @@
   - [Error Example](./references/function-argument-references-error.md)
 - [Mutable Function Argument References](./references/mutable-function-argument-references.md)
 
+# Prototype
+
+- [Prototype 1](./prototypes/1.md)
+
 # Scratchpad
 
 - [Scratchpad](./scratchpad/index.md)

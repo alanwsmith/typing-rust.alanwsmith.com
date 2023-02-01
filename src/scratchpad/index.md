@@ -2,6 +2,8 @@
 
 ## Step By Step Test
 
+This is the first prototype of the viewer.
+
 <script>
 let alfa_step = 0;
 
@@ -13,23 +15,49 @@ const renderCode = (code, lines) => {
   console.log(loc);
 }
 
-const alfa_text = [
-  `<p>The first thing to put in palce is our <code>main()</code>
-  function wrapper</p>`,
-  `<p>Next we create our <code>alfa</code> varaible and bind
-  the <code>String</code> value of &quot;apple&quot;</p>`,
-  `<p>Finally, we print out the value of the variable with 
-  <code>println!()</code>`
-]
 
-const alfa_code = `fn main() {
-  let alfa = String::from("apple");
+const alfa_code = `
+fn main() {
+  let mut alfa = String::from("apple");
+  widget(&mut alfa);
   println!("alfa is {alfa}");
-}`.split("\n");
+}
+
+fn widget(thing: &mut String) {
+  thing.push_str("pie");
+}
+
+/// Temp stuff below
+
+fn widget() {
+
+`.split("\n");
 
 const alfa_lines = [
-  [0, 3], [0, 1, 3], [0, 1, 2, 3]
+  [1, 5, 6, 13, 9], 
+  [1, 2, 5, 6, 13, 9], 
+  [1, 2, 3, 5, 6, 13, 9], 
+  [1, 2, 3, 5, 6, 7, 9], 
+  [1, 2, 3, 5, 6, 7, 8, 9], 
+  [1, 2, 3, 4, 5, 6, 7, 8, 9], 
 ]
+
+const alfa_text = [
+  `<p>Start with empty <code>main</code> and <code>widget</code>
+  functions</p>`,
+  `<p>Create a mutable <code>alfa</code> varaible bound to 
+  our <code>String</code></p>`,
+  `<p>Add a call to the <code>widget</code> function using
+  with a mutable reference to <code>alfa</code> as an argument.
+  </p>`,
+  `<p>Update the <code>widget</code> function to accept the
+  mutable refernce and bind it to a local variable named
+  <code>thing</code></p>`,
+  `<p>Make an update to the refernce</p>`,
+  `<p>Output the value of <code>alfa</code> to show it's changed<p>`
+]
+
+
 
 const goToPrevious = () => {
   if (alfa_step > 0) {
@@ -39,20 +67,21 @@ const goToPrevious = () => {
 }
 
 const goToNext = () => {
+  console.log(`goToNext incoming alfa_step: ${alfa_step}`)
   if (alfa_step < alfa_lines.length - 1) {
     alfa_step += 1
     updateStepByStep(alfa_step)
   }
 }
 
-const updateStepByStep = (lines_index) => {
+const updateStepByStep = () => {
   const outputLines = [];
-  for (let line_id in alfa_lines[lines_index]) {
-    outputLines.push(alfa_code[alfa_lines[lines_index][line_id]])
+  for (let line_id in alfa_lines[alfa_step]) {
+    outputLines.push(alfa_code[alfa_lines[alfa_step][line_id]])
   }
   window.stepByStepCode.value = outputLines.join("\n")
 
-  window.stepByStepText.innerHTML = alfa_text[lines_index]
+  window.stepByStepText.innerHTML = alfa_text[alfa_step]
 
   if (alfa_step > 0) {
     window.previousButton.innerHTML = "Previous"
@@ -67,23 +96,39 @@ const updateStepByStep = (lines_index) => {
 }
 
 const updateFromIndividualButton = (event) => {
-  const indexToSwitchTo = event.target.id.split("--")[1]
+  const indexToSwitchTo = parseInt(event.target.id.split("--")[1])
+  console.log(indexToSwitchTo)
   alfa_step = indexToSwitchTo
-  updateStepByStep(indexToSwitchTo)
+  updateStepByStep()
 }
-
 
 const setupStepByStep = () => {
 
-  const individualButtonRowEl = document.createElement("div")
+  const stepByStepButtonRowEl = document.createElement("div")
+
+  const previousStepButtonEl = document.createElement('button')
+  previousStepButtonEl.innerHTML = "&nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;"
+  previousStepButtonEl.id = "previousButton"
+  stepByStepButtonRowEl.append(previousStepButtonEl)
+
+
+  //stepByStepButtonEl.innerHTML = `<button id="previousButton">&nbsp;&nbsp;----&nbsp;&nbsp;</button>
+  //<button id="nextButton">Next</button>`
+
+  // const individualButtonRowEl = document.createElement("div")
 
   for (let i=0; i<alfa_lines.length; i ++) {
     const individualButtonEl = document.createElement("button")
     individualButtonEl.innerHTML = i + 1
     individualButtonEl.id = `individualStep--${i}`
-    individualButtonRowEl.append(individualButtonEl)
+    stepByStepButtonRowEl.append(individualButtonEl)
     individualButtonEl.addEventListener("click", updateFromIndividualButton)
   }
+
+  const nextStepButtonEl = document.createElement('button')
+  nextStepButtonEl.innerHTML = "Next"
+  nextStepButtonEl.id = "nextButton"
+  stepByStepButtonRowEl.append(nextStepButtonEl)
 
   const outputLines = [];
   for (let indx in alfa_lines[0]) {
@@ -95,9 +140,6 @@ const setupStepByStep = () => {
   stepByStepCodeEl.cols = 70
   stepByStepCodeEl.value = outputLines.join("\n");
 
-  const stepByStepButtonEl = document.createElement("div")
-  stepByStepButtonEl.innerHTML = `<button id="previousButton">&nbsp;&nbsp;----&nbsp;&nbsp;</button>
-  <button id="nextButton">Next</button>`
 
   const stepByStepTextEl = document.createElement("div")
   stepByStepTextEl.id = "stepByStepText"
@@ -105,11 +147,11 @@ const setupStepByStep = () => {
 
   window["stepByStepDiv"].append(stepByStepCodeEl);
   window["stepByStepDiv"].append(stepByStepTextEl);
-  window["stepByStepDiv"].append(stepByStepButtonEl);
-  window["stepByStepDiv"].append(individualButtonRowEl);
-  window["previousButton"].addEventListener("click", goToPrevious)
-  window["nextButton"].addEventListener("click", goToNext)
-  setStepByStepCodeRowCount()
+  window["stepByStepDiv"].append(stepByStepButtonRowEl);
+  // window["stepByStepDiv"].append(individualButtonRowEl);
+   window["previousButton"].addEventListener("click", goToPrevious)
+   window["nextButton"].addEventListener("click", goToNext)
+   setStepByStepCodeRowCount()
 }
 
 const setStepByStepCodeRowCount = () => {

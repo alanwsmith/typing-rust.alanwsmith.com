@@ -47,3 +47,7 @@
 button {
   font-family: monospace;
 }
+
+#stepByStepText {
+  min-height: 100px;
+}
