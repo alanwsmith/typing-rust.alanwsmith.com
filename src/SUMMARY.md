@@ -1,19 +1,52 @@
 # Summary
 
-- [Introduction: Hello, World](./introduction/index.md)
-  - [The Status Line](./introduction/status-line.md)
+- [Hello, World](./introduction/index.md)
+- [The Status Line](./introduction/status-line.md)
 - [A Complete Program](./hello-world/index.md)
-  - [The Parts](./hello-world/the-parts.md)
+- [Hello, World - The Parts](./hello-world/the-parts.md)
 - [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
+- [Mutable Variables](./mutable-variables/index.md)
+  - [Example](./mutable-variables/example.md)
 - [Printing](./printing/index.md)
-  - [Variables In println!](./variables/variables-in-println.md)
+- [Functions](./functions/index.md)
+  - [No Args Or Return Value](./functions/no-arguments-no-return-value.md)
+  - [Has Args But No Return Value](./functions/has-arguments-no-return-value.md)
+  - [No Args But Has Return Value](./functions/no-arguments-but-has-return-values.md)
+  - [With Args And Return Value](./functions/has-arguments-has-return-value.md)
+- [Ownership](./ownership/index.md)
+  - [Step 1](./ownership/step-1.md)
+  - [Step 2](./ownership/step-2.md)
+  - [Step 3](./ownership/step-3.md)
+  - [What Doesn't Happen](./ownership/what-does-not-happen.md)
+  - [Step 4](./ownership/step-4.md)
+  - [Step 5](./ownership/step-5.md)
+  - [Hitting A Moved Error](./ownership/hitting-a-moved-error.md)
+  - [Moving Error Details](./ownership/moving-string-error-details.md)
+- [References](./references/index.md)
+  - [Example](./references/example.md)
+  - [Step 1](./references/step-1.md)
+  - [Step 2](./references/step-2.md)
+  - [Working Example](./references/working-example.md)
+  - [Multiple References](./references/multiple-references.md)
+- [Function Argument References](./references/function-argument-references.md)
+  - [Error Example](./references/function-argument-references-error.md)
+- [Mutable Function Argument References](./references/mutable-function-argument-references.md)
+
+# Scratchpad
+
+- [Scratchpad](./scratchpad/index.md)
+
+# Pending
+
+- [Ownership Stuff]()
+  - [Function Moves](./ownership/function-moves.md)
+  - [Function Move Errors](./ownership/function-move-errors.md)
 - [If Expressions](./if-expressions/index.md)
   - [If/Else](./if-expressions/if-else.md)
 - [Comparison Operators](./operators/index.md)
 - [Variables With If Expressions](./variables-with-if-expressions/index.md)
   - [println! Variables](./variables-with-if-expressions/println-variables.md)
-- [Functions](./functions/index.md)
 - [Data Types](./data-types/index.md)
   - [i32](./data-types/i32.md)
 - [Function Arguments](./functions/arguments.md)
@@ -43,23 +76,8 @@
   - [Mutable Strings](./strings/mutable-strings.md)
 - [Difficulty Increasing](./concepts-ahead/index.md)
 - [Illustrations Incoming](./illustrations-incoming/index.md)
-- [Ownership](./ownership/index.md)
-  - [Step 1](./ownership/step-1.md)
-  - [Step 2](./ownership/step-2.md)
-  - [Step 3](./ownership/step-3.md)
-  - [What Doesn't Happen](./ownership/what-does-not-happen.md)
-  - [Step 4](./ownership/step-4.md)
-  - [Step 5](./ownership/step-5.md)
-  - [Hitting A Moved Error](./ownership/hitting-a-moved-error.md)
-  - [Moving Error Details](./ownership/moving-string-error-details.md)
-  - [Function Moves](./ownership/function-moves.md)
-  - [Function Move Errors](./ownership/function-move-errors.md)
-- [References](./references/index.md)
-  - [Step 1](./references/step-1.md)
-  - [Step 2](./references/step-2.md)
-  - [Working Example](./references/working-example.md)
-  - [Multiple References](./references/multiple-references.md)
-- [Mutable References](./mutable-references/index.md)
+- [References Old](./references/_index_old.md)
+- [Mutable References](./mutable-references/_index_old.md)
 
 # Holding Drafts
 
@@ -82,6 +100,7 @@
 # Holding
 
 - [While Loops](./while-loops/index.md)
+- [Variables In println!](./variables/variables-in-println.md)
 
 # Holding
 

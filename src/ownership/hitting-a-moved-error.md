@@ -28,11 +28,12 @@ we get an error that we'll discuss next.
 ```rust, noplayground, EXAMPLE1
 fn main() {
   let alfa = String::from("apple");
-  println!("alfa has {alfa}");
-
   let bravo = alfa;
-  println!("bravo has {bravo}");
 
+  // TODO Explaing how alfa is getting shuffled around
+  // e.g. if we move a requst for alfa after
+  // bravo has taken ownership of the value things
+  // error out.
   println!("alfa has {alfa}");
 }
 ```
