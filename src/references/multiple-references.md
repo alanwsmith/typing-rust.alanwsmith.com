@@ -9,7 +9,17 @@ Here's an illustration using two new
 variables `charlie` and `delta` that
 reference the original `alfa` value.
 
-And here's the code showing it working:
+![References Illustration](/images/references-3.png)
+
+And here's the code showing it working. It
+outputs:
+
+```txt
+alfa has apple
+bravo has apple
+charlie has apple
+delta has apple
+```
 
 ### SOURCE CODE
 

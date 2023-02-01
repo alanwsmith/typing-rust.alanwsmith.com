@@ -12,14 +12,12 @@ That looks like this:
 ```rust, noplayground, EXAMPLE1
 fn main() {
   let alfa = String::from("apple");
-  println!("call widget next");
-
   widget(&alfa);
   println!("alfa is {alfa}");
 }
 
-fn widget(value: &String) {
-  println!("widget got {value}");
+fn widget(thing: &String) {
+  println!("widget got {thing}");
 }
 ```
 

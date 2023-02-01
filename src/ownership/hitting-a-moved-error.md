@@ -30,10 +30,6 @@ fn main() {
   let alfa = String::from("apple");
   let bravo = alfa;
 
-  // TODO Explaing how alfa is getting shuffled around
-  // e.g. if we move a requst for alfa after
-  // bravo has taken ownership of the value things
-  // error out.
   println!("alfa has {alfa}");
 }
 ```

@@ -7,7 +7,8 @@ character like this:
 let bravo = &alfa;
 ```
 
-We'll represent the reference this way:
-
+We'll represent the reference this way where
 `alfa` still owns the `String` but `bravo`
 is connected to it as well.
+
+![References Illustration](/images/references-2.png)
