@@ -1,62 +1,18 @@
 # Functions
 
-Every program we've run so far has consisted of
-a single function called `main`. It's required
-in Rust programs, but it doesn't have to hold
-all the code. We can make other functions
-to make the code easier to deal with.
+Each program we make will have a `main()` funciton.
+It's the first things that gets executed.
 
-Creating another basic function follows the same
-pattern we used for main:
+We can create other functions as well. We'll use
+three types of functions with the following
+properties:
 
-1. `fn` starts the definition
-2. The name we want to use (which will be `alfa` in our example below)
-3. A set of `()` parenthesis to indicate no arguments will be passed
-4. The code block of the function surrounded by `{}` curly brackets.
+1. Does not accept arguments - Has no return value
+2. Accepts arguments - Has no return value
+3. Does not accept arguments - Does have a return value
+4. Accepts arguments - Does have a return value
 
-For example:
-
-```rust,noplayground
-fn alfa() {
-  println!("This is alfa");
-}
-```
-
-The way to use our `alfa` function is to "call" it.
-That's done by using it's name followed by an
-empty set of `()` parenthesis and the `;` to end
-the expression:
-
-```rust,noplayground
-alfa();
-```
-
-Here's a full exaple that defines our `alfa()`
-function and then a `main()` function that calls
-it when the program is run.
-
-The output will be:
-
-```txt
-Call alfa next
-This is alfa
-```
-
-### SOURCE CODE
-
-```rust, noplayground, EXAMPLE1
-fn main() {
-  println!("call alfa next");
-  alfa();
-}
-
-fn alfa() {
-  println!("this is alfa");
-}
-```
-
-### CODE RUNNER
-
-```rust, editable, CODE1
-
-```
+The formulas for each of the three types are
+on the next three pages. Don't worry too much
+about memorizing them. We'll use each plenty
+of times.

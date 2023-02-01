@@ -28,10 +28,7 @@ we get an error that we'll discuss next.
 ```rust, noplayground, EXAMPLE1
 fn main() {
   let alfa = String::from("apple");
-  println!("alfa has {alfa}");
-
   let bravo = alfa;
-  println!("bravo has {bravo}");
 
   println!("alfa has {alfa}");
 }

@@ -1,38 +1,19 @@
 # Mutable Variables
 
-If we want to set a variable to a new
-value we use the `mut` keyword. So,
-instead of
+Rust variables are immutalbe by default.
+The `mut` keyword makes them mutable
+so you can change them after they are
+set.
 
-```rust, noplayground
-let alfa = 7;
+For example, this makes an immutable variable:
+
+```rust,noplayground
+let alfa = String::from("apple");
 ```
 
-we use:
+And this version with `mut` makes a
+mutable one we can change the value of:
 
-```rust, noplayground
-let mut alfa = 7;
-```
-
-When we put that in place, our example
-works.
-
-#### SOURCE CODE
-
-```rust, noplayground, EXAMPLE1
-fn main() {
-
-  let mut alfa = 7;
-  println!("alfa is {}", alfa);
-
-  alfa = 9;
-  println!("alfa is {}", alfa);
-
-}
-```
-
-### CODE RUNNER
-
-```rust, editable, CODE1
-
+```rust,noplayground
+let mut alfa = String::from("apple");
 ```

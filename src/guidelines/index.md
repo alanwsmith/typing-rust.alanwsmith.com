@@ -42,3 +42,14 @@ total sense.
 - Avoid statements like "which we haven't talked about yet".
   If the person thinks about it at all, they'll know that's the
   case so there's littl point in mentioning it.
+
+- Don't dig into every possible option at the start with edge
+  cases. e.g. "In Rust, the `main()` function is used to kick
+  things off" works find without having to. "In most programs,
+  except for these types when its... whatever") It's like
+  taking an 80/20 thing where the statement needs to be accurate
+  but not all inclusive. Details of the different cases can
+  be dealt with later.
+
+- You can also use lanage like "basic variables are defined like"
+  instead of "variables are defined like".
