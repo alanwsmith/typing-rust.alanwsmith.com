@@ -51,14 +51,23 @@
   - [Step 5](./ownership/step-5.md)
   - [Hitting A Moved Error](./ownership/hitting-a-moved-error.md)
   - [Moving Error Details](./ownership/moving-string-error-details.md)
+  - [Function Moves](./ownership/function-moves.md)
+  - [Function Move Errors](./ownership/function-move-errors.md)
 - [References](./references/index.md)
   - [Step 1](./references/step-1.md)
+  - [Step 2](./references/step-2.md)
+  - [Working Example](./references/working-example.md)
+  - [Multiple References](./references/multiple-references.md)
+- [Mutable References](./mutable-references/index.md)
+
+# Holding Drafts
+
+- [References Holding]()
+
   - [A Single Value](./references/a-single-value.md)
   - [Using In A Function](./references/using-in-a-function.md)
   - [Changing In A Function](./references/changing-in-a-function.md)
   - [A Function Error](./references/a-function-error.md)
-
-# Holding Drafts
 
 - [Ownership And Moving](./strings/moving-strings.md)
   - [Moving Error](./strings/moving-strings-error.md)
