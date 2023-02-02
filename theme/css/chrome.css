@@ -2,12 +2,15 @@
 
 @import 'variables.css';
 
+/*
 ::-webkit-scrollbar {
   background: var(--bg);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar);
 }
+*/
+
 html {
   scrollbar-color: var(--scrollbar) var(--bg);
 }
@@ -264,9 +267,11 @@ pre > .buttons button {
     padding: 0.3rem 1rem;
   }
 }
+/*
 pre > code {
   padding: 1rem;
 }
+*/
 
 /* FIXME: ACE editors overlap their buttons because ACE does absolute
    positioning within the code block which breaks padding. The only solution I

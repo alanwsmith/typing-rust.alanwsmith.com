@@ -1,5 +1,47 @@
 # Scratchpad
 
+## Step By Step
+
+<script>
+const rawSourceCode = `fn main() {
+  let alfa = String::from("apple");
+  show_value(&alfa);
+  println!("alfa is {alfa}");
+}
+
+fn show_value(value: &String) { 
+  println!("show_value got {value}");
+}`.split('\n')
+
+
+const lineSets = [
+{ lines: [],
+text: ""
+},
+{ lines: [`0_r`, `0_s`,`0_s`,`0_s`,`0_r`,`0_s`,`0_s`,`0_s`,`0_s`,],
+text: "<p>here 1</p>"
+},
+{ lines: [`0_c`, `0_s`,`0_s`,`0_s`,`0_c`,`0_s`,`0_r`,`0_s`,`0_r`,],
+text: "<p>here 1</p>"
+},
+{ lines: [`0_c`, `0_s`,`0_s`,`0_s`,`0_c`,`0_s`,`0_c`,`0_r`,`0_c`,],
+text: "<p>here 1</p>"
+},
+{ lines: [`0_c`, `0_r`,`0_s`,`0_s`,`0_c`,`0_s`,`0_c`,`0_c`,`0_c`,],
+text: "<p>here 1</p>"
+},
+{ lines: [`0_c`, `0_c`,`0_r`,`0_s`,`0_c`,`0_s`,`0_c`,`0_c`,`0_c`,],
+text: "<p>here 1</p>"
+},
+{ lines: [`0_c`, `0_c`,`0_c`,`0_r`,`0_c`,`0_s`,`0_c`,`0_c`,`0_c`,],
+text: "<p>here 1</p>"
+},
+{ lines: [`0_c`, `0_c`,`0_c`,`0_c`,`0_c`,`0_s`,`0_c`,`0_c`,`0_c`,],
+text: "<p>here</p>"
+}
+]
+</script>
+
 ## Step By Step Test
 
 This is the first prototype of the viewer.

@@ -1,8 +1,8 @@
 # Summary
 
 - [Hello, World](./introduction/index.md)
-  - [The Status Line](./introduction/status-line.md)
-  - [Quick Notes](./cards/index.md)
+- [The Status Line](./introduction/status-line.md)
+- [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
 - [Printing Variables](./printing/index.md)
 - [Mutable Variables](./mutable-variables/index.md)
@@ -31,6 +31,10 @@
   - [With Variables](./references/function-argument-references-with-variables.md)
   - [Error Example](./references/function-argument-references-error.md)
 - [Mutable Function Argument References](./references/mutable-function-argument-references.md)
+
+# Prototypes
+
+- [Prototype 1](./prototypes/1.md)
 
 # Scratchpad
 

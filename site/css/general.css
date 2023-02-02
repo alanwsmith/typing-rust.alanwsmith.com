@@ -21,10 +21,12 @@ body {
     overflow-x: hidden;
 }
 
+/*
 code {
     font-family: var(--mono-font) !important;
     font-size: var(--code-font-size);
 }
+*/
 
 /* make long words/inline code not x overflow */
 main {

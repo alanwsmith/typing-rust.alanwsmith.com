@@ -28,7 +28,6 @@ Give it a shot in the Code Runner:
 ```rust, noplayground, EXAMPLE1
 fn main() {
   let alfa = String::from("apple");
-
   println!("alfa is {alfa}");
 }
 ```
