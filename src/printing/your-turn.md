@@ -1,5 +1,7 @@
 # Printing Variables - Your Turn
 
+Here's the same code to try yourself.
+
 ### SOURCE CODE
 
 ```rust, noplayground, EXAMPLE1

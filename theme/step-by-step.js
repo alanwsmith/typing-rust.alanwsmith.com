@@ -107,6 +107,7 @@ const makePreLines = () => {
 const makeBaseLines = () => {
   s.sourceCode.forEach((sourceLineBatch, batchIndex) => {
     sourceLineBatch.forEach((sourceLine, lineIndex) => {
+      // The main line that shows line numbers and highlighting
       const newLineRust = document.createElement('pre')
       newLineRust.classList.add('language-rust')
       newLineRust.classList.add('codeLineMarker')
@@ -118,6 +119,7 @@ const makeBaseLines = () => {
       newLineRust.classList.remove('hljs')
       window[`codeLineWrapper${batchIndex}`].appendChild(newLineRust)
 
+      // Shows the source code line directly with no highlights
       const newLineCustom = document.createElement('pre')
       newLineCustom.id = `codeLine_${batchIndex}_${lineIndex}_c`
       newLineCustom.innerHTML = `${sourceLine} `
@@ -125,12 +127,37 @@ const makeBaseLines = () => {
       newLineCustom.classList.add('codeLineMarker')
       window[`codeLineWrapper${batchIndex}`].appendChild(newLineCustom)
 
+      // Shows `out:` along with the line
+      const newLineOutput = document.createElement('pre')
+      newLineOutput.id = `codeLine_${batchIndex}_${lineIndex}_o`
+      newLineOutput.innerHTML = `${sourceLine} `
+      newLineOutput.classList.add('hideit')
+      newLineOutput.classList.add('codeLineMarker')
+      window[`codeLineWrapper${batchIndex}`].appendChild(newLineOutput)
+
+      // For spaces which is empty line but have a line number
       const newLineSpacer = document.createElement('pre')
       newLineSpacer.id = `codeLine_${batchIndex}_${lineIndex}_s`
       newLineSpacer.innerHTML = ` `
       newLineSpacer.classList.add('hideit')
       newLineSpacer.classList.add('codeLineMarker')
       window[`codeLineWrapper${batchIndex}`].appendChild(newLineSpacer)
+
+      // For empty lines that are black and have no line number
+      const newLineEmpty = document.createElement('pre')
+      newLineEmpty.id = `codeLine_${batchIndex}_${lineIndex}_e`
+      newLineEmpty.innerHTML = ` `
+      newLineEmpty.classList.add('hideit')
+      newLineEmpty.classList.add('codeLineMarker')
+      window[`codeLineWrapper${batchIndex}`].appendChild(newLineEmpty)
+
+      // For waiting which shows `out:` without the output
+      const newLineWaiting = document.createElement('pre')
+      newLineWaiting.id = `codeLine_${batchIndex}_${lineIndex}_w`
+      newLineWaiting.innerHTML = ` `
+      newLineWaiting.classList.add('hideit')
+      newLineWaiting.classList.add('codeLineMarker')
+      window[`codeLineWrapper${batchIndex}`].appendChild(newLineWaiting)
     })
   })
 }
@@ -185,16 +212,28 @@ const addPointers = () => {
 
 const updatePointers = () => {
   for (let lineIndex = 0; lineIndex < s.sourceCode.length; lineIndex++) {
+    let lineCode = lineSets[s.currentLineSet].lines[lineIndex].split('_')[1]
     let numberString = lineIndex < 9 ? `0${lineIndex + 1}` : lineIndex + 1
     // clear if yo're at complete
     if (s.currentLineSet === 0) {
-      window[`pointer_${lineIndex}`].innerHTML = `${numberString}  `
+      if (lineCode === 'o') {
+        window[
+          `pointer_${lineIndex}`
+        ].innerHTML = `<code class="bold">out:</code>`
+      } else if (lineCode === 'e') {
+        window[`pointer_${lineIndex}`].innerHTML = ` `
+      } else {
+        window[`pointer_${lineIndex}`].innerHTML = `${numberString}  `
+      }
     } else {
-      let lineCode = lineSets[s.currentLineSet].lines[lineIndex].split('_')[1]
       if (lineCode === 'r') {
         window[
           `pointer_${lineIndex}`
-        ].innerHTML = `${numberString} <code class="bold">&gt;</code>`
+        ].innerHTML = `${numberString}<code class="bold"> &gt;</code>`
+      } else if (lineCode === 'w') {
+        window[`pointer_${lineIndex}`].innerHTML = `<code>out:</code>`
+      } else if (lineCode === 'e') {
+        window[`pointer_${lineIndex}`].innerHTML = `<code>  </code>`
       } else {
         window[`pointer_${lineIndex}`].innerHTML = `${numberString}  `
       }

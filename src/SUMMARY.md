@@ -2,18 +2,24 @@
 
 - [Hello, World](./introduction/index.md)
   - [Your Turn](./introduction/your-turn.md)
+- [The Status Line](./introduction/status-line.md)
 - [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
 - [Printing Variables](./printing/index.md)
+  - [Step By Step](./printing/step-by-step.md)
   - [Your Turn](./printing/your-turn.md)
 - [Mutable Variables](./mutable-variables/index.md)
-  - [Example](./mutable-variables/example.md)
+  - [Step By Step](./mutable-variables/example.md)
   - [Your Turn](./mutable-variables/your-turn.md)
 - [Functions](./functions/index.md)
   - [No Args Or Return Value](./functions/no-arguments-no-return-value.md)
+    - [Your Turn](./functions/no-arguments-no-return-value-your-turn.md)
   - [Has Args But No Return Value](./functions/has-arguments-no-return-value.md)
+    - [Your Turn](./functions/has-arguments-no-return-value-your-turn.md)
   - [No Args But Has Return Value](./functions/no-arguments-but-has-return-values.md)
+    - [Your Turn](./functions/no-arguments-but-has-return-values-your-turn.md)
   - [With Args And Return Value](./functions/has-arguments-has-return-value.md)
+    - [Your Turn](./functions/has-arguments-has-return-value-your-turn.md)
 - [Ownership](./ownership/index.md)
   - [Step 1](./ownership/step-1.md)
   - [Step 2](./ownership/step-2.md)
@@ -246,8 +252,6 @@
   - [Nested Loops](./loops/nested-loops.md)
 
 # Holding
-
-- [The Status Line](./introduction/status-line.md)
 
 # Fizz Buzz
 

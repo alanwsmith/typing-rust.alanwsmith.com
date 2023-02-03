@@ -3,11 +3,14 @@
 Hi. I'm Alan and I'm building this site to
 learn Rust.
 
-I've setup two interactive features of the site.
-An example of the first one is below. It's
-a "Step By Step" explination of code. The
-steps add code along with an explanation
-of what's changing.
+The site has traditional pages and code samples
+as well as two interactive features. The
+first is a "Step By Step" explination
+of the code examples. Each step some code
+and provides an explination of what's happening.
+
+Here's one with two steps for a program
+that print out "Hello, World".
 
 #### Step By Step
 

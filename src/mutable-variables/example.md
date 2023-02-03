@@ -1,7 +1,14 @@
-# Mutable Variables Example
+# Mutable Variables - Step By Step
 
-The `.push_str()` method lets us add more
-text to a mutable variable.
+One way to change a mutable string is to use
+`.push_str()` to add more characters
+to the end of it.
+
+Here's an example that
+create a mutable variable with a `String`
+bound to it, adds more text
+to it with `.push_str()`, and then
+prints it out:
 
 #### Step By Step
 
@@ -20,19 +27,19 @@ const lineSets = [
 },
 { 
   lines: [`0_r`, `0_s`,`0_s`, `0_s`, `0_r`],
-  text: `<p>Start out with the standard <code>mian</code> function</p>`,
+  text: `<p>We start with the standard <code>mian</code> function</p>`,
 },
 { 
   lines: [`0_c`, `0_r`,`0_s`, `0_s`,`0_c`],
-  text: `<p>Use the <code>mut</code> keyword to create a mutable variable named <code>alfa</code> with a <code>String</code> of <code>apple</code> bound to it.<p>`
+  text: `<p>Use the <code>mut</code> keyword to create a mutable variable named <code>alfa</code> with a <code>String</code> of <code>apple</code> bound to it<p>`
 },
 { 
   lines: [`0_c`, `0_c`,`0_r`, `0_s`,`0_c`],
-  text: `<p>Then we add the <code>println!()</code> statement that outputs the text of the <code>String</code> when the program is run</p>`
+  text: `<p>Next, add a <code>.push_str()</code> expression to push <code>pie</code> onto the end of the string</p>`
 },
 { 
   lines: [`0_c`, `0_c`,`0_c`, `0_r`,`0_c`],
-  text: `<p>The last step is to print output which shows use the value of the variable.</p>`
+  text: `<p>The last step is to print output which shows use the value of the variable</p>`
 },
 
 ]

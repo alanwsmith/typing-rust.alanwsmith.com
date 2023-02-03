@@ -1,9 +1,10 @@
 # Mutable Variables
 
-Rust variables are immutalbe by default.
-The `mut` keyword makes them mutable
-so they can be changed after they are
-created.
+Rust variables are immutalbe by default. That means
+you can't change them after they've been set.
+
+The `mut` keyword makes them mutable allowing them
+to be changed after they are created.
 
 Here's an example of a standard immutable variable:
 
@@ -11,10 +12,10 @@ Here's an example of a standard immutable variable:
 let alfa = String::from("apple");
 ```
 
-Updating that line like this to include the
-`mut` keyword before the variable names
-makes it mutable.
+And here's the same binding but with the `mut`
+keyword that make the variable mutable.
 
 ```rust,noplayground
 let mut alfa = String::from("apple");
+    ↑↑↑
 ```

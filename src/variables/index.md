@@ -7,11 +7,11 @@ formula:
 2. A name
 3. The `=` sign
 4. The value
-5. A `;`
+5. A `;` character
 
 The values for a string of text looks like this:
 `String::from("apple")`. Using that and `alfa` for
-the name this is how we create a variable:
+the name we can create a variable like this:
 
 ```rust,noplayground
 let alfa = String::from("apple");
@@ -19,4 +19,4 @@ let alfa = String::from("apple");
 
 In Rust, setting variables is called "binding".
 So, the above line binds a `String` with the
-text "apple" to the variable `alfa.
+text "apple" to the variable `alfa`.

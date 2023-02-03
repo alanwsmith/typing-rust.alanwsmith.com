@@ -10,32 +10,34 @@ const rawSourceCode = `fn main() {
 
 fn widget(thing: String) {
   println!("widget got {thing}");
-}`.split('\n')
+}
+
+widget got apple`.split('\n')
 
 
 const lineSets = [
 { 
-  lines: [`0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`],
+  lines: [`0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_e`, `0_o`],
   text: `<p></p>`
 },
 { 
-  lines: [`0_r`, `0_s`, `0_s`, `0_r`, `0_s`, `0_s`, `0_s`, `0_s`],
+  lines: [`0_r`, `0_s`, `0_s`, `0_r`, `0_s`, `0_s`, `0_s`, `0_s`, `0_e`, `0_w`],
   text: `<p></p>`
 },
 { 
-  lines: [`0_c`, `0_s`, `0_s`, `0_c`, `0_s`, `0_r`, `0_s`, `0_r`],
+  lines: [`0_c`, `0_s`, `0_s`, `0_c`, `0_s`, `0_r`, `0_s`, `0_r`, `0_e`, `0_w`],
   text: `<p></p>`
 },
 { 
-  lines: [`0_c`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_r`, `0_c`],
+  lines: [`0_c`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_r`, `0_c`, `0_e`, `0_w`],
   text: `<p></p>`
 },
 { 
-  lines: [`0_c`, `0_r`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`],
+  lines: [`0_c`, `0_r`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_e`, `0_w`],
   text: `<p></p>`
 },
 { 
-  lines: [`0_c`, `0_c`, `0_r`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`],
+  lines: [`0_c`, `0_c`, `0_r`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_e`, `0_w`],
   text: `<p></p>`
 },
 ]
