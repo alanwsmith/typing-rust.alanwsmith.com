@@ -19,6 +19,7 @@ The letters are:
 - s = blanked out but with line number
 - e = blanked out, no line number
 - c = no syntax highlighting, with line number
+- u = update <code> blocks lighlighted and line numbers with pointers
 - o = "out:"
 
 */
@@ -102,7 +103,12 @@ const updateLines = () => {
       }
     }
   }
-  window.contentArea.innerHTML = lineSets[s.currentLineSet].text
+  window.contentAreaText.innerHTML = lineSets[s.currentLineSet].text
+  if (s.currentLineSet === 0) {
+    window.contentAreaNumber.innerHTML = `Output`
+  } else {
+    window.contentAreaNumber.innerHTML = `Step ${s.currentLineSet}`
+  }
 }
 
 const updateButtons = () => {
@@ -151,6 +157,31 @@ const makeBaseLines = () => {
       newLineCustom.classList.add('hideit')
       newLineCustom.classList.add('codeLineMarker')
       window[`codeLineWrapper${batchIndex}`].appendChild(newLineCustom)
+
+      // const codeEls = newLineCustom.getElementsByTagName('code')
+      // for (let codeIndex = 0; codeIndex < codeEls.length; codeIndex++) {
+      //   console.log(codeEls[codeIndex])
+      //   codeEls[codeIndex].classList.add('language-rust')
+      //   codeEls[codeIndex].classList.add('hljs')
+      //   hljs.highlightBlock(codeEls[codeIndex])
+      //   codeEls[codeIndex].classList.remove('hljs')
+      // }
+
+      // Shows the source code line directly with no highlights
+      const newLineUpdate = document.createElement('pre')
+      newLineUpdate.id = `codeLine_${batchIndex}_${lineIndex}_u`
+      newLineUpdate.innerHTML = `${sourceLine} `
+      newLineUpdate.classList.add('hideit')
+      newLineUpdate.classList.add('codeLineMarker')
+      window[`codeLineWrapper${batchIndex}`].appendChild(newLineUpdate)
+      const codeEls = newLineUpdate.getElementsByTagName('code')
+      for (let codeIndex = 0; codeIndex < codeEls.length; codeIndex++) {
+        console.log(codeEls[codeIndex])
+        codeEls[codeIndex].classList.add('language-rust')
+        codeEls[codeIndex].classList.add('hljs')
+        hljs.highlightBlock(codeEls[codeIndex])
+        codeEls[codeIndex].classList.remove('hljs')
+      }
 
       // Shows `out:` along with the line
       const newLineOutput = document.createElement('pre')
@@ -255,6 +286,10 @@ const updatePointers = () => {
         window[
           `pointer_${lineIndex}`
         ].innerHTML = `${numberString}<code class="bold"> &gt;</code>`
+      } else if (lineCode === 'u') {
+        window[
+          `pointer_${lineIndex}`
+        ].innerHTML = `${numberString}<code class="bold"> &gt;</code>`
       } else if (lineCode === 'w') {
         window[`pointer_${lineIndex}`].innerHTML = `<code>out:</code>`
       } else if (lineCode === 'e') {
@@ -270,7 +305,10 @@ const buildElements = () => {
   const stepByStepAreaEl = document.createElement('div')
   stepByStepAreaEl.id = 'stepByStepArea'
   stepByStepAreaEl.innerHTML = `
-  <div id="contentArea"></div>
+  <div id="contentArea">
+    <h5 id="contentAreaNumber"></h5>
+    <div id="contentAreaText"></div>
+  </div>
   <div id="codeBucket">
     <div id="codeGutter"></div>
     <div id="codeBlock"></div>
