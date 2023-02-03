@@ -14,9 +14,7 @@ it like this:
 println!("alfa is {alfa}");
 ```
 
-Here's an example of how to use it.
-
-## Step By Step
+#### Step By Step
 
 <script>
 const rawSourceCode = `fn main() {

@@ -11,7 +11,7 @@ const loadSourceCode = () => {
 }
 
 const s = {
-  currentLineSet: 0,
+  currentLineSet: 1,
   lineMarkers: [],
 }
 
@@ -45,7 +45,7 @@ const handleNextButtonClick = () => {
 }
 
 const handlePreviousButtonClick = () => {
-  if (s.currentLineSet > 1) {
+  if (s.currentLineSet > 0) {
     s.currentLineSet -= 1
   }
   updateLines()
@@ -178,20 +178,20 @@ const addPointers = () => {
 
 const updatePointers = () => {
   for (let lineIndex = 0; lineIndex < s.sourceCode.length; lineIndex++) {
-    // log(lineSets[s.currentLineSet].lines[lineIndex])
-    let lineCode = lineSets[s.currentLineSet].lines[lineIndex].split('_')[1]
     let numberString = lineIndex < 9 ? `0${lineIndex + 1}` : lineIndex + 1
-    if (lineCode === 'r') {
-      window[
-        `pointer_${lineIndex}`
-      ].innerHTML = `${numberString} <code class="bold">&gt;</code>`
-    } else {
+    // clear if yo're at complete
+    if (s.currentLineSet === 0) {
       window[`pointer_${lineIndex}`].innerHTML = `${numberString}  `
+    } else {
+      let lineCode = lineSets[s.currentLineSet].lines[lineIndex].split('_')[1]
+      if (lineCode === 'r') {
+        window[
+          `pointer_${lineIndex}`
+        ].innerHTML = `${numberString} <code class="bold">&gt;</code>`
+      } else {
+        window[`pointer_${lineIndex}`].innerHTML = `${numberString}  `
+      }
     }
-    // log(lineCode)
-    //   const newPointerEl = document.createElement('pre')
-    //   newPointerEl.innerHTML = lineIndex + 1
-    //   window.codeGutter.appendChild(newPointerEl)
   }
 }
 
@@ -199,12 +199,11 @@ const buildElements = () => {
   const stepByStepAreaEl = document.createElement('div')
   stepByStepAreaEl.id = 'stepByStepArea'
   stepByStepAreaEl.innerHTML = `
-  <div id="contentArea"></div>
   <div id="codeBucket">
     <div id="codeGutter"></div>
     <div id="codeBlock"></div>
   </div>
-  <div id="spacer"></div>
+  <div id="contentArea"></div>
   <div id="buttonWrapper"></div>
 `
   window['step-by-step'].insertAdjacentElement('afterend', stepByStepAreaEl)
@@ -219,10 +218,10 @@ const stepByStepReadyUp = () => {
     updateLines()
     addPointers()
     updatePointers()
-    addCompleteButton()
     addPreviousButton()
     addButtons()
     addNextButton()
+    addCompleteButton()
     updateButtons()
   }
 }

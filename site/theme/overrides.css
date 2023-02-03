@@ -279,7 +279,7 @@ pre[class*='language-'].line-numbers > code {
 
 #contentArea {
   min-height: 23rem;
-  background-color: #667;
+  border: 1px solid #777;
   border-radius: 0.4rem;
   margin-right: 0.4rem;
   padding-right: 0.7rem;
@@ -293,6 +293,7 @@ pre[class*='language-'].line-numbers > code {
 #codeBlock {
   min-height: 20rem;
   background-color: #000;
+  border: 1px solid #777;
   border-top-right-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
   padding: 0.7rem;
@@ -314,7 +315,7 @@ x_pre {
 
 #stepByStepArea {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 #buttonWrapper {
@@ -322,11 +323,15 @@ x_pre {
 }
 
 #nextSet {
-  margin-left: 0.6rem;
+  margin-left: 0.5rem;
 }
 
 #previousSet {
-  margin-right: 0.6rem;
+  margin-right: 0.5rem;
+}
+
+#completeSet {
+  margin-left: 1.9rem;
 }
 
 /*
