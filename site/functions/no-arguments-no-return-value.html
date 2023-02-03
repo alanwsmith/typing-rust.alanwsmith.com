@@ -156,21 +156,70 @@ arguments and return no values is:</p>
 <p>Calling functions without arguments is done using its
 name followed by empty <code>()</code>, like:</p>
 <pre><code class="language-rust  noplayground">widget();</code></pre>
-<p>Here's a full example that print:</p>
-<pre><code class="language-txt">call widget next
-this is widget
-</code></pre>
-<h3 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h3>
-<pre><code class="language-rust  noplayground  EXAMPLE1">fn main() {
-  println!(&quot;call widget next&quot;);
+<h4 id="step-by-step"><a class="header" href="#step-by-step">Step By Step</a></h4>
+<script>
+const rawSourceCode = `fn main() {
   widget();
 }
 
 fn widget() {
-  println!(&quot;this is widget&quot;);
-}</code></pre>
-<h3 id="code-runner"><a class="header" href="#code-runner">CODE RUNNER</a></h3>
-<pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
+  println!("this is widget");
+}`.split('\n')
+
+
+const lineSets = [
+{ 
+  lines: [`0_r`, `0_r`,`0_r`,`0_r`, `0_r`, `0_r`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_r`, `0_s`,`0_r`,`0_s`, `0_s`, `0_s`, `0_s`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_s`,`0_c`,`0_s`, `0_r`, `0_s`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_s`,`0_c`,`0_s`, `0_c`, `0_r`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_r`,`0_c`,`0_s`, `0_c`, `0_c`, `0_c`],
+  text: `<p></p>`
+},
+
+]
+
+</script>
+<!--
+
+Here's a full example that print:
+
+```txt
+call widget next
+this is widget
+```
+
+### SOURCE CODE
+
+```rust, noplayground, EXAMPLE1
+fn main() {
+  println!("call widget next");
+  widget();
+}
+
+fn widget() {
+  println!("this is widget");
+}
+```
+
+### CODE RUNNER
+
+```rust, editable, CODE1
+
+```
+-->
 
                     </main>
 

@@ -143,12 +143,13 @@
                         <h1 id="mutable-variables"><a class="header" href="#mutable-variables">Mutable Variables</a></h1>
 <p>Rust variables are immutalbe by default.
 The <code>mut</code> keyword makes them mutable
-so you can change them after they are
-set.</p>
-<p>For example, this makes an immutable variable:</p>
+so they can be changed after they are
+created.</p>
+<p>Here's an example of a standard immutable variable:</p>
 <pre><code class="language-rust noplayground">let alfa = String::from(&quot;apple&quot;);</code></pre>
-<p>And this version with <code>mut</code> makes a
-mutable one we can change the value of:</p>
+<p>Updating that line like this to include the
+<code>mut</code> keyword before the variable names
+makes it mutable.</p>
 <pre><code class="language-rust noplayground">let mut alfa = String::from(&quot;apple&quot;);</code></pre>
 
                     </main>

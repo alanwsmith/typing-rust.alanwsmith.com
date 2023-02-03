@@ -141,23 +141,96 @@
                         <div id="debugLine" style="color: red; font-family: monospace;"></div>
                         -->
                         <h1 id="mutable-variables-example"><a class="header" href="#mutable-variables-example">Mutable Variables Example</a></h1>
-<p>We can more characters to a <code>String</code>
-value with <code>.push_str()</code> if the
-variable is mutable. Here's an example
-that outputs:</p>
-<pre><code class="language-txt">alfa is apple
-alfa is apple-pie
-</code></pre>
-<h3 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h3>
-<pre><code class="language-rust  noplayground  EXAMPLE1">fn main() {
-  let mut alfa = String::from(&quot;apple&quot;);
-  println!(&quot;alfa is {alfa}&quot;);
+<p>The <code>.push_str()</code> method lets us add more
+text to a mutable variable.</p>
+<h4 id="step-by-step"><a class="header" href="#step-by-step">Step By Step</a></h4>
+<script>
+const rawSourceCode = `fn main() {
+  let mut alfa = String::from("apple");
+  alfa.push_str("pie");
+  println!("alfa is {alfa}");
+}`.split('\n')
 
-  alfa.push_str(&quot;-pie&quot;);
-  println!(&quot;alfa is {alfa}&quot;);
-}</code></pre>
-<h3 id="code-runner"><a class="header" href="#code-runner">CODE RUNNER</a></h3>
-<pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
+
+const lineSets = [
+{ 
+  lines: [`0_r`, `0_r`,`0_r`,`0_r`, `0_r`],
+  text: `<p>The output from the program is <code>alfa is applepie</code></p>`
+},
+{ 
+  lines: [`0_r`, `0_s`,`0_s`, `0_s`, `0_r`],
+  text: `<p>Start out with the standard <code>mian</code> function</p>`,
+},
+{ 
+  lines: [`0_c`, `0_r`,`0_s`, `0_s`,`0_c`],
+  text: `<p>Use the <code>mut</code> keyword to create a mutable variable named <code>alfa</code> with a <code>String</code> of <code>apple</code> bound to it.<p>`
+},
+{ 
+  lines: [`0_c`, `0_c`,`0_r`, `0_s`,`0_c`],
+  text: `<p>Then we add the <code>println!()</code> statement that outputs the text of the <code>String</code> when the program is run</p>`
+},
+{ 
+  lines: [`0_c`, `0_c`,`0_c`, `0_r`,`0_c`],
+  text: `<p>The last step is to print output which shows use the value of the variable.</p>`
+},
+
+]
+
+</script>
+<!--
+
+---
+
+Here's a full program to demonstrate that. It
+outputs:
+
+```txt
+alfa is apple
+```
+
+Give it a shot in the Code Runner:
+
+### SOURCE CODE
+
+```rust, noplayground, EXAMPLE1
+fn main() {
+  let alfa = String::from("apple");
+  println!("alfa is {alfa}");
+}
+```
+
+### CODE RUNNER
+
+```rust, editable, CODE1
+
+```
+
+-->
+<!--
+
+```txt
+alfa is apple
+alfa is apple-pie
+```
+
+### SOURCE CODE
+
+```rust, noplayground, EXAMPLE1
+fn main() {
+  let mut alfa = String::from("apple");
+  println!("alfa is {alfa}");
+
+  alfa.push_str("-pie");
+  println!("alfa is {alfa}");
+}
+```
+
+### CODE RUNNER
+
+```rust, editable, CODE1
+
+```
+-->
 
                     </main>
 

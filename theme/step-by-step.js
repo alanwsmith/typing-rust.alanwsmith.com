@@ -34,19 +34,26 @@ const handleCompleteButtonClick = () => {
 }
 
 const handleNextButtonClick = () => {
-  if (s.currentLineSet < lineSets.length - 1) {
-    s.currentLineSet += 1
-  } else {
-    s.currentLineSet = 0
+  if (s.currentLineSet !== 0) {
+    if (s.currentLineSet < lineSets.length - 1) {
+      s.currentLineSet += 1
+    } else {
+      s.currentLineSet = 0
+    }
   }
+
   updateLines()
   updateButtons()
   updatePointers()
 }
 
 const handlePreviousButtonClick = () => {
-  if (s.currentLineSet > 0) {
-    s.currentLineSet -= 1
+  if (s.currentLineSet === 0) {
+    s.currentLineSet = lineSets.length - 1
+  } else {
+    if (s.currentLineSet > 1) {
+      s.currentLineSet -= 1
+    }
   }
   updateLines()
   updateButtons()
@@ -199,11 +206,12 @@ const buildElements = () => {
   const stepByStepAreaEl = document.createElement('div')
   stepByStepAreaEl.id = 'stepByStepArea'
   stepByStepAreaEl.innerHTML = `
+  <div id="contentArea"></div>
   <div id="codeBucket">
     <div id="codeGutter"></div>
     <div id="codeBlock"></div>
   </div>
-  <div id="contentArea"></div>
+  <div id="contentAreaPlaceholder"></div>
   <div id="buttonWrapper"></div>
 `
   window['step-by-step'].insertAdjacentElement('afterend', stepByStepAreaEl)
@@ -220,8 +228,8 @@ const stepByStepReadyUp = () => {
     updatePointers()
     addPreviousButton()
     addButtons()
-    addNextButton()
     addCompleteButton()
+    addNextButton()
     updateButtons()
   }
 }

@@ -284,6 +284,7 @@ pre[class*='language-'].line-numbers > code {
   margin-right: 0.4rem;
   padding-right: 0.7rem;
   padding-left: 0.7rem;
+  background-color: #223;
 }
 
 #codeCol {
@@ -315,7 +316,7 @@ x_pre {
 
 #stepByStepArea {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 #buttonWrapper {
@@ -323,15 +324,18 @@ x_pre {
 }
 
 #nextSet {
-  margin-left: 0.5rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
 }
 
 #previousSet {
-  margin-right: 0.5rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
 }
 
 #completeSet {
-  margin-left: 1.9rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
 }
 
 /*
