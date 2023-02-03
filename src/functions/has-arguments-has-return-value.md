@@ -9,8 +9,8 @@ const rawSourceCode = `fn main() {
   println!("charlie is {charlie}");
 }
 
-fn widget(input: String) -> String {
-  println!("widget got {input}");
+fn widget(thing: String) -> String {
+  println!("widget got {thing}");
   let bravo = String::from("berry");
   bravo
 }`.split('\n')
@@ -23,11 +23,11 @@ const lineSets = [
 },
 { 
   lines: [`0_r`, `0_s`, `0_s`, `0_s`, `0_r`, `0_s`, `0_s`, `0_s`, `0_s`, `0_s`, `0_s`],
-  text: `<p></p>`
+  text: `<p>The first step is to create the main function.</p>`
 },
 { 
   lines: [`0_c`, `0_s`, `0_s`, `0_s`, `0_c`, `0_s`, `0_r`, `0_s`, `0_s`, `0_s`, `0_r`],
-  text: `<p></p>`
+  text: `<p>Next, create a function named <code>widget</code> that accepts one argument</p>`
 },
 { 
   lines: [`0_c`, `0_s`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_r`, `0_s`, `0_s`, `0_c`],

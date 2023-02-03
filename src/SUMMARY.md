@@ -1,11 +1,14 @@
 # Summary
 
 - [Hello, World](./introduction/index.md)
+  - [Your Turn](./introduction/your-turn.md)
 - [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
 - [Printing Variables](./printing/index.md)
+  - [Your Turn](./printing/your-turn.md)
 - [Mutable Variables](./mutable-variables/index.md)
   - [Example](./mutable-variables/example.md)
+  - [Your Turn](./mutable-variables/your-turn.md)
 - [Functions](./functions/index.md)
   - [No Args Or Return Value](./functions/no-arguments-no-return-value.md)
   - [Has Args But No Return Value](./functions/has-arguments-no-return-value.md)
