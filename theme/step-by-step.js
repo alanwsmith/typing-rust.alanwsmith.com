@@ -129,12 +129,6 @@ const makeBaseLines = () => {
 }
 
 const addButtons = () => {
-  // const newButtonEl = document.createElement('button')
-  // newButtonEl.innerHTML = `Complete`
-  // newButtonEl.id = `stepButton_${lineSets.length - 1}`
-  // window.buttonWrapper.appendChild(newButtonEl)
-  // newButtonEl.addEventListener('click', handleNumberButtonClick)
-
   for (let lineIndex = 1; lineIndex < lineSets.length; lineIndex++) {
     const newButtonEl = document.createElement('button')
     newButtonEl.innerHTML = lineIndex
