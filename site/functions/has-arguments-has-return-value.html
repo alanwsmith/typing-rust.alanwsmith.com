@@ -141,27 +141,60 @@
                         <div id="debugLine" style="color: red; font-family: monospace;"></div>
                         -->
                         <h1 id="functions-that-take-arguments-and-have-return-values"><a class="header" href="#functions-that-take-arguments-and-have-return-values">Functions That Take Arguments And Have Return Values</a></h1>
-<pre><code class="language-txt">call widget next
-widget got apple
-charlie is berry
-</code></pre>
-<h3 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h3>
-<pre><code class="language-rust  noplayground  EXAMPLE1">fn main() {
-  let alfa = String::from(&quot;apple&quot;);
-  println!(&quot;call widget next&quot;);
-
+<h4 id="step-by-step"><a class="header" href="#step-by-step">Step By Step</a></h4>
+<script>
+const rawSourceCode = `fn main() {
+  let alfa = String::from("apple");
   let charlie = widget(alfa);
-  println!(&quot;charlie is {charlie}&quot;);
+  println!("charlie is {charlie}");
 }
 
-fn widget(input: String) -&gt; String {
-  println!(&quot;widget got {input}&quot;);
-
-  let bravo = String::from(&quot;berry&quot;);
+fn widget(input: String) -> String {
+  println!("widget got {input}");
+  let bravo = String::from("berry");
   bravo
-}</code></pre>
-<h3 id="code-runner"><a class="header" href="#code-runner">CODE RUNNER</a></h3>
-<pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
+}`.split('\n')
+
+
+const lineSets = [
+{ 
+  lines: [`0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_r`, `0_s`, `0_s`, `0_s`, `0_r`, `0_s`, `0_s`, `0_s`, `0_s`, `0_s`, `0_s`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_s`, `0_s`, `0_s`, `0_c`, `0_s`, `0_r`, `0_s`, `0_s`, `0_s`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_s`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_r`, `0_s`, `0_s`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_s`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_r`, `0_s`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_s`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_r`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_r`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_c`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_c`, `0_r`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_c`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_c`, `0_c`, `0_r`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_c`, `0_c`],
+  text: `<p></p>`
+},
+]
+</script>
 
                     </main>
 

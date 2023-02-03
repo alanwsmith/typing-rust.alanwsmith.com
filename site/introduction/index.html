@@ -143,22 +143,35 @@
                         <h1 id="welcome-to-typing-rust"><a class="header" href="#welcome-to-typing-rust">Welcome to Typing Rust</a></h1>
 <p>Hi. I'm Alan and I'm building this site to
 learn Rust.</p>
-<p>The best way I know to learn a programming language
-is by typing examples into an editor and running them.
-This site let you do just that. It's made of
-<strong>Source Code</strong> blocks paired with <strong>Code Runner</strong> editors
-you can use directly on the site.</p>
-<p>The site works by typing the Source Code into the Code Runners and
-hitting &quot;Run&quot; to see the output. Try it with the code
-below and you'll see the output &quot;Hello, World&quot;.</p>
-<p>It can feel tedious at first, but stick with
-it for a bit. You may find it works for you too.</p>
-<h4 id="source-code"><a class="header" href="#source-code">SOURCE CODE</a></h4>
-<pre><code class="language-rust  noplayground  EXAMPLE1">fn main() {
-  println!(&quot;Hello, World&quot;);
-}</code></pre>
-<h4 id="code-runner"><a class="header" href="#code-runner">CODE RUNNER</a></h4>
-<pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
+<p>I've got plans to setup connections to
+let you type in examples with a live
+spell checker. That work is in progress.</p>
+<p>For now, the site provides step by step
+examples of each of the concepts it
+covers. Here's the first one which
+shows a basic &quot;Hello, World&quot;.</p>
+<h4 id="step-by-step"><a class="header" href="#step-by-step">Step By Step</a></h4>
+<script>
+const rawSourceCode = `fn main() {
+  println!("Hello, World");
+}`.split('\n')
+
+
+const lineSets = [
+{ 
+  lines: [`0_r`, `0_r`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_r`, `0_s`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_r`, `0_c`],
+  text: `<p></p>`
+},
+]
+</script>
 
                     </main>
 

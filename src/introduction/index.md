@@ -3,29 +3,35 @@
 Hi. I'm Alan and I'm building this site to
 learn Rust.
 
-The best way I know to learn a programming language
-is by typing examples into an editor and running them.
-This site let you do just that. It's made of
-**Source Code** blocks paired with **Code Runner** editors
-you can use directly on the site.
+I've got plans to setup connections to
+let you type in examples with a live
+spell checker. That work is in progress.
 
-The site works by typing the Source Code into the Code Runners and
-hitting "Run" to see the output. Try it with the code
-below and you'll see the output "Hello, World".
+For now, the site provides step by step
+examples of each of the concepts it
+covers. Here's the first one which
+shows a basic "Hello, World".
 
-It can feel tedious at first, but stick with
-it for a bit. You may find it works for you too.
+#### Step By Step
 
-#### SOURCE CODE
-
-```rust, noplayground, EXAMPLE1
-fn main() {
+<script>
+const rawSourceCode = `fn main() {
   println!("Hello, World");
-}
-```
+}`.split('\n')
 
-#### CODE RUNNER
 
-```rust, editable, CODE1
-
-```
+const lineSets = [
+{ 
+  lines: [`0_r`, `0_r`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_r`, `0_s`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_r`, `0_c`],
+  text: `<p></p>`
+},
+]
+</script>

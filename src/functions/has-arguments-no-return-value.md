@@ -1,22 +1,42 @@
 # Functions That Take Arguments But Have No Return Value
 
-### SOURCE CODE
+#### Step By Step
 
-```rust, noplayground, EXAMPLE1
-fn main() {
+<script>
+const rawSourceCode = `fn main() {
   let alfa = String::from("apple");
-
-  println!("call widget next");
   widget(alfa);
 }
 
-fn widget(input: String) {
-  println!("widget got {input}");
-}
-```
+fn widget(thing: String) {
+  println!("widget got {thing}");
+}`.split('\n')
 
-### CODE RUNNER
 
-```rust, editable, CODE1
-
-```
+const lineSets = [
+{ 
+  lines: [`0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_r`, `0_s`, `0_s`, `0_r`, `0_s`, `0_s`, `0_s`, `0_s`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_s`, `0_s`, `0_c`, `0_s`, `0_r`, `0_s`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_r`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_r`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_c`, `0_r`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`],
+  text: `<p></p>`
+},
+]
+</script>
