@@ -1,3 +1,28 @@
+/*
+
+  Basic format is:
+
+`NUMBER_LETTER`
+
+Like:
+
+`0_r`
+
+Where 0 is the index from the columns of source
+code there colums are divided by comments. 
+
+  this_is = "coulum 1" // this_is = "coulmn2"
+
+The letters are:
+
+- r = highlighted with line number
+- s = blanked out but with line number
+- e = blanked out, no line number
+- c = no syntax highlighting, with line number
+- o = "out:"
+
+*/
+
 export const stepByStepInit = () => {
   document.addEventListener('DOMContentLoaded', stepByStepReadyUp)
 }
