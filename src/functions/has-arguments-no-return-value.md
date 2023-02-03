@@ -1,48 +1,13 @@
 # Functions That Take Arguments But Have No Return Value
 
-#### Step By Step
+The formula for functions that _do_ take
+arguments without returning a value is must
+the same as functions that don't. The
+difference is that the `()` parens are
+populated to let the function know about
+the incoming data
 
-<script>
-const rawSourceCode = `fn main() {
-  let alfa = String::from("apple");
-  widget(alfa);
-}
-
-fn widget(thing: String) { // fn widget(<code>thing: String</code>) { // fn widget() {
-  println!("widget got {thing}");
-}
-
-widget got apple`.split('\n')
-
-
-const lineSets = [
-{ 
-  lines: [`0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_e`, `0_o`],
-  text: `<p>When the <code>widget</code> function receives the value in <code>alfa</code> from <code>main</code> it prints the output</p>`
-},
-{ 
-  lines: [`0_s`, `0_s`, `0_s`, `0_s`, `0_s`, `2_r`, `0_s`, `0_r`, `0_e`, `0_w`],
-  text: `<p>Start by creating an empty <code>widget</code> function</p>`
-},
-{ 
-  lines: [`0_s`, `0_s`, `0_s`, `0_s`, `0_s`, `1_u`, `0_s`, `0_c`, `0_e`, `0_w`],
-  text: `<p>Update it to accept a <code>String</code> and bind it to the internal function variable <code>thing</code></p>`
-},
-{ 
-  lines: [`0_s`, `0_s`, `0_s`, `0_s`, `0_s`, `0_c`, `0_r`, `0_c`, `0_e`, `0_w`],
-  text: `<p>Setup <code>widget</code> to print out the <code>String</code> it receives in the <code>thing</code> variable</p>`
-},
-{ 
-  lines: [`0_r`, `0_s`, `0_s`, `0_r`, `0_s`, `0_c`, `0_c`, `0_c`, `0_e`, `0_w`],
-  text: `<p>Create the <code>main</code> function that's what gets called first when the program runs</p>`
-},
-{ 
-  lines: [`0_c`, `0_r`, `0_s`, `0_r`, `0_s`, `0_c`, `0_c`, `0_c`, `0_e`, `0_w`],
-  text: `<p>Create a variable named <code>alfa</code> inside <code>main</code> and bind a <code>String</code> of &quot;apple&quot; to it </p>`
-},
-{ 
-  lines: [`0_c`, `0_c`, `0_r`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_e`, `0_w`],
-  text: `<p>Call the <code>widget</code> function from <code>main</code> passing in the <code>alfa</code> variable as an argument</p>`
-},
-]
-</script>
+1. The `fn` keyword
+2. A name
+3. Parenthesis with argument details. For example: `(thing: String)`
+4. A set of `{}` curly brackets surrounding the function's code block

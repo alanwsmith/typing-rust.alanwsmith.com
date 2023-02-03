@@ -1,47 +1,19 @@
 # Takes No Arguments But Has A Return Value
 
-#### Step By Step
+In addition to receiving data, functions can
+also return values back to the code
+that called them. Difining those functions is
+done by adding `->` along what will be send back
+behindg the parenthesis after the name. For example
 
-<script>
-const rawSourceCode = `fn main() {
-  let charlie = widget();
-  println!("charlie got {charlie}");
-}
+```rust,noplayground
+widget() -> String
+```
 
-fn widget() -> String {
-  let bravo = String::from("berry");
-  bravo
-}`.split('\n')
+The parts of the function look like this:
 
-
-const lineSets = [
-{ 
-  lines: [`0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`],
-  text: `<p></p>`
-},
-{ 
-  lines: [`0_r`, `0_s`, `0_s`, `0_r`, `0_s`, `0_s`, `0_s`, `0_s`, `0_s`],
-  text: `<p></p>`
-},
-{ 
-  lines: [`0_c`, `0_s`, `0_s`, `0_c`, `0_s`, `0_r`, `0_s`, `0_s`, `0_r`],
-  text: `<p></p>`
-},
-{ 
-  lines: [`0_c`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_r`, `0_s`, `0_c`],
-  text: `<p></p>`
-},
-{ 
-  lines: [`0_c`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_r`, `0_c`],
-  text: `<p></p>`
-},
-{ 
-  lines: [`0_c`, `0_r`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_c`],
-  text: `<p></p>`
-},
-{ 
-  lines: [`0_c`, `0_c`, `0_r`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_c`],
-  text: `<p></p>`
-},
-]
-</script>
+1. The `fn` keyword
+2. A name
+3. An empty set of `()` parenthesis.
+4. The `->` symbol followed by what type of data will be returned
+5. A set of `{}` curly brackets surrounding the function's code block

@@ -1,9 +1,8 @@
 # Mutable Variables
 
 Rust variables are immutalbe by default. That means
-you can't change them after they've been set.
-
-The `mut` keyword makes them mutable allowing them
+you can't change them after they've been set. The
+`mut` keyword makes them mutable allowing them
 to be changed after they are created.
 
 Here's an example of a standard immutable variable:
