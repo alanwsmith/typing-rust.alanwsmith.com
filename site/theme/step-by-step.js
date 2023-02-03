@@ -11,7 +11,7 @@ const loadSourceCode = () => {
 }
 
 const s = {
-  currentLineSet: 1,
+  currentLineSet: 0,
   lineMarkers: [],
 }
 
@@ -26,9 +26,18 @@ const handleNumberButtonClick = (event) => {
   updatePointers()
 }
 
+const handleCompleteButtonClick = () => {
+  s.currentLineSet = 0
+  updateLines()
+  updateButtons()
+  updatePointers()
+}
+
 const handleNextButtonClick = () => {
   if (s.currentLineSet < lineSets.length - 1) {
     s.currentLineSet += 1
+  } else {
+    s.currentLineSet = 0
   }
   updateLines()
   updateButtons()
@@ -65,6 +74,11 @@ const updateLines = () => {
 }
 
 const updateButtons = () => {
+  if (s.currentLineSet === 0) {
+    window[`completeSet`].classList.add('activeButton')
+  } else {
+    window[`completeSet`].classList.remove('activeButton')
+  }
   for (let lineSetIndex = 1; lineSetIndex < lineSets.length; lineSetIndex++) {
     if (s.currentLineSet === lineSetIndex) {
       window[`stepButton_${lineSetIndex}`].classList.add('activeButton')
@@ -115,18 +129,27 @@ const makeBaseLines = () => {
 }
 
 const addButtons = () => {
-  for (let lineIndex = 1; lineIndex < lineSets.length - 1; lineIndex++) {
+  // const newButtonEl = document.createElement('button')
+  // newButtonEl.innerHTML = `Complete`
+  // newButtonEl.id = `stepButton_${lineSets.length - 1}`
+  // window.buttonWrapper.appendChild(newButtonEl)
+  // newButtonEl.addEventListener('click', handleNumberButtonClick)
+
+  for (let lineIndex = 1; lineIndex < lineSets.length; lineIndex++) {
     const newButtonEl = document.createElement('button')
     newButtonEl.innerHTML = lineIndex
     newButtonEl.id = `stepButton_${lineIndex}`
     window.buttonWrapper.appendChild(newButtonEl)
     newButtonEl.addEventListener('click', handleNumberButtonClick)
   }
-  const newButtonEl = document.createElement('button')
-  newButtonEl.innerHTML = `Final`
-  newButtonEl.id = `stepButton_${lineSets.length - 1}`
-  window.buttonWrapper.appendChild(newButtonEl)
-  newButtonEl.addEventListener('click', handleNumberButtonClick)
+}
+
+const addCompleteButton = () => {
+  const completeButtonEl = document.createElement('button')
+  completeButtonEl.id = 'completeSet'
+  completeButtonEl.innerHTML = 'Complete'
+  window.buttonWrapper.appendChild(completeButtonEl)
+  window.completeSet.addEventListener('click', handleCompleteButtonClick)
 }
 
 const addPreviousButton = () => {
@@ -182,11 +205,12 @@ const buildElements = () => {
   const stepByStepAreaEl = document.createElement('div')
   stepByStepAreaEl.id = 'stepByStepArea'
   stepByStepAreaEl.innerHTML = `
+  <div id="contentArea"></div>
   <div id="codeBucket">
     <div id="codeGutter"></div>
     <div id="codeBlock"></div>
   </div>
-  <div id="contentArea"></div>
+  <div id="spacer"></div>
   <div id="buttonWrapper"></div>
 `
   window['step-by-step'].insertAdjacentElement('afterend', stepByStepAreaEl)
@@ -201,6 +225,7 @@ const stepByStepReadyUp = () => {
     updateLines()
     addPointers()
     updatePointers()
+    addCompleteButton()
     addPreviousButton()
     addButtons()
     addNextButton()

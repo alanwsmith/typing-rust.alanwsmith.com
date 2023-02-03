@@ -15,3 +15,10 @@ A few quick notes before we continue:
   programs. For example, defining a variable that's
   used only once on the following line. The goal is to
   show _how_ to use something not _when_ to use it.
+
+- The site is designed for you to type in the examples.
+  I learn best that way, but not everyone does. Reading
+  it like a book without typing the examples is a perfectly
+  fine way to do it too. (Though, I really do encourage
+  you to stick with typing for a bit to see if it starts
+  to work for you)

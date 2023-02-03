@@ -281,8 +281,9 @@ pre[class*='language-'].line-numbers > code {
   min-height: 23rem;
   background-color: #667;
   border-radius: 0.4rem;
-  margin-left: 0.6rem;
+  margin-right: 0.4rem;
   padding-right: 0.7rem;
+  padding-left: 0.7rem;
 }
 
 #codeCol {
@@ -313,7 +314,7 @@ x_pre {
 
 #stepByStepArea {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 #buttonWrapper {

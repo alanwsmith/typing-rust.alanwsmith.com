@@ -1,7 +1,6 @@
 # Summary
 
 - [Hello, World](./introduction/index.md)
-- [The Status Line](./introduction/status-line.md)
 - [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
 - [Printing Variables](./printing/index.md)
@@ -242,6 +241,10 @@
   - [Binding Values](./loops/binding-variables.md)
   - [Labels](./loops/labels.md)
   - [Nested Loops](./loops/nested-loops.md)
+
+# Holding
+
+- [The Status Line](./introduction/status-line.md)
 
 # Fizz Buzz
 
