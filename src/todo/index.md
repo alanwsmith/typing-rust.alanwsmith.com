@@ -30,6 +30,8 @@
 
 ## Other
 
+- Add section about how to read the docs
+
 - Verify that the generic term statement can be used
   to describe expressions (e.g. "an `if` statement is
   an expression")

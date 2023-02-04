@@ -64,6 +64,10 @@
 - [Struct Methods](./struct-methods/_todo.md)
 - [Enums](./enums/_todo.md)
 - [Vecs](./vectors/_todo.md)
+- [Strings](./strings/index.md)
+  - [Strings Original Text](./strings/_index_old4.md)
+  - [Mutable Strings](./strings/mutable-strings.md)
+  - [To Examine](./strings/to-examine.md)
 
 # Prototypes
 
@@ -108,9 +112,6 @@
   - [Functions As Conditions](./functions/as-conditions.md)
 - [Program 3 NAME TKTKTKT](./programs/3.md)
 - [Scopes](./scopes/index.md)
-- [Strings](./strings/index.md)
-  - [Strings Original Text](./strings/_index_old4.md)
-  - [Mutable Strings](./strings/mutable-strings.md)
 - [Difficulty Increasing](./concepts-ahead/index.md)
 - [Illustrations Incoming](./illustrations-incoming/index.md)
 - [References Old](./references/_index_old.md)
