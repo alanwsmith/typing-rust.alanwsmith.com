@@ -1,32 +1,57 @@
 # Functions That Take Arguments And Have Return Values
 
-```txt
-call widget next
-widget got apple
-charlie is berry
-```
+#### Step By Step
 
-### SOURCE CODE
-
-```rust, noplayground, EXAMPLE1
-fn main() {
+<script>
+const rawSourceCode = `fn main() {
   let alfa = String::from("apple");
-  println!("call widget next");
-
   let charlie = widget(alfa);
   println!("charlie is {charlie}");
 }
 
-fn widget(input: String) -> String {
-  println!("widget got {input}");
-
+fn widget(thing: String) -> String {
+  println!("widget got {thing}");
   let bravo = String::from("berry");
   bravo
-}
-```
+}`.split('\n')
 
-### CODE RUNNER
 
-```rust, editable, CODE1
-
-```
+const lineSets = [
+{ 
+  lines: [`0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`, `0_r`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_r`, `0_s`, `0_s`, `0_s`, `0_r`, `0_s`, `0_s`, `0_s`, `0_s`, `0_s`, `0_s`],
+  text: `<p>The first step is to create the main function.</p>`
+},
+{ 
+  lines: [`0_c`, `0_s`, `0_s`, `0_s`, `0_c`, `0_s`, `0_r`, `0_s`, `0_s`, `0_s`, `0_r`],
+  text: `<p>Next, create a function named <code>widget</code> that accepts one argument</p>`
+},
+{ 
+  lines: [`0_c`, `0_s`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_r`, `0_s`, `0_s`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_s`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_r`, `0_s`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_s`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_r`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_r`, `0_s`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_c`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_c`, `0_r`, `0_s`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_c`, `0_c`],
+  text: `<p></p>`
+},
+{ 
+  lines: [`0_c`, `0_c`, `0_c`, `0_r`, `0_c`, `0_s`, `0_c`, `0_c`, `0_c`, `0_c`, `0_c`],
+  text: `<p></p>`
+},
+]
+</script>

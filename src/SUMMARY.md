@@ -1,17 +1,28 @@
 # Summary
 
 - [Hello, World](./introduction/index.md)
-  - [The Status Line](./introduction/status-line.md)
-  - [Quick Notes](./cards/index.md)
+  - [Your Turn](./introduction/your-turn.md)
+- [The Status Line](./introduction/status-line.md)
+- [Quick Notes](./cards/index.md)
 - [Variables](./variables/index.md)
 - [Printing Variables](./printing/index.md)
+  - [Step By Step](./printing/step-by-step.md)
+  - [Your Turn](./printing/your-turn.md)
 - [Mutable Variables](./mutable-variables/index.md)
-  - [Example](./mutable-variables/example.md)
+  - [Step By Step](./mutable-variables/example.md)
+  - [Your Turn](./mutable-variables/your-turn.md)
 - [Functions](./functions/index.md)
-  - [No Args Or Return Value](./functions/no-arguments-no-return-value.md)
-  - [Has Args But No Return Value](./functions/has-arguments-no-return-value.md)
-  - [No Args But Has Return Value](./functions/no-arguments-but-has-return-values.md)
-  - [With Args And Return Value](./functions/has-arguments-has-return-value.md)
+  - [No Arguments - No Return](./functions/no-arguments-no-return-value.md)
+    - [Step By Step](./functions/no-arguments-no-return-value-step-by-step.md)
+    - [Your Turn](./functions/no-arguments-no-return-value-your-turn.md)
+  - [With Arguments - No Return](./functions/has-arguments-no-return-value.md)
+    - [Step By Step](./functions/has-arguments-no-return-value-step-by-step.md)
+    - [Your Turn](./functions/has-arguments-no-return-value-your-turn.md)
+  - [No Arguments - With Return](./functions/no-arguments-but-has-return-values.md)
+    - [Step By Step](./functions/no-arguments-but-has-return-values-step-by-step.md)
+    - [Your Turn](./functions/no-arguments-but-has-return-values-your-turn.md)
+  - [With Arguments - With Return](./functions/has-arguments-has-return-value.md)
+    - [Your Turn](./functions/has-arguments-has-return-value-your-turn.md)
 - [Ownership](./ownership/index.md)
   - [Step 1](./ownership/step-1.md)
   - [Step 2](./ownership/step-2.md)
@@ -19,18 +30,28 @@
   - [What Doesn't Happen](./ownership/what-does-not-happen.md)
   - [Step 4 - What Does Happen](./ownership/step-4.md)
   - [Step 5](./ownership/step-5.md)
+    - [Step By Step](./ownership/step-5-step-by-step.md)
+    - [Your Turn](./ownership/step-5-your-turn.md)
   - [Hitting A Moved Error](./ownership/hitting-a-moved-error.md)
+    - [Your Turn](./ownership/hitting-a-moved-error-your-turn.md)
   - [Moving Error Details](./ownership/moving-string-error-details.md)
 - [References](./references/index.md)
-  - [Example](./references/example.md)
+  - [Setp By Step](./references/step-by-step.md)
+  - [Your Turn](./references/example.md)
   - [Step 1](./references/step-1.md)
   - [Step 2](./references/step-2.md)
   - [Working Example](./references/working-example.md)
   - [Multiple References](./references/multiple-references.md)
+    - [Step By Step](./references/multiple-references-step-by-step.md)
+    - [Your Turn](./references/multiple-references-your-turn.md)
 - [Function Argument References](./references/function-argument-references.md)
   - [With Variables](./references/function-argument-references-with-variables.md)
   - [Error Example](./references/function-argument-references-error.md)
 - [Mutable Function Argument References](./references/mutable-function-argument-references.md)
+
+# Prototypes
+
+- [Prototype 1](./prototypes/1.md)
 
 # Scratchpad
 
@@ -238,6 +259,8 @@
   - [Binding Values](./loops/binding-variables.md)
   - [Labels](./loops/labels.md)
   - [Nested Loops](./loops/nested-loops.md)
+
+# Holding
 
 # Fizz Buzz
 

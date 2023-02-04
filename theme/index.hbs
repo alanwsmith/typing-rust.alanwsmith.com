@@ -308,6 +308,12 @@
           typoInit();
         </script>
 
+        <script type="module">
+          import { stepByStepInit } from "./{{ ../path_to_root }}theme/step-by-step.js"
+          stepByStepInit();
+        </script>
+
+
         {{#if is_print}}
         {{#if mathjax_support}}
         <script>
