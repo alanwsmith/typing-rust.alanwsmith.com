@@ -7,8 +7,8 @@ the prints it out.
 
 <script>
 const rawSourceCode = `fn main() {
-  let alfa = String::from("apple");
-  println!("alfa is {alfa}");
+  let alfa = String::from("apple"); //   let alfa = <code>String::from("apple")</code>; //   let alfa =
+  println!("alfa is {alfa}"); //   println!(<code>"alfa is {alfa}"</code>); //   println!()
 }
 
 alfa is apple`.split('\n')
@@ -16,20 +16,28 @@ alfa is apple`.split('\n')
 
 const lineSets = [
 { 
-  lines: [`0_r`, `0_r`,`0_r`,`0_r`, `0_c`, `0_o`],
+  lines: [`0_r`, `0_r`,`0_r`,`0_r`, `0_e`, `0_o`],
   text: `<p>The output from the program is <code>alfa is apple</code></p>`
 },
 { 
-  lines: [`0_r`, `0_s`,`0_s`,`0_r`, `0_s`, `0_s`],
-  text: `<p>We start out with an empty <code>main</code> function.</p>`
+  lines: [`0_r`, `0_s`,`0_s`,`0_r`, `0_e`, `0_w`],
+  text: `<p>Start out with an empty <code>main</code> function.</p>`
 },
 { 
-  lines: [`0_c`, `0_r`,`0_s`,`0_c`, `0_s`, `0_s`],
-  text: `<p>The first step is to create a variable named <code>alfa</code> with a <code>String</code> containing &quot;apple&quot; bound to it</p>`
+  lines: [`0_c`, `2_r`,`0_s`,`0_c`, `0_e`, `0_w`],
+  text: `<p>Start creating a variable named <code>alfa</code.</p>`
 },
 { 
-  lines: [`0_c`, `0_c`,`0_r`,`0_c`, `0_s`, `0_s`],
-  text: `<p>Then we add the <code>println!()</code> statement that outputs the text of the <code>String</code> when the program is run</p>`
+  lines: [`0_c`, `1_u`,`0_s`,`0_c`, `0_e`, `0_w`],
+  text: `<p>Bind a <code>String</code> with &quot;apple&quot; to <code>alfa</code></p>`
+},
+{ 
+  lines: [`0_c`, `0_c`,`2_r`,`0_c`, `0_e`, `0_w`],
+  text: `<p>Start a <code>println!()</code> expression</p>`
+},
+{ 
+  lines: [`0_c`, `0_c`,`1_u`,`0_c`, `0_e`, `0_w`],
+  text: `<p>Add the string to output including the <code>{alfa}</code> portion to output the variable</p>`
 },
 
 ]

@@ -1,7 +1,5 @@
 # Functions - No Args Or Return Value - Step By Step
 
-Details
-
 #### Step By Step
 
 <script>

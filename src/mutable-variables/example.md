@@ -8,7 +8,7 @@ to the end of it. Here's what that looks like:
 
 <script>
 const rawSourceCode = `fn main() {
-  let mut alfa = String::from("apple");
+  let mut alfa = String::from("apple"); //   let mut alfa = <code>String::from("apple")</code>; //   let <code>mut</code> alfa = //   let alfa =
   alfa.push_str("pie");
   println!("alfa is {alfa}");
 }
@@ -23,12 +23,22 @@ const lineSets = [
 },
 { 
   lines: [`0_r`, `0_s`,`0_s`, `0_s`, `0_r`, `0_e`, `0_w`],
-  text: `<p>We start with the standard <code>mian</code> function</p>`,
+  text: `<p>Start with a <code>mian</code> function</p>`,
+},
+
+{ 
+  lines: [`0_c`, `3_r`,`0_s`, `0_s`,`0_c`, `0_e`, `0_w`],
+  text: `<p>Begin creating a variable named <code>alfa</code></p>`
 },
 { 
-  lines: [`0_c`, `0_r`,`0_s`, `0_s`,`0_c`, `0_e`, `0_w`],
-  text: `<p>Use the <code>mut</code> keyword to create a mutable variable named <code>alfa</code> with a <code>String</code> of <code>apple</code> bound to it<p>`
+  lines: [`0_c`, `2_u`,`0_s`, `0_s`,`0_c`, `0_e`, `0_w`],
+  text: `<p>Add the <code>mut</code> keyword to make <code>alfa</code> mutalble</p>`
 },
+{ 
+  lines: [`0_c`, `1_u`,`0_s`, `0_s`,`0_c`, `0_e`, `0_w`],
+  text: `<p>Add in <code>String</code> value to bind to <code>alfa</code></p>`
+},
+
 { 
   lines: [`0_c`, `0_c`,`0_r`, `0_s`,`0_c`, `0_e`, `0_w`],
   text: `<p>Next, add a <code>.push_str()</code> expression to push <code>pie</code> onto the end of the string</p>`
