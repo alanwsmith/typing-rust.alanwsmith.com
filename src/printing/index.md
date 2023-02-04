@@ -13,3 +13,9 @@ it like this:
 ```rust, noplayground
 println!("alfa is {alfa}");
 ```
+
+TODO: Show example liek this too:
+
+```rust, noplayground
+println!("alfa is {}", alfa);
+```

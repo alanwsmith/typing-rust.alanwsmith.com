@@ -1,5 +1,150 @@
 # Enums
 
+Purpose of an email is to be one of a specific
+type and nothing else. (TODO: Show `structs`
+as enum types.)
+
+TODO: Show how you have to cover all the
+options. And how you can do that with
+the catch all.
+
+Show how the turn values from match
+must be the same if you are assinging
+it to a value.
+
+Show a version where the stuff inside
+the emum value is a struct of some
+other type. 
+
+Your example:
+
+```rust
+enum Color {
+  Red,
+  Green,
+  Blue
+}
+
+fn main() {
+  let alfa = Color::Blue;
+
+  match alfa {
+    Color::Red => {
+      println!("Red like fire");
+    }
+    Color::Green => {
+      println!("Green like grass");
+    }
+    Color::Blue => {
+      println!("Blue like the sky");
+    }
+  }
+}
+```
+
+---
+
+```rust
+enum Color {
+  Red(String),
+  Green(String),
+  Blue(String)
+}
+
+fn main() {
+  let alfa = Color::Blue(String::from("navy"));
+
+  match alfa {
+    Color::Red(name) => {
+      println!("{name} is red like fire");
+    }
+    Color::Green(name) => {
+      println!("{name} is green like grass");
+    }
+    Color::Blue(name) => {
+      println!("{name} is blue like the sky");
+    }
+  }
+}
+```
+
+```rust
+enum Color {
+  Red(String),
+  Green(String),
+  Blue(String)
+}
+
+fn main() {
+  let alfa = Color::Blue(String::from("navy"));
+
+  let bravo = match alfa {
+    Color::Red(name) => name,
+    Color::Green(name) => name,
+    Color::Blue(name) => format!("thing {name}")
+  };
+  println!("bravo is {bravo}");
+}
+```
+
+---
+
+```rust
+enum Color {
+  Red(String),
+  Green(String),
+}
+
+fn main() {
+  let alfa = Color::Red(String::from("apple"));
+
+  match alfa {
+    Color::Red(name) => runRed(&name),
+    Color::Green(name) => runGreen(&name),
+  };
+}
+
+fn runRed(value: &String) {
+  println!("got {value}")
+}
+
+fn runGreen(value: &String) {
+  println!("got {value}")
+}
+```
+
+```rust
+enum Color {
+  Red(String),
+  Green(String),
+}
+
+fn main() {
+  let alfa = Color::Red(String::from("apple"));
+
+  let bravo = match alfa {
+    Color::Red(name) => runRed(&name),
+    Color::Green(name) => runGreen(&name),
+  };
+
+  println!("bravo is {bravo}")
+}
+
+fn runRed(value: &String) -> String {
+  format!("a {}", value)
+}
+
+fn runGreen(value: &String) -> String {
+  format!("a {}", value)
+}
+```
+
+---
+
+### Original Notes
+
+---
+
 NOTE: It's possibe that you don't want to
 show code until you show the `if let` or the
 match stuff for how to get something out.
