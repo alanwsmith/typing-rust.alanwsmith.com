@@ -4,6 +4,7 @@
   - [Your Turn](./introduction/your-turn.md)
 - [The Status Line](./introduction/status-line.md)
 - [Quick Notes](./cards/index.md)
+- [Cheatsheet](./cheatsheet/index.md)
 - [Variables](./variables/index.md)
 - [Printing Variables](./printing/index.md)
   - [Step By Step](./printing/step-by-step.md)
@@ -48,6 +49,31 @@
   - [With Variables](./references/function-argument-references-with-variables.md)
   - [Error Example](./references/function-argument-references-error.md)
 - [Mutable Function Argument References](./references/mutable-function-argument-references.md)
+- [Structs](./structs/index.md)
+  - [Step By Step](./structs/step-by-step.md)
+  - [Your Turn](./structs/your-turn.md)
+- [Mutalbe Struct Instances](./mutable-struct-instances/index.md)
+  - [Step By Step](./mutable-struct-instances/step-by-step.md)
+  - [Your Turn](./mutable-struct-instances/your-turn.md)
+- [Passing Structs To Functions](./passing-structs-to-functions/index.md)
+  - [Step By Setp](./passing-structs-to-functions/step-by-step.md)
+  - [Your Turn](./passing-structs-to-functions/your-turn.md)
+- [Passing Mutalbe Structs To Functions](./passing-mutable-structs-to-functions/index.md)
+  - [Step By Step](./passing-mutable-structs-to-functions/step-by-step.md)
+  - [Your Turn](./passing-mutable-structs-to-functions/your-turn.md)
+- [Struct Methods](./struct-methods/_todo.md)
+
+# DRAFTS
+
+- [Drafts](./drafts/index.md)
+- [Enums](./enums/_todo.md)
+- [Vecs](./vectors/_todo.md)
+- [Strings](./strings/index.md)
+  - [Strings Original Text](./strings/_index_old4.md)
+  - [Mutable Strings](./strings/mutable-strings.md)
+  - [To Examine](./strings/to-examine.md)
+- [Hash Maps](./hash-maps/_to_do.md)
+- [Errors](./errors/index.md)
 
 # Prototypes
 
@@ -92,8 +118,6 @@
   - [Functions As Conditions](./functions/as-conditions.md)
 - [Program 3 NAME TKTKTKT](./programs/3.md)
 - [Scopes](./scopes/index.md)
-- [Strings](./strings/index.md)
-  - [Mutable Strings](./strings/mutable-strings.md)
 - [Difficulty Increasing](./concepts-ahead/index.md)
 - [Illustrations Incoming](./illustrations-incoming/index.md)
 - [References Old](./references/_index_old.md)
@@ -195,12 +219,8 @@
 
 - [Slices TODO](./slices/_todo.md)
 - [String literals](./string-literals/_todo.md)
-- [Structs](./structs/_todo.md)
 - [Tuple Structs](./tuple-structs/_todo.md)
 - [Debug Derived Trait](./debug-derived-trait/_todo.md)
-- [Struct Methods](./struct-methods/_todo.md)
-- [Enums](./enums/_todo.md)
-  - [Enum Type Aliases](./enum-type-aliases/index.md)
 - [match](./match/_todo.md)
 
 ---
@@ -261,6 +281,8 @@
   - [Nested Loops](./loops/nested-loops.md)
 
 # Holding
+
+- [Enum Type Aliases](./enum-type-aliases/index.md)
 
 # Fizz Buzz
 

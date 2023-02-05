@@ -1,34 +1,121 @@
 # Strings
 
-We've seen two data types so far: `i32` and `bool`.
-The first represents a number and the second is
-a value that's either `true` or `false`. Now let's
-start playing with text. To do that we'll use the
-`String` data type.
-
-We only need to put the value we want to use on
-the right side of the `=` sign to create `i32`
-and `bool` type values. The `String` type is
-a little more complex. It uses this pattern:
+Create a string with text you already
+know:
 
 ```rust,noplayground
-String::from("brown");
+let alfa = String::from("apple");
 ```
 
-Creating a `String` and using it looks like
-this:
+---
 
-#### SOURCE CODE
+Create an empty string. Probably want
+to make it mutable so you can add
+stuff to it.
 
-```rust, noplayground, EXAMPLE1
-fn main() {
-  let color = String::from("brown");
-  println!("The quick {color} fox");
+```rust,noplayground
+let mut alfa = String::new();
+```
+
+Add text
+
+```rust,noplayground
+alfa.push_str("pie");
+```
+
+---
+
+Adding a single character with `.push()`
+
+```rust,noplayground
+alfa.push("s");
+```
+
+---
+
+Concationation -
+
+Use `format!()` which is like `println!()`
+but it makes a new string instead of printing
+to output.
+
+```rust
+let alfa = String::from("apple");
+let bravo = String::from("berry");
+
+let charlie = format!("{}{}", alfa, bravo);
+
+println!("{alfa} {bravo} {charlie}");
+```
+
+at some point put in the details about using
+`+` and how ownership works. This is for
+a later chapter. For now just stick with
+`format!()`. Note that ownership of
+`alfa` gets moved to `charlie` so it
+can't be used in the `println!()`
+
+```rust
+let alfa = String::from("apple");
+let bravo = String::from("berry");
+
+let charlie = alfa + &bravo;
+
+println!("{bravo} {charlie}");
+```
+
+---
+
+Iterating over a string with `.chars()`
+
+```rust
+let alfa = String::from("apple");
+
+for character in alfa.chars() {
+  println!("character is {character}");
 }
+
+println!("alfa is {alfa}");
 ```
 
-### CODE RUNNER
+TODO: Go over why `&alfa[0..4]` is tricky
+because with UTF-8 that's 2 characters
+in Russian.
 
-```rust, editable, CODE1
+---
 
+Strings are always valid UTF-8
+
+---
+
+`.replace`
+
+makes a new string, but it doesn't
+take ownership so `alfa` is still
+available
+
+```rust
+let alfa = String::from("the quick fox");
+let bravo = alfa.replace("quick", "slow");
+
+println!("alfa is {alfa}");
+println!("bravo is {bravo}");
+```
+
+---
+
+.contains()
+
+TODO: Figures out when to show `as_str()`
+stuff.
+
+```rust
+let alfa = String::from("the quick fox");
+let bravo = String::from("quick");
+
+if alfa.contains(bravo.as_str()) {
+  println!("found {bravo}");
+} else {
+  println!("did not find {bravo}");
+}
 ```

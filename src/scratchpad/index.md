@@ -1,5 +1,17 @@
 # Scratchpad
 
+### SOURCE CODE
+
+```rust, noplayground, EXAMPLE1
+
+```
+
+### CODE RUNNER
+
+```rust, editable, CODE1
+
+```
+
 ## Step By Step
 
 <script>
