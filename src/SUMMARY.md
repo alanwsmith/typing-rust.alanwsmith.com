@@ -62,12 +62,18 @@
   - [Step By Step](./passing-mutable-structs-to-functions/step-by-step.md)
   - [Your Turn](./passing-mutable-structs-to-functions/your-turn.md)
 - [Struct Methods](./struct-methods/_todo.md)
+
+# DRAFTS
+
+- [Drafts](./drafts/index.md)
 - [Enums](./enums/_todo.md)
 - [Vecs](./vectors/_todo.md)
 - [Strings](./strings/index.md)
   - [Strings Original Text](./strings/_index_old4.md)
   - [Mutable Strings](./strings/mutable-strings.md)
   - [To Examine](./strings/to-examine.md)
+- [Hash Maps](./hash-maps/_to_do.md)
+- [Errors](./errors/index.md)
 
 # Prototypes
 

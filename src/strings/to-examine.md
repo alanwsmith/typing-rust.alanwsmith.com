@@ -1,7 +1,5 @@
 # To Examine
 
-
-
 ---
 
 Truncate strings:

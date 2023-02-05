@@ -85,3 +85,37 @@ in Russian.
 ---
 
 Strings are always valid UTF-8
+
+---
+
+`.replace`
+
+makes a new string, but it doesn't
+take ownership so `alfa` is still
+available
+
+```rust
+let alfa = String::from("the quick fox");
+let bravo = alfa.replace("quick", "slow");
+
+println!("alfa is {alfa}");
+println!("bravo is {bravo}");
+```
+
+---
+
+.contains()
+
+TODO: Figures out when to show `as_str()`
+stuff.
+
+```rust
+let alfa = String::from("the quick fox");
+let bravo = String::from("quick");
+
+if alfa.contains(bravo.as_str()) {
+  println!("found {bravo}");
+} else {
+  println!("did not find {bravo}");
+}
+```
