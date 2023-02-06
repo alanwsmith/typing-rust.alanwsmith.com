@@ -1,9 +1,4 @@
-# Printing Variables - Step By Step
-
-Here's a program that creates a variable
-the prints it out.
-
-#### Step By Step
+# Step By Step
 
 <script>
 const rawSourceCode = `fn main() {

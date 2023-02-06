@@ -1,18 +1,14 @@
 # Option Type
 
-TKTKTKTKT
 
-There's some stuff here:
+```rust
 
-https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html
 
-Need to really figure out how to use it before
-trying to make an example (I don't understand the ones
-in the book)
+```
 
+Options are returned by lots of things to let you
+know if there is a valid value or not.
 
 More stuff on this page:
 
 https://doc.rust-lang.org/book/ch06-02-match.html
-
-

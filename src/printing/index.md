@@ -14,7 +14,7 @@ it like this:
 println!("alfa is {alfa}");
 ```
 
-TODO: Show example liek this too:
+TODO: Show example like this too:
 
 ```rust, noplayground
 println!("alfa is {}", alfa);

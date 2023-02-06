@@ -2,6 +2,10 @@
 
 ## Stream
 
+- [] Read a file to string
+
+- [] Look at `nom` for parsing
+
 - [] Add button to disable live typo detection.
 
 - Add two buttons into the Code Runner that let you
@@ -29,6 +33,9 @@
   and reading it?)
 
 ## Other
+
+- Verify the font styling in `mutable-variables/index.html` works
+  cross browser
 
 - Add section about how to read the docs
 

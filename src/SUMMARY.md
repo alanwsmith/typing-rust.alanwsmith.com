@@ -10,7 +10,8 @@
   - [Step By Step](./printing/step-by-step.md)
   - [Your Turn](./printing/your-turn.md)
 - [Mutable Variables](./mutable-variables/index.md)
-  - [Step By Step](./mutable-variables/example.md)
+  - [push_str()](./mutable-variables/push-str.md)
+  - [Step By Step](./mutable-variables/step-by-step.md)
   - [Your Turn](./mutable-variables/your-turn.md)
 - [Functions](./functions/index.md)
   - [No Arguments - No Return](./functions/no-arguments-no-return-value.md)
@@ -23,6 +24,7 @@
     - [Step By Step](./functions/no-arguments-but-has-return-values-step-by-step.md)
     - [Your Turn](./functions/no-arguments-but-has-return-values-your-turn.md)
   - [With Arguments - With Return](./functions/has-arguments-has-return-value.md)
+    - [Step By Step](./functions/has-arguments-has-return-value-your-turn-step-by-step.md)
     - [Your Turn](./functions/has-arguments-has-return-value-your-turn.md)
 - [Ownership](./ownership/index.md)
   - [Step 1](./ownership/step-1.md)
@@ -45,6 +47,13 @@
   - [Multiple References](./references/multiple-references.md)
     - [Step By Step](./references/multiple-references-step-by-step.md)
     - [Your Turn](./references/multiple-references-your-turn.md)
+
+# DRAFTS
+
+- [Drafts](./drafts/index.md)
+- [Result Type](./result-type/_todo.md)
+  - [Step By Step](./result-type/step-by-step.md)
+- [Result And Option](./result-and-option/index.md)
 - [Function Argument References](./references/function-argument-references.md)
   - [With Variables](./references/function-argument-references-with-variables.md)
   - [Error Example](./references/function-argument-references-error.md)
@@ -61,11 +70,9 @@
 - [Passing Mutalbe Structs To Functions](./passing-mutable-structs-to-functions/index.md)
   - [Step By Step](./passing-mutable-structs-to-functions/step-by-step.md)
   - [Your Turn](./passing-mutable-structs-to-functions/your-turn.md)
+- [Option Type](./option-type/_todo.md)
+  - [Your Turn](./option-type/your-turn.md)
 - [Struct Methods](./struct-methods/_todo.md)
-
-# DRAFTS
-
-- [Drafts](./drafts/index.md)
 - [Enums](./enums/_todo.md)
 - [Vecs](./vectors/_todo.md)
 - [Strings](./strings/index.md)
