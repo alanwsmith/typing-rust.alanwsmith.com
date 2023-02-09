@@ -4,15 +4,19 @@
   - [Your Turn](./introduction/your-turn.md)
 - [The Status Line](./introduction/status-line.md)
 - [Quick Notes](./cards/index.md)
-- [Cheatsheet](./cheatsheet/index.md)
 - [Variables](./variables/index.md)
 - [Printing Variables](./printing/index.md)
   - [Step By Step](./printing/step-by-step.md)
   - [Your Turn](./printing/your-turn.md)
+- [Printing Multiple Variables](./printing/multiple-variables.md)
+  - [Step By Step](./printing/multiple-variables-step-by-step.md)
+- [Printing Variables - Alternate Syntax](./printing/alternate-style.md)
+- [Printing Multiple Variables - Alternate Syntax](./printing/multiple-variables-alternate-syntax.md)
 - [Mutable Variables](./mutable-variables/index.md)
   - [push_str()](./mutable-variables/push-str.md)
   - [Step By Step](./mutable-variables/step-by-step.md)
   - [Your Turn](./mutable-variables/your-turn.md)
+- [Variables Names With _ Underscores](./variables-with-underscores/index.md)
 - [Functions](./functions/index.md)
   - [No Arguments - No Return](./functions/no-arguments-no-return-value.md)
     - [Step By Step](./functions/no-arguments-no-return-value-step-by-step.md)
@@ -47,11 +51,16 @@
   - [Multiple References](./references/multiple-references.md)
     - [Step By Step](./references/multiple-references-step-by-step.md)
     - [Your Turn](./references/multiple-references-your-turn.md)
+- [Cheatsheet](./cheatsheet/index.md)
 
 # DRAFTS
 
 - [Drafts](./drafts/index.md)
-- [Result Type](./result-type/_todo.md)
+- [Errors - panic!() and Result](./errors/index.md)
+- [panic!()](./panic/index.md)
+  - [Identifying panic!() Errors](./panic/identifying-panic-errors.md)
+  - [Causing panic!() Errors](./panic/causing-panic-errors.md)
+- [Result (Error Handling)](./result-type/_todo.md)
   - [Step By Step](./result-type/step-by-step.md)
 - [Result And Option](./result-and-option/index.md)
 - [Function Argument References](./references/function-argument-references.md)
@@ -70,7 +79,8 @@
 - [Passing Mutalbe Structs To Functions](./passing-mutable-structs-to-functions/index.md)
   - [Step By Step](./passing-mutable-structs-to-functions/step-by-step.md)
   - [Your Turn](./passing-mutable-structs-to-functions/your-turn.md)
-- [Option Type](./option-type/_todo.md)
+- [Option Type](./option-type/index.md)
+  - [Option Page 2](./option-type/_todo.md)
   - [Your Turn](./option-type/your-turn.md)
 - [Struct Methods](./struct-methods/_todo.md)
 - [Enums](./enums/_todo.md)
@@ -80,7 +90,6 @@
   - [Mutable Strings](./strings/mutable-strings.md)
   - [To Examine](./strings/to-examine.md)
 - [Hash Maps](./hash-maps/_to_do.md)
-- [Errors](./errors/index.md)
 
 # Prototypes
 
@@ -228,7 +237,10 @@
 - [String literals](./string-literals/_todo.md)
 - [Tuple Structs](./tuple-structs/_todo.md)
 - [Debug Derived Trait](./debug-derived-trait/_todo.md)
-- [match](./match/_todo.md)
+- [match](./match/index.md)
+  - [Step By Step](./match/step-by-step.md)
+  - [Passing Values](./match/passing-values.md)
+- [match drafts](./match/_todo.md)
 
 ---
 

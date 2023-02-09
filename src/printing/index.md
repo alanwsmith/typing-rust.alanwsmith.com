@@ -14,8 +14,20 @@ it like this:
 println!("alfa is {alfa}");
 ```
 
-TODO: Show example like this too:
+A full program looks like this:
 
-```rust, noplayground
-println!("alfa is {}", alfa);
+```rust,noplayground
+fn main() {
+  let alfa = String::from("apple");
+  println!("alfa is {alfa}");
+}
 ```
+
+which outputs:
+
+```txt
+alfa is apple
+```
+
+
+

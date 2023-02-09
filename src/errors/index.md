@@ -1,4 +1,20 @@
-# Errors - Panic
+# Errors: Result and panic!()
+
+There are two categories of errors in Rust programs
+and expressions the correspond with them:
+
+1. Errors the program can't recover from which 
+are triggered by `panic!()` 
+2. Errors the program can recover from which is 
+tied to a `Result`
+
+
+
+
+
+
+
+
 
 These are draft notes
 

@@ -34,6 +34,12 @@
 
 ## Other
 
+- [] Show how to read this type of thing from the docs
+`pub fn read_dir<P: AsRef<Path>>(path: P) -> Result<ReadDir>`
+
+- [] Show a `match` expression that returns a value
+assuming that's possible. 
+
 - Verify the font styling in `mutable-variables/index.html` works
   cross browser
 

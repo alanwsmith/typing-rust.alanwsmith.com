@@ -18,7 +18,7 @@ first is a "Step By Step" explination
 of the code examples. Each step some code
 and provides an explination of what's happening.
 
-Here's one with two steps for a program
+Here's one with three steps for a program
 that print out "Hello, World".
 
 #### Step By Step

@@ -1,4 +1,10 @@
-# Result Type
+# Result Type For Error Handling
+
+
+
+
+
+
 
 The Result type is used to return values.
 It can contain either and `Ok` or an
