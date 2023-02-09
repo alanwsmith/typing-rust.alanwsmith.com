@@ -1,7 +1,5 @@
 # Step By Step
 
-#### Step By Step
-
 <script>
 const rawSourceCode = `fn main() {
   println!("Hello, World");

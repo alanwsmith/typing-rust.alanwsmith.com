@@ -5,16 +5,11 @@ you can't change them after they've been set. The
 `mut` keyword makes them mutable allowing them
 to be changed after they are created.
 
-Here's an example of a standard immutable variable:
+Here's an example of creating a default (immutable) variable:
 
-```rust,noplayground
-let alfa = String::from("apple");
-```
+<pre class="noplayground language-rust">let alfa = <span style="color: #aaa">String::from("apple");</span></pre>
 
-And here's the same binding but with the `mut`
-keyword that make the variable mutable.
+And this is how to create one using the `mut` keyword
+to make it mutable:
 
-```rust,noplayground
-let mut alfa = String::from("apple");
-    ↑↑↑
-```
+<pre class="noplayground language-rust">let <span style="color: #0cd;">mut</span> alfa = <span style="color: #aaa;">String::from("apple");</span></pre>

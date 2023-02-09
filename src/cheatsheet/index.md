@@ -1,5 +1,7 @@
 # Cheatsheet
 
+NOTE: These are draft notes.
+
 TODO: Figure out where to put this in the
 book.
 

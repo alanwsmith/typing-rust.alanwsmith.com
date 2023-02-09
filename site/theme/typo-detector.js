@@ -10,14 +10,14 @@ const disableTypoChecker = () => {
   window.statusButton.removeEventListener('click', disableTypoChecker)
   window.statusButton.addEventListener('click', enableTypoChecker)
   s.typoCheckerOn = false
-  s.statusLine.innerHTML = `<span style="color: #555555;">Status: Off</span>`
+  s.statusLine.innerHTML = `<span style="color: #555555;">Typos: Checker Diabled</span>`
 }
 
 const enableTypoChecker = () => {
   window.statusButton.removeEventListener('click', enableTypoChecker)
   window.statusButton.addEventListener('click', disableTypoChecker)
   s.typoCheckerOn = true
-  s.statusLine.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #009900">OK</span>`
+  s.statusLine.innerHTML = `<span style="color: #555555;">Typos:</span> <span style="color: #009900">0</span>`
   checkForTyposV3()
 }
 
@@ -27,10 +27,10 @@ const typoReadyUp = () => {
     s.codeRunner = s.code1.parentNode.parentNode
     s.statusWrapper = document.createElement('div')
     s.statusLine = document.createElement('div')
-    s.statusLine.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #009900">OK</span>`
+    s.statusLine.innerHTML = `<span style="color: #555555;">Typos:</span> <span style="color: #009900">0</span>`
     s.statusLine.id = 'typoStatusNode'
     s.statusButtonDiv = document.createElement('div')
-    s.statusButtonDiv.innerHTML = `<button id="statusButton">Disable Status Line</button>`
+    s.statusButtonDiv.innerHTML = `<button id="statusButton">Disable Typo Checker</button>`
     s.statusWrapper.appendChild(s.statusLine)
     s.statusWrapper.appendChild(s.statusButtonDiv)
     s.codeRunner.insertAdjacentElement('beforebegin', s.statusWrapper)
@@ -152,14 +152,14 @@ const checkForTyposV3 = () => {
             bummerString += `<span style="color: red;">${baseLines[
               baseIndex
             ].charAt(letterIndex)}</span>`
-            s.typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #880000">TYPO</span> ${bummerString}`
+            s.typoStatusNode.innerHTML = `<span style="color: #555555;">Typos:</span> ${bummerString}`
             break toploop
             break lowerloop1
           } else {
             bummerString += `<span style="color: #888888">${baseLines[
               baseIndex
             ].charAt(letterIndex)}</span>`
-            s.typoStatusNode.innerHTML = `<span style="color: #555555;">Status:</span> <span style="color: #008800">OK</span>`
+            s.typoStatusNode.innerHTML = `<span style="color: #555555;">Typos:</span> <span style="color: #008800">0</span>`
           }
         }
       } else {
