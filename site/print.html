@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="css/chrome.css">
         <link rel="stylesheet" href="css/print.css" media="print">
 
+
+
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="fonts/fonts.css">
@@ -30,7 +32,9 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/highlight.min.js">
         <link rel="stylesheet" href="theme/overrides.css">
+        <link rel="stylesheet" href="theme/step-by-step-v2.css">
 
 
     </head>
@@ -159,31 +163,97 @@ and provides an explination of what's happening.</p>
 that print out &quot;Hello, World&quot;.</p>
 <h4 id="step-by-step"><a class="header" href="#step-by-step">Step By Step</a></h4>
 <script>
-const rawSourceCode = `fn main() {
-  println!("Hello, World"); //   println!(<code>"Hello, World"</code>); //   println!();
+const c = {
+  source: `use std::env; 
+ 
+fn main() { 
+  let alfa = env::var("HOME"); 
+  match alfa { 
+    Ok(item) => { 
+      println!("got {}", item); 
+    } 
+    Err(error) => { 
+      println!("error {}", error); 
+    } 
+  } 
+}`,
+
+  // Usage (until it's better documented)
+  //  highlights: ['h1|3|4|7'],
+  //  fullCode: true,
+  //   altLines: [
+  //   {
+  //     line: 5,
+  //     text: 'the quick brown fox jumps over the lazy dog',
+  //   },
+  // ],
+
+  // NOTE: Only one hightlight works per line right now
+  sets: [
+    {
+      fullCode: true,
+      coords: [1, 38, 30, 13],
+      notes: `<p>This is the full source code example.</p><p>Click through the buttons below to explinations of for each part of the code.</p>`,
+    },
+    {
+      addLines: [1],
+      coords: [3, 10, 30],
+      notes: `<p>Start by loading <code>std::env</code> which provides Rust programs with access to the Environmental Variables it runs in</p>`,
+    },
+    {
+      addLines: [3, 13],
+      coords: [5, 10, 30],
+      notes: `<p>Create the <code>main</code> function that Rust uses as the entry point for the program</p>`,
+    },
+    {
+      addLines: [4],
+      coords: [6, 10, 30],
+      notes: `<p>Create a new immutalbe variable called <code>alfa</code> and bind the value returned by <code>env::var(&quot;HOME&quot;)</code> to it. That value is a <code>Result</code></p>`,
+    },
+    {
+      addLines: [5, 12],
+      coords: [7, 10, 30],
+      notes: `<p>Begin creating the <code>match</code> expression that we'll use to process the <code>Result</code> value that was returned from <code>env::var(&quot;HOME&quot;)</code></p>`,
+    },
+    {
+      highlights: ['h2, 4, 7, 11', 'h1, 5, 9, 13'],
+      coords: [7, 10, 30],
+      notes: `<p>Note that the value <code>match</code> is working on come from the <code>alfa</code> variable</p><p>TODO: See if match transfers ownership</p>`,
+    },
+    {
+      addLines: [6, 8],
+      coords: [8, 10, 30],
+      notes: `<p><code>Result</code> values are <code>enums</code> that can contain either an <code>Ok</code> or a <code>Err</code> value. Here we're creating the first arm of the <code>match</code> expression that handles an <code>Ok</code></p>`,
+    },
+    {
+      addLines: [7],
+      coords: [9, 10, 30],
+      notes: `<p>When the <code>Result</code> value in <code>alfa</code> contains an <code>Ok</code> the code inside its code block gets executed. In this case we're printing out the value that got passed in via <code>Ok</code></p>`,
+    },
+    {
+      highlights: ['h2, 6, 8, 11', 'h1, 7, 26, 29'],
+      coords: [9, 10, 30],
+      notes: `<p>Note the <code>item</code> value we're getting came packeged with the <code>Ok</code> from <code>Result</code></p>`,
+    },
+    {
+      addLines: [9, 11],
+      coords: [11, 10, 30],
+      notes: `<p>Next we create the <code>Err</code> arm for the match expression</p>`,
+    },
+    {
+      addLines: [10],
+      coords: [12, 10, 38],
+      notes: `<p>Finally we add the code to run if the <code>Result</code> from <code>env::var(&quot;HOME&quot;)</code> is an <code>Err</code></p>`,
+    },
+    {
+      fullCode: true,
+      coords: [1, 38, 30, 13],
+      notes: `<p>Put togehter, the full program looks like this.</p><p>Note: The output for this prototype contain two hard coded lines. The real version will just have one from the actual program</p>`,
+    },
+  ],
+
+  output: ['got /Users/alan', 'this is a stub to check two lines of output'],
 }
-
-Hello, World`.split('\n')
-
-
-const lineSets = [
-{ 
-  lines: [`0_r`, `0_r`, `0_r`, `0_e`, `0_o`],
-  text: `<p>That code is a full program. It will compile, run, and output &quot;Hello, World&quot;</p>`
-},
-{ 
-  lines: [`0_r`, `0_s`, `0_r`, `0_e`, `0_w`],
-  text: `<p>Well start all our code samples with a <code>main</code> function like the one shown here.</p>`
-},
-{ 
-  lines: [`0_c`, `2_r`, `0_c`, `0_e`, `0_w`],
-  text: `<p>We'll use the <code>println!()</code> expression to output text from our programs. Here we add a line to print &quot;Hello, World&quot;.</p>`
-},
-{ 
-  lines: [`0_c`, `1_u`, `0_c`, `0_e`, `0_w`],
-  text: `<p>We'll use the <code>println!()</code> expression to output text from our programs. Here we add a line to print &quot;Hello, World&quot;.</p>`
-},
-]
 </script>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hello-world---your-turn"><a class="header" href="#hello-world---your-turn">Hello, World - Your Turn</a></h1>
 <p>I learn best by doing. For programming
@@ -6625,6 +6695,14 @@ and reading it?)</p>
 <h2 id="other"><a class="header" href="#other">Other</a></h2>
 <ul>
 <li>
+<p>[] Show how to read this type of thing from the docs
+<code>pub fn read_dir&lt;P: AsRef&lt;Path&gt;&gt;(path: P) -&gt; Result&lt;ReadDir&gt;</code></p>
+</li>
+<li>
+<p>[] Show a <code>match</code> expression that returns a value
+assuming that's possible. </p>
+</li>
+<li>
 <p>Verify the font styling in <code>mutable-variables/index.html</code> works
 cross browser</p>
 </li>
@@ -7528,7 +7606,7 @@ you've officially written Rust.</p>
 
 
         <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
+        <script src="/theme/highlight.min.js"></script>
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
@@ -7536,6 +7614,7 @@ you've officially written Rust.</p>
         <!--
         <script src="theme/typo-detector.js" type="module"></script>
         <script src="theme/step-by-step.js" type="module"></script>
+        <script src="theme/step-by-step-v2.js" type="module"></script>
         -->
 
         <script type="module">
@@ -7543,11 +7622,17 @@ you've officially written Rust.</p>
           typoInit();
         </script>
 
+<!--
         <script type="module">
           import { stepByStepInit } from "./theme/step-by-step.js"
           stepByStepInit();
         </script>
+        -->
 
+        <script type="module">
+          import { stepByStepInitV2 } from "./theme/step-by-step-v2.js"
+          stepByStepInitV2();
+        </script>
 
         <script>
         window.addEventListener('load', function() {

@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="../css/chrome.css">
         <link rel="stylesheet" href="../css/print.css" media="print">
 
+
+
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="../fonts/fonts.css">
@@ -29,7 +31,9 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/highlight.min.js">
         <link rel="stylesheet" href="../theme/overrides.css">
+        <link rel="stylesheet" href="../theme/step-by-step-v2.css">
 
 
     </head>
@@ -236,7 +240,7 @@ Probably that makes the most sense.</li>
 
 
         <script src="../clipboard.min.js"></script>
-        <script src="../highlight.js"></script>
+        <script src="..//theme/highlight.min.js"></script>
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
@@ -244,6 +248,7 @@ Probably that makes the most sense.</li>
         <!--
         <script src="../theme/typo-detector.js" type="module"></script>
         <script src="../theme/step-by-step.js" type="module"></script>
+        <script src="../theme/step-by-step-v2.js" type="module"></script>
         -->
 
         <script type="module">
@@ -251,11 +256,17 @@ Probably that makes the most sense.</li>
           typoInit();
         </script>
 
+<!--
         <script type="module">
           import { stepByStepInit } from "./../theme/step-by-step.js"
           stepByStepInit();
         </script>
+        -->
 
+        <script type="module">
+          import { stepByStepInitV2 } from "./../theme/step-by-step-v2.js"
+          stepByStepInitV2();
+        </script>
 
 
     </body>
