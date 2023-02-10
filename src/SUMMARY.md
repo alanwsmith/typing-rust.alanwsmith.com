@@ -1,6 +1,8 @@
 # Summary
 
 - [Hello, World](./introduction/index.md)
+- [Scratchpad 2](./scratchpad/2.md)
+- [Scratchpad](./scratchpad/index.md)
   - [Your Turn](./introduction/your-turn.md)
 - [The Status Line](./introduction/status-line.md)
 - [Quick Notes](./cards/index.md)
@@ -16,7 +18,7 @@
   - [push_str()](./mutable-variables/push-str.md)
   - [Step By Step](./mutable-variables/step-by-step.md)
   - [Your Turn](./mutable-variables/your-turn.md)
-- [Variables Names With _ Underscores](./variables-with-underscores/index.md)
+- [Variables Names With \_ Underscores](./variables-with-underscores/index.md)
 - [Functions](./functions/index.md)
   - [No Arguments - No Return](./functions/no-arguments-no-return-value.md)
     - [Step By Step](./functions/no-arguments-no-return-value-step-by-step.md)
@@ -96,8 +98,6 @@
 - [Prototype 1](./prototypes/1.md)
 
 # Scratchpad
-
-- [Scratchpad](./scratchpad/index.md)
 
 # Pending
 
