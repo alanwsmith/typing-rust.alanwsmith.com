@@ -32,6 +32,8 @@
         <link rel="stylesheet" href="{{ path_to_root }}css/print.css" media="print">
         {{/if}}
 
+
+
         <!-- Fonts -->
         <link rel="stylesheet" href="{{ path_to_root }}FontAwesome/css/font-awesome.css">
         {{#if copy_fonts}}
@@ -292,7 +294,7 @@
         {{/if}}
 
         <script src="{{ path_to_root }}clipboard.min.js"></script>
-        <script src="{{ path_to_root }}highlight.js"></script>
+        <script src="{{ path_to_root }}/theme/highlight.min.js"></script>
         <script src="{{ path_to_root }}book.js"></script>
 
         <!-- Custom JS scripts -->
@@ -308,11 +310,19 @@
           typoInit();
         </script>
 
+<!--
         <script type="module">
           import { stepByStepInit } from "./{{ ../path_to_root }}theme/step-by-step.js"
           stepByStepInit();
         </script>
+        -->
 
+<!--
+        <script type="module">
+          import { stepByStepInitV2 } from "./{{ ../path_to_root }}theme/step-by-step-v2.js"
+          stepByStepInitV2();
+        </script>
+        -->
 
         {{#if is_print}}
         {{#if mathjax_support}}
