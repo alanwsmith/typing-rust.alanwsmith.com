@@ -160,9 +160,14 @@ const s = {
   }
 
 const updateText = () => {
- // the ,1 moves the cursor to the end 
- // so that text isn't selected. 
-  s.editor.setValue(s.lines[s.current], 1); 
+  const output = []
+  for (let i = 0; i <= s.current; i ++ ) {
+    output.push(s.lines[i])
+  }
+
+  // the ,1 moves the cursor to the end 
+  // so that text isn't selected. 
+  s.editor.setValue(output.join("\n"), 1); 
   s.current += 1;
 }
 
@@ -174,6 +179,7 @@ const init = () => {
   changeButton.innerHTML = "Click"
   window['scratchpad-2'].appendChild(changeButton)
   changeButton.addEventListener("click", updateText)
+  s.editor.setHighlightActiveLine(true);
 }
 
 document.addEventListener("DOMContentLoaded", init)

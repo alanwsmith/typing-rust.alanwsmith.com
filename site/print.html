@@ -145,116 +145,8 @@
                         <hr />
                         <div id="debugLine" style="color: red; font-family: monospace;"></div>
                         -->
-                        <h1 id="welcome-to-typing-rust"><a class="header" href="#welcome-to-typing-rust">Welcome to Typing Rust</a></h1>
-<hr />
-<p><em>NOTE: This site is a working draft. All the
-pages before DRAFTS in the side navivagtion
-are in pretty good shape. The ones after it
-are in various stages of in progress</em></p>
-<hr />
-<p>Hi. I'm Alan and I'm building this site to
-learn Rust.</p>
-<p>The site has traditional pages and code samples
-as well as two interactive features. The
-first is a &quot;Step By Step&quot; explination
-of the code examples. Each step some code
-and provides an explination of what's happening.</p>
-<p>Here's one with three steps for a program
-that print out &quot;Hello, World&quot;.</p>
-<h4 id="step-by-step"><a class="header" href="#step-by-step">Step By Step</a></h4>
-<script>
-const c = {
-  source: `use std::env; 
- 
-fn main() { 
-  let alfa = env::var("HOME"); 
-  match alfa { 
-    Ok(item) => { 
-      println!("got {}", item); 
-    } 
-    Err(error) => { 
-      println!("error {}", error); 
-    } 
-  } 
-}`,
-
-  // Usage (until it's better documented)
-  //  highlights: ['h1|3|4|7'],
-  //  fullCode: true,
-  //   altLines: [
-  //   {
-  //     line: 5,
-  //     text: 'the quick brown fox jumps over the lazy dog',
-  //   },
-  // ],
-
-  // NOTE: Only one hightlight works per line right now
-  sets: [
-    {
-      fullCode: true,
-      coords: [1, 38, 30, 13],
-      notes: `<p>This is the full source code example.</p><p>Click through the buttons below to explinations of for each part of the code.</p>`,
-    },
-    {
-      addLines: [1],
-      coords: [3, 10, 30],
-      notes: `<p>Start by loading <code>std::env</code> which provides Rust programs with access to the Environmental Variables it runs in</p>`,
-    },
-    {
-      addLines: [3, 13],
-      coords: [5, 10, 30],
-      notes: `<p>Create the <code>main</code> function that Rust uses as the entry point for the program</p>`,
-    },
-    {
-      addLines: [4],
-      coords: [6, 10, 30],
-      notes: `<p>Create a new immutalbe variable called <code>alfa</code> and bind the value returned by <code>env::var(&quot;HOME&quot;)</code> to it. That value is a <code>Result</code></p>`,
-    },
-    {
-      addLines: [5, 12],
-      coords: [7, 10, 30],
-      notes: `<p>Begin creating the <code>match</code> expression that we'll use to process the <code>Result</code> value that was returned from <code>env::var(&quot;HOME&quot;)</code></p>`,
-    },
-    {
-      highlights: ['h2, 4, 7, 11', 'h1, 5, 9, 13'],
-      coords: [7, 10, 30],
-      notes: `<p>Note that the value <code>match</code> is working on come from the <code>alfa</code> variable</p><p>TODO: See if match transfers ownership</p>`,
-    },
-    {
-      addLines: [6, 8],
-      coords: [8, 10, 30],
-      notes: `<p><code>Result</code> values are <code>enums</code> that can contain either an <code>Ok</code> or a <code>Err</code> value. Here we're creating the first arm of the <code>match</code> expression that handles an <code>Ok</code></p>`,
-    },
-    {
-      addLines: [7],
-      coords: [9, 10, 30],
-      notes: `<p>When the <code>Result</code> value in <code>alfa</code> contains an <code>Ok</code> the code inside its code block gets executed. In this case we're printing out the value that got passed in via <code>Ok</code></p>`,
-    },
-    {
-      highlights: ['h2, 6, 8, 11', 'h1, 7, 26, 29'],
-      coords: [9, 10, 30],
-      notes: `<p>Note the <code>item</code> value we're getting came packeged with the <code>Ok</code> from <code>Result</code></p>`,
-    },
-    {
-      addLines: [9, 11],
-      coords: [11, 10, 30],
-      notes: `<p>Next we create the <code>Err</code> arm for the match expression</p>`,
-    },
-    {
-      addLines: [10],
-      coords: [12, 10, 38],
-      notes: `<p>Finally we add the code to run if the <code>Result</code> from <code>env::var(&quot;HOME&quot;)</code> is an <code>Err</code></p>`,
-    },
-    {
-      fullCode: true,
-      coords: [1, 38, 30, 13],
-      notes: `<p>Put togehter, the full program looks like this.</p><p>Note: The output for this prototype contain two hard coded lines. The real version will just have one from the actual program</p>`,
-    },
-  ],
-
-  output: ['got /Users/alan', 'this is a stub to check two lines of output'],
-}
-</script>
+                        <p>This is the original place I made these notes. </p>
+<p>I'm moving them over to <a href="https://rust-notes.alanwsmith.com/">rust-notes.alanwsmith.com</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="scratchpad-2"><a class="header" href="#scratchpad-2">Scratchpad 2</a></h1>
 <pre><pre class="playground"><code class="language-rust  editable">fn main() {
   println!(&quot;Hello, World&quot;);
@@ -271,9 +163,14 @@ const s = {
   }
 
 const updateText = () => {
- // the ,1 moves the cursor to the end 
- // so that text isn't selected. 
-  s.editor.setValue(s.lines[s.current], 1); 
+  const output = []
+  for (let i = 0; i <= s.current; i ++ ) {
+    output.push(s.lines[i])
+  }
+
+  // the ,1 moves the cursor to the end 
+  // so that text isn't selected. 
+  s.editor.setValue(output.join("\n"), 1); 
   s.current += 1;
 }
 
@@ -285,6 +182,7 @@ const init = () => {
   changeButton.innerHTML = "Click"
   window['scratchpad-2'].appendChild(changeButton)
   changeButton.addEventListener("click", updateText)
+  s.editor.setHighlightActiveLine(true);
 }
 
 document.addEventListener("DOMContentLoaded", init)
@@ -294,7 +192,7 @@ document.addEventListener("DOMContentLoaded", init)
 <pre><code class="language-rust  noplayground  EXAMPLE1"></code></pre>
 <h3 id="code-runner"><a class="header" href="#code-runner">CODE RUNNER</a></h3>
 <pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
-<h2 id="step-by-step-1"><a class="header" href="#step-by-step-1">Step By Step</a></h2>
+<h2 id="step-by-step"><a class="header" href="#step-by-step">Step By Step</a></h2>
 <script>
 const rawSourceCode = `fn main() {
   let alfa = String::from("apple");
@@ -663,7 +561,7 @@ it like this:</p>
 <p>which outputs:</p>
 <pre><code class="language-txt">alfa is apple
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-2"><a class="header" href="#step-by-step-2">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-1"><a class="header" href="#step-by-step-1">Step By Step</a></h1>
 <script>
 const rawSourceCode = `fn main() {
   let alfa = String::from("apple"); //   let alfa = <code>String::from("apple")</code>; //   let alfa =
@@ -758,7 +656,7 @@ them:</p>
 <p>The output is:</p>
 <pre><code class="language-txt">apple berry cherry
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-3"><a class="header" href="#step-by-step-3">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-2"><a class="header" href="#step-by-step-2">Step By Step</a></h1>
 <script>
 const rawSourceCode = `fn main() {
   let alfa = String::from("apple"); //   let alfa = <code>String::from("apple")</code>; //   let alfa =
@@ -885,7 +783,7 @@ this adds &quot;pie&quot; to the end of the &quot;apple&quot;
 <code>String</code></p>
 <pre><code class="language-rust noplayground">let mut alfa = String::from(&quot;apple&quot;);
 alfa.push_str(&quot;pie&quot;);</code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-4"><a class="header" href="#step-by-step-4">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-3"><a class="header" href="#step-by-step-3">Step By Step</a></h1>
 <script>
 const rawSourceCode = `fn main() {
   let mut alfa = String::from("apple"); //   let mut alfa = <code>String::from("apple")</code>; //   let <code>mut</code> alfa = //   let alfa =
@@ -992,7 +890,7 @@ arguments and return no values is:</p>
 <p>Calling functions without arguments is done using its
 name followed by empty <code>()</code>, like:</p>
 <pre><code class="language-rust  noplayground">widget();</code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-5"><a class="header" href="#step-by-step-5">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-4"><a class="header" href="#step-by-step-4">Step By Step</a></h1>
 <script>
 const rawSourceCode = `fn main() {
   widget();
@@ -1058,7 +956,7 @@ the incoming data</p>
 <li>Parenthesis with argument details. For example: <code>(thing: String)</code></li>
 <li>A set of <code>{}</code> curly brackets surrounding the function's code block</li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-6"><a class="header" href="#step-by-step-6">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-5"><a class="header" href="#step-by-step-5">Step By Step</a></h1>
 <script>
 const rawSourceCode = `fn main() {
   let alfa = String::from("apple"); //   let alfa = <code>String::from("apple");</code> //   let alfa = 
@@ -1142,7 +1040,7 @@ behindg the parenthesis after the name. For example</p>
 <li>The <code>-&gt;</code> symbol followed by what type of data will be returned</li>
 <li>A set of <code>{}</code> curly brackets surrounding the function's code block</li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-7"><a class="header" href="#step-by-step-7">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-6"><a class="header" href="#step-by-step-6">Step By Step</a></h1>
 <script>
 const rawSourceCode = `fn main() {
   let alfa = widget(); //   let alfa = <code>widget()</code>; //   let alfa = 
@@ -1217,7 +1115,7 @@ fn widget() -&gt; String {
 <h3 id="code-runner-6"><a class="header" href="#code-runner-6">CODE RUNNER</a></h3>
 <pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="functions-that-take-arguments-and-have-return-values"><a class="header" href="#functions-that-take-arguments-and-have-return-values">Functions That Take Arguments And Have Return Values</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-8"><a class="header" href="#step-by-step-8">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-7"><a class="header" href="#step-by-step-7">Step By Step</a></h1>
 <script>
 const rawSourceCode = `fn main() {
   let alfa = String::from("apple"); //   let alfa = <code>String::from("apple")</code>; //   let alfa =
@@ -1420,7 +1318,7 @@ use so far everything works.</p>
 }</code></pre>
 <h3 id="code-runner-7"><a class="header" href="#code-runner-7">CODE RUNNER</a></h3>
 <pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-9"><a class="header" href="#step-by-step-9">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-8"><a class="header" href="#step-by-step-8">Step By Step</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="your-turn-4"><a class="header" href="#your-turn-4">Your Turn</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hitting-a-moved-error"><a class="header" href="#hitting-a-moved-error">Hitting A Moved Error</a></h1>
 <p>Where things go wrong is if we try to
@@ -1584,7 +1482,7 @@ delta has apple
 }</code></pre>
 <h3 id="code-runner-11"><a class="header" href="#code-runner-11">CODE RUNNER</a></h3>
 <pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-10"><a class="header" href="#step-by-step-10">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-9"><a class="header" href="#step-by-step-9">Step By Step</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="your-turn-6"><a class="header" href="#your-turn-6">Your Turn</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cheatsheet"><a class="header" href="#cheatsheet">Cheatsheet</a></h1>
 <p>NOTE: These are draft notes.</p>
@@ -2054,7 +1952,7 @@ match env::var(key) {
     Err(e) =&gt; println!(&quot;couldn't interpret {key}: {e}&quot;),
 }
 <span class="boring">}</span></code></pre></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-11"><a class="header" href="#step-by-step-11">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-10"><a class="header" href="#step-by-step-10">Step By Step</a></h1>
 <script>
 const rawSourceCode = `use std::env;
 
@@ -2272,7 +2170,7 @@ of the field. For example:</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="structs---step-by-step"><a class="header" href="#structs---step-by-step">Structs - Step By Step</a></h1>
 <p>TODO: Make sure to note that the <code>let</code>
 expression needs a <code>;</code> at the end of it</p>
-<h4 id="step-by-step-12"><a class="header" href="#step-by-step-12">Step By Step</a></h4>
+<h4 id="step-by-step-11"><a class="header" href="#step-by-step-11">Step By Step</a></h4>
 <script>
 const rawSourceCode = `struct Widget {
   alfa: String, //   alfa: <code>String</code>, //   alfa:
@@ -2386,7 +2284,7 @@ let mut thing = Widget {
   alfa: String::from(&quot;apple&quot;)
 }</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="mutalbe-struct-instances---step-by-step"><a class="header" href="#mutalbe-struct-instances---step-by-step">Mutalbe Struct Instances - Step By Step</a></h1>
-<h4 id="step-by-step-13"><a class="header" href="#step-by-step-13">Step By Step</a></h4>
+<h4 id="step-by-step-12"><a class="header" href="#step-by-step-12">Step By Step</a></h4>
 <script>
 const rawSourceCode = `struct Widget {
   alfa: String, //   alfa: <code>String</code>, //   alfa:
@@ -2502,7 +2400,7 @@ fn report_on(thing: &amp;Widget) {
 <h3 id="code-runner-17"><a class="header" href="#code-runner-17">CODE RUNNER</a></h3>
 <pre><pre class="playground"><code class="language-rust  editable  CODE1"></code></pre></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="passing-mutalbe-structs-to-functions"><a class="header" href="#passing-mutalbe-structs-to-functions">Passing Mutalbe Structs To Functions</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-14"><a class="header" href="#step-by-step-14">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-13"><a class="header" href="#step-by-step-13">Step By Step</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="passing-mutable-structs-to-functions"><a class="header" href="#passing-mutable-structs-to-functions">Passing Mutable Structs To Functions</a></h1>
 <h3 id="source-code-18"><a class="header" href="#source-code-18">SOURCE CODE</a></h3>
 <pre><code class="language-rust  noplayground  EXAMPLE1">struct Widget {
@@ -6436,7 +6334,7 @@ fn main() {
   }
 }
 </code></pre></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-15"><a class="header" href="#step-by-step-15">Step By Step</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="step-by-step-14"><a class="header" href="#step-by-step-14">Step By Step</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="passing-values"><a class="header" href="#passing-values">Passing Values</a></h1>
 <p>The options in enums can hold data too. </p>
 <p>This is how to get at that. </p>

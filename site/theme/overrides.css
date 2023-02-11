@@ -391,3 +391,15 @@ h3 {
   margin-top: 3.8rem;
   margin-bottom: 0.6rem;
 }
+
+.ace_line .ace_keyword {
+  color: red;
+}
+
+.ace_line .ace_operator {
+  color: red;
+}
+
+.ace-tomorrow-night .ace_keyword.ace_operator {
+  color: red;
+}
